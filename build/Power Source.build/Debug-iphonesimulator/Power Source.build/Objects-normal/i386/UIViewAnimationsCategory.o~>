@@ -1,0 +1,2 @@
+/Users/mdhull/XCode Projects/Power Source/Classes/UIViewAnimationsCategory.m:24: warning: incomplete implementation of category 'customAnimations'
+/Users/mdhull/XCode Projects/Power Source/Classes/UIViewAnimationsCategory.m:24: warning: method definition for '-animateToFrame:andPerformSelector:' not found

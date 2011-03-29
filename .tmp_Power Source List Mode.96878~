@@ -1,0 +1,18 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Power Source List Mode</title>
+	</head>
+	<body>
+		<p style="font-family:helvetica; font-size:14px">
+		<br><b>Power Source List Mode</b></b></br>
+		<br />
+		<br>The power source list mode allows touch-selection of any bus shown on the system diagram in order to view items powered on the selected bus.  To use this mode, simply touch any bus to view items powered on the bus.  Once the desired bus is highlighted, the items will appear in a scroll-able table below the diagram.  Scroll through the items by performing a touch-drag-up or touch-drag-down gestures with your finger.   The corresponding power source of each item will appear on the right-hand side of each item. <i>(example:  Symbol Generator 1 Power/Control - EssBus 1)</i></br>
+		<br />
+		<br>Certain items, such as the Central Bus, do not have any items that receive power from that bus.  </br>
+		<br />
+		<br>Use the arrow button to navigate back to the main screen.</br>
+
+	</body>
+</html>

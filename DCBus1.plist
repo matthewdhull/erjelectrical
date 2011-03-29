@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Aileron Control System 1</string>
+	<string>Air/Gnd Position System A</string>
+	<string>AOA 1 Sensor Heating</string>
+	<string>Autopilot 1</string>
+	<string>Outbd Brake Temp Indication</string>
+	<string>Cabin Lighting 1</string>
+	<string>Central Maintenance Computer</string>
+	<string>Clear Ice Detection System 1 (XRJ)</string>
+	<string>CMU Mark III</string>
+	<string>Cockpit Reading Light</string>
+	<string>Courtesy/Stair Lights 2</string>
+	<string>Crew Seat Adjustment 1</string>
+	<string>DME 1</string>
+	<string>EICAS Power (DAU 1B)</string>
+	<string>Electrical Flight Idle Stop 1</string>
+	<string>Electronic Bay Cooling (Exhuast 1)</string>
+	<string>Electronic Bay Cooling (Recirc 2)</string>
+	<string>Emergency/Parking Brake</string>
+	<string>Fuel Pump 1C</string>
+	<string>ENG 1 Thrust Reverser Command</string>
+	<string>ENG 1 Lip Anti-Ice</string>
+	<string>Flap Power/Command 1</string>
+	<string>Flood/Storm Lights</string>
+	<string>FMS 1 CDU</string>
+	<string>FMS 1 Computer</string>
+	<string>FMS 1 Data Loader</string>
+	<string>Pressure Refueling 1, 2</string>
+	<string>Outbd Ground Spoiler</string>
+	<string>Electric Hydraulic Pump 2</string>
+	<string>Hydraulic System 2 Indication</string>
+	<string>Ice Detector 1</string>
+	<string>Inverter</string>
+	<string>Landing Light 1</string>
+	<string>Lavatory Flush</string>
+	<string>Lavatory Lights</string>
+	<string>Lavatory Smoke Detector</string>
+	<string>Lavatory Water Drain Heater</string>
+	<string>Logo Lights</string>
+	<string>MFD 2 Power</string>
+	<string>Navigation Lights</string>
+	<string>Overhead Panel Lighting</string>
+	<string>Pack Valve 1</string>
+	<string>Rudder Pedal Adjustment</string>
+	<string>PFD 1 Power</string>
+	<string>Pitch Trim 1</string>
+	<string>Pitot 1 Heating</string>
+	<string>Pneumatic High Stage Valve 1</string>
+	<string>Pressurization Control</string>
+	<string>Radar System</string>
+	<string>Radio Altimeter 1</string>
+	<string>Passenger Signs</string>
+	<string>Speed Brake</string>
+	<string>Static Port 1 Heating</string>
+	<string>Strobe Lights</string>
+	<string>TAT 1 Sensor HEating</string>
+	<string>TCAS 2000</string>
+	<string>Transponder 1 Power/Control</string>
+	<string>Ventral Fuel Transfer Pump A (XRJ)</string>
+	<string>VHF System 3</string>
+	<string>Windshield 1 Heating</string>
+	<string>Windshield Wiper System 1</string>
+	<string>Wing Anti-ice System</string>
+	<string>Yaw Trim System</string>
+</array>
+</plist>

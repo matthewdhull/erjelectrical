@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>ADC 1 Power/Control</string>
+	<string>ADF 1</string>
+	<string>AHRS 1 Power</string>
+	<string>Air/Gnd Position System B</string>
+	<string>APU Bleed</string>
+	<string>Aural Warning System 1</string>
+	<string>CA/FO Audio System (Intph 1)</string>
+	<string>Baggage Fire Extinguishing</string>
+	<string>Outboard Brake Control Unit</string>
+	<string>Cockpit Dome Lights</string>
+	<string>CA Clock</string>
+	<string>Symbol Generator 1 Power/Control</string>
+	<string>EICAS Power (DAU1A)</string>
+	<string>ENG 1 Fire Detection 1</string>
+	<string>Fuel Pump 1A</string>
+	<string>Fuel Pump 2B</string>
+	<string>ENG 1 FADEC A Power</string>
+	<string>ENG 2 FADEC A Power</string>
+	<string>ENG 1 Starting</string>
+	<string>ENG 1, 2 N2 Signal 1A</string>
+	<string>ENG 1, 2 N2 Signal 2A</string>
+	<string>FDR Management</string>
+	<string>Fuel Quantity Indication 1</string>
+	<string>Landing Gear Control (Down Override)</string>
+	<string>Nose Landing Gear Indication 1</string>
+	<string>Passenger Oxygen System 1</string>
+	<string>CA Panel Lighting</string>
+	<string>Enginge Bleed Valve 1</string>
+	<string>Ram Air Distribution</string>
+	<string>RMU 1 Power/Control</string>
+	<string>Rudder Power Control System 2</string>
+	<string>SPS (Shaker 1/Channel 1)</string>
+	<string>VHF System 1</string>
+	<string>VOR/ILS/MB 1</string>
+</array>
+</plist>

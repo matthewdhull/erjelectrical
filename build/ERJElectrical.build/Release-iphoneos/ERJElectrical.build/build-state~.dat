@@ -1,0 +1,1387 @@
+TERJElectrical
+v7
+r1
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk
+c000000004B79A1A50000000000000110
+t1266262437
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+c000000004B2B3B9F00000000000001E5
+t1261124511
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B537900000000005F4900
+t1261130617
+s6244608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B551F0000000000501370
+t1261131039
+s5247856
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B54F40000000000001355
+t1261130996
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004B2B5700000000000000007D
+t1261131520
+s125
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61610000000000000788
+t1261134177
+s1928
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B63DA0000000001B3F450
+t1261134810
+s28570704
+
+N/Users/mdhull/Library/MobileDevice/Provisioning Profiles/1D35D76A-A2E4-499A-8753-5CD97AC8185B.mobileprovision
+c000000004BA78E730000000000001CC7
+t1269272179
+s7367
+
+N/Users/mdhull/XCode Projects/Power Source/AmpVoltageCover.png
+c000000004B8ED30900000000000000F6
+t1267651337
+s246
+
+N/Users/mdhull/XCode Projects/Power Source/ArrowTab.png
+c000000004B8FD8BB00000000000007FE
+t1267718331
+s2046
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBus1.plist
+c000000004B9860E300000000000000D5
+t1268277475
+s213
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBus12.png
+c000000004B6659280000000000000186
+t1264998696
+s390
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBus2.plist
+c000000004B9860D600000000000000DD
+t1268277462
+s221
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.xib
+c000000004B11F8650000000000001BC3
+t1259468901
+s7107
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssHotBus.png
+c000000004B66590B000000000000018D
+t1264998667
+s397
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBus.plist
+c000000004B11FD57000000000000015B
+t1259470167
+s347
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.xib
+c000000004B11C5190000000000001CAE
+t1259455769
+s7342
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBus.plist
+c000000004B11FDC800000000000001D6
+t1259470280
+s470
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.xib
+c000000004B11F8850000000000001BCC
+t1259468933
+s7116
+
+N/Users/mdhull/XCode Projects/Power Source/BatteryImage.png
+c000000004B912CE80000000000001A09
+t1267805416
+s6665
+
+N/Users/mdhull/XCode Projects/Power Source/BusImage.png
+c000000004B912C860000000000001C31
+t1267805318
+s7217
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.h
+c000000004B1993AE0000000000000197
+t1259967406
+s407
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m
+c000000004B1993D900000000000002FD
+t1259967449
+s765
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.xib
+c000000004B699FCD0000000000002A72
+t1265213389
+s10866
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.h
+c000000004B968A590000000000000458
+t1268157017
+s1112
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.m
+c000000004B9F0DEF0000000000002774
+t1268714991
+s10100
+i"ButtonPad.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.png
+c000000004B30592D000000000000424B
+t1261459757
+s16971
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPadImage.png
+c000000004B9131540000000000003471
+t1267806548
+s13425
+
+N/Users/mdhull/XCode Projects/Power Source/CentralBus.plist
+c000000004B985F6000000000000000D5
+t1268277088
+s213
+
+N/Users/mdhull/XCode Projects/Power Source/CentralBus.png
+c000000004B6659B900000000000002B8
+t1264998841
+s696
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib
+c000000004B840C1E0000000000001EAA
+t1266945054
+s7850
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.h
+c000000004B96BB5B0000000000000269
+t1268169563
+s617
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m
+c000000004B96BB700000000000000BFD
+t1268169584
+s3069
+i"ModeSelectView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.h
+c000000004B96BB790000000000000637
+t1268169593
+s1591
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m
+c000000004B96C96B0000000000001DA2
+t1268173163
+s7586
+i"NewRootController.h"
+i"ElectricalSystemEngineViewController.h"
+i"PwrSrcDistroLoadListViewController.h"
+i"ManualNavigationController.h"
+i"ModeSelectView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib
+c000000004B869B1A0000000000001BFB
+t1267112730
+s7163
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.h
+c000000004B8F474200000000000001DA
+t1267681090
+s474
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m
+c000000004B904CF300000000000002C4
+t1267748083
+s708
+i"Power_SourceAppDelegate.h"
+i"NewRootController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Contact.html
+c000000004BA062C40000000000000326
+t1268802244
+s806
+
+N/Users/mdhull/XCode Projects/Power Source/ContactorImage.png
+c000000004B912BB20000000000001EEE
+t1267805106
+s7918
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1.plist
+c000000004B134AF70000000000000A28
+t1259555575
+s2600
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus12.png
+c000000004B66588E0000000000000219
+t1264998542
+s537
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.xib
+c000000004B116F200000000000001B8C
+t1259433760
+s7052
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2.plist
+c000000004B134BD20000000000000AA2
+t1259555794
+s2722
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.xib
+c000000004B10BE5D0000000000001C96
+t1259388509
+s7318
+
+N/Users/mdhull/XCode Projects/Power Source/ERJElecSysUserManual.html
+c000000004BA065190000000000000B2B
+t1268802841
+s2859
+
+N/Users/mdhull/XCode Projects/Power Source/ERJElecSysUserManual.rtf
+c000000004B946F6A00000000000041F0
+t1268019050
+s16880
+
+N/Users/mdhull/XCode Projects/Power Source/ElecSysDiagramDropShadow.png
+c000000004B576B940000000000008966
+t1264020372
+s35174
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.h
+c000000004B9D81280000000000000D8F
+t1268613416
+s3471
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m
+c000000004B9D9914000000000000552E
+t1268619540
+s21806
+i"ElectricalSystemDiagramView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineDiagram.png
+c000000004B5767C300000000000036D5
+t1264019395
+s14037
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.h
+c000000004BA3C39C0000000000002370
+t1269023644
+s9072
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m
+c000000004BA3C4CE000000000001A140
+t1269023950
+s106816
+i"ElectricalSystemEngineViewController.h"
+i"LineContactor.h"
+i"GeneratorSymbol.h"
+i"ButtonPad.h"
+i"ElectricalSystemDiagramView.h"
+i"GeneratorDisplay.h"
+i"NewRootController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Entitlements.plist
+c000000004BA7935600000000000000E1
+t1269273430
+s225
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus1.plist
+c000000004B9862BF00000000000005E8
+t1268277951
+s1512
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus12.png
+c000000004B66593E0000000000000190
+t1264998718
+s400
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus2.plist
+c000000004B9862D80000000000000603
+t1268277976
+s1539
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.xib
+c000000004B11BCD00000000000001BD6
+t1259453648
+s7126
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.xib
+c000000004B11BCD90000000000001BDB
+t1259453657
+s7131
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.h
+c000000004B8ECA9B0000000000000AA3
+t1267649179
+s2723
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m
+c000000004B9ED85A0000000000002908
+t1268701274
+s10504
+i"GeneratorDisplay.h"
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.png
+c000000004B71C351000000000000220A
+t1265746769
+s8714
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplayImage.png
+c000000004B913E340000000000003BCB
+t1267809844
+s15307
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorImage.png
+c000000004B9180C80000000000002448
+t1267826888
+s9288
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.h
+c000000004B7245D7000000000000052F
+t1265780183
+s1327
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m
+c000000004B71C0B900000000000011A3
+t1265746105
+s4515
+i"GeneratorSymbol.h"
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1.plist
+c000000004B17351200000000000001E2
+t1259812114
+s482
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus12.png
+c000000004B66590D0000000000000212
+t1264998669
+s530
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.xib
+c000000004B11C5A70000000000001C8D
+t1259455911
+s7309
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2.plist
+c000000004B11FCD700000000000001A3
+t1259470039
+s419
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.xib
+c000000004B11C59A0000000000001C8D
+t1259455898
+s7309
+
+N/Users/mdhull/XCode Projects/Power Source/InteractiveButtonHighlighted.png
+c000000004B89A2480000000000000B67
+t1267311176
+s2919
+
+N/Users/mdhull/XCode Projects/Power Source/InteractiveMode.html
+c000000004BA065550000000000002A67
+t1268802901
+s10855
+
+N/Users/mdhull/XCode Projects/Power Source/LexiconLimitations.html
+c000000004BA064E7000000000000071A
+t1268802791
+s1818
+
+N/Users/mdhull/XCode Projects/Power Source/LineContactor.h
+c000000004B554D5C00000000000001E3
+t1263881564
+s483
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/LineContactor.m
+c000000004B554D8D0000000000000FE2
+t1263881613
+s4066
+i"LineContactor.h"
+
+N/Users/mdhull/XCode Projects/Power Source/MainScreen.png
+c000000004B96C94A000000000000CCBA
+t1268173130
+s52410
+
+N/Users/mdhull/XCode Projects/Power Source/MainWindow.xib
+c000000004B9042B30000000000003D22
+t1267745459
+s15650
+
+N/Users/mdhull/XCode Projects/Power Source/ManualNavigationController.h
+c000000004B967B9900000000000002ED
+t1268153241
+s749
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ManualNavigationController.m
+c000000004B967D0000000000000009CA
+t1268153600
+s2506
+i"ManualNavigationController.h"
+i"UserManualViewController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ManualNavigationController.xib
+c000000004B902D870000000000004047
+t1267740039
+s16455
+
+N/Users/mdhull/XCode Projects/Power Source/ModalViewDismissalDelegate.h
+c000000004B8C69F200000000000000F6
+t1267493362
+s246
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.h
+c000000004B18624B000000000000013E
+t1259889227
+s318
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m
+c000000004B18625700000000000002CB
+t1259889239
+s715
+i"PowerSourceCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.png
+c000000004B1992350000000000000175
+t1259967029
+s373
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib
+c000000004B84070300000000000024A0
+t1266943747
+s9376
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceListMode.html
+c000000004BA0628F00000000000004C0
+t1268802191
+s1216
+
+N/Users/mdhull/XCode Projects/Power Source/Power_Source_Prefix.pch
+c000000004B108FCA00000000000000C1
+t1259376586
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.h
+c000000004B9D7D750000000000000C6C
+t1268612469
+s3180
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m
+c000000004B9C730200000000000039CA
+t1268544258
+s14794
+i"PwrSrcDistroLoadListViewController.h"
+i"ElectricalSystemDiagramView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib
+c000000004B84ABD90000000000001FBA
+t1266985945
+s8122
+
+N/Users/mdhull/XCode Projects/Power Source/RWDifferences.html
+c000000004BA0653400000000000006EA
+t1268802868
+s1770
+
+N/Users/mdhull/XCode Projects/Power Source/ScenarioGuide.html
+c000000004BA0629B0000000000003772
+t1268802203
+s14194
+
+N/Users/mdhull/XCode Projects/Power Source/ScreenIcon.png
+c000000004BA7C3C40000000000000CA8
+t1269285828
+s3240
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1.plist
+c000000004B11FE8D00000000000001B2
+t1259470477
+s434
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus12.png
+c000000004B6659520000000000000257
+t1264998738
+s599
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.xib
+c000000004B11FFD00000000000001C90
+t1259470800
+s7312
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2.plist
+c000000004B9861C2000000000000024A
+t1268277698
+s586
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.xib
+c000000004B11FFC40000000000001C90
+t1259470788
+s7312
+
+N/Users/mdhull/XCode Projects/Power Source/TableBorder.png
+c000000004B9B02DD0000000000002739
+t1268450013
+s10041
+
+N/Users/mdhull/XCode Projects/Power Source/TableViewHighlighted.png
+c000000004B89A26B0000000000000D3C
+t1267311211
+s3388
+
+N/Users/mdhull/XCode Projects/Power Source/ThreeNetworksImage.png
+c000000004B959895000000000000F340
+t1268095125
+s62272
+
+N/Users/mdhull/XCode Projects/Power Source/TouchAnyBusLabel.png
+c000000004B9C72930000000000001CA0
+t1268544147
+s7328
+
+N/Users/mdhull/XCode Projects/Power Source/TwoNetworksImage.png
+c000000004B9683C6000000000000D7D6
+t1268155334
+s55254
+
+N/Users/mdhull/XCode Projects/Power Source/UserManual.css
+c000000004BA0776C000000000000065D
+t1268807532
+s1629
+
+N/Users/mdhull/XCode Projects/Power Source/UserManualViewController.h
+c000000004B9C59AE000000000000026F
+t1268537774
+s623
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/UserManualViewController.m
+c000000004B9C5A05000000000000177A
+t1268537861
+s6010
+i"UserManualViewController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/UserManualViewController.xib
+c000000004B95EB6C0000000000004394
+t1268116332
+s17300
+
+N/Users/mdhull/XCode Projects/Power Source/abnormal.png
+c000000004B25D8FB0000000000000276
+t1260771579
+s630
+
+N/Users/mdhull/XCode Projects/Power Source/abnormalGeneratorSymbol.png
+c000000004B418F110000000000000369
+t1262587665
+s873
+
+N/Users/mdhull/XCode Projects/Power Source/abnormalStripes.png
+c000000004B5552D2000000000000034D
+t1263882962
+s845
+
+N/Users/mdhull/XCode Projects/Power Source/blackButton.png
+c000000004B43E56C000000000000010E
+t1262740844
+s270
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/BusListCustomCell.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ButtonPad.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ERJElectrical.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ElectricalSystemDiagramView.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/GeneratorDisplay.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/GeneratorSymbol.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/LineContactor.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ManualNavigationController.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ModeSelectView.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/NewRootController.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/PowerSourceCustomCell.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/Power_SourceAppDelegate.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/UserManualViewController.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app.dSYM
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/AmpVoltageCover.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ArrowTab.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus1.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus12.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus2.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBusTableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupEssHotBus.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupEssentialBus.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupEssentialBusTableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupHotBus.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupHotBusTableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BatteryImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BusImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BusListCustomCell.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ButtonPad.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ButtonPadImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/CentralBus.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/CentralBus.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/Contact.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ContactorImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus1.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus12.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus1TableViewController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus2.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus2TableViewController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ERJElecSysUserManual.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ERJElecSysUserManual.rtf
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ERJElectrical
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ElecSysDiagramDropShadow.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ElectricalSystemEngineDiagram.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/Entitlements.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus1.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus12.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus2.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssentialBus1TableViewControlller.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssentialBus2TableViewController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorDisplay.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorDisplayImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus1.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus12.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus1TableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus2.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus2TableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/Info.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/InteractiveButtonHighlighted.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/InteractiveMode.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/LexiconLimitations.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/MainScreen.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/MainWindow.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ManualNavigationController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/MenuTableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/NewRootController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PkgInfo
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PowerSourceCustomCell.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PowerSourceCustomCell.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PowerSourceListMode.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PwrSrcDistroLoadListViewController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/RWDifferences.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ResourceRules.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ScenarioGuide.html
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ScreenIcon.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus1.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus12.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus1TableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus2.plist
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus2TableController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TableBorder.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TableViewHighlighted.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ThreeNetworksImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TouchAnyBusLabel.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TwoNetworksImage.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/UserManual.css
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/UserManualViewController.nib
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormal.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormalGeneratorSymbol.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormalStripes.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/blackButton.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/buttonPad2.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/darkBlueBackground.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/depoweredGeneratorSymbol.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/gradientBackground.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/normalGeneratorSymbol.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/plug.png
+t2
+s0
+
+N/Users/mdhull/XCode Projects/Power Source/buttonPad2.png
+c000000004B7B0A600000000000003791
+t1266354784
+s14225
+
+N/Users/mdhull/XCode Projects/Power Source/darkBlueBackground.png
+c000000004B170E8D000000000000046E
+t1259802253
+s1134
+
+N/Users/mdhull/XCode Projects/Power Source/depoweredGeneratorSymbol.png
+c000000004B41934400000000000004C4
+t1262588740
+s1220
+
+N/Users/mdhull/XCode Projects/Power Source/gradientBackground.png
+c000000004B831B4F000000000001629C
+t1266883407
+s90780
+
+N/Users/mdhull/XCode Projects/Power Source/main.m
+c000000004B108FCA000000000000016F
+t1259376586
+s367
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/normalGeneratorSymbol.png
+c000000004B4192EF000000000000034B
+t1262588655
+s843
+
+N/Users/mdhull/XCode Projects/Power Source/plug.png
+c000000004B14A8490000000000000105
+t1259645001
+s261
+
+N/var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-gsikssjirddbnqgchqpgtkixzsky/Power_Source_Prefix.pch.gch
+t2
+s0
+
+NPower_Source-Info.plist
+c000000004BA7C4670000000000000425
+t1269285991
+s1061
+
+CCodeSign "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app"
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/BusListCustomCell.o "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ButtonPad.o "/Users/mdhull/XCode Projects/Power Source/ButtonPad.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ElectricalSystemDiagramView.o "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/GeneratorDisplay.o "/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/GeneratorSymbol.o "/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/LineContactor.o "/Users/mdhull/XCode Projects/Power Source/LineContactor.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ManualNavigationController.o "/Users/mdhull/XCode Projects/Power Source/ManualNavigationController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/ModeSelectView.o "/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/NewRootController.o "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/PowerSourceCustomCell.o "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/Power_SourceAppDelegate.o "/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/UserManualViewController.o "/Users/mdhull/XCode Projects/Power Source/UserManualViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/Objects-normal/armv6/main.o "/Users/mdhull/XCode Projects/Power Source/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/ManualNavigationController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/UserManualViewController.xib"
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/AmpVoltageCover.png" AmpVoltageCover.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ArrowTab.png" ArrowTab.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus12.png" BackupBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupEssHotBus.png" BackupEssHotBus.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BatteryImage.png" BatteryImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BusImage.png" BusImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ButtonPad.png" ButtonPad.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ButtonPadImage.png" ButtonPadImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/CentralBus.png" CentralBus.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ContactorImage.png" ContactorImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus12.png" DCBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ElecSysDiagramDropShadow.png" ElecSysDiagramDropShadow.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ElectricalSystemEngineDiagram.png" ElectricalSystemEngineDiagram.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus12.png" EssBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorDisplay.png" GeneratorDisplay.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorDisplayImage.png" GeneratorDisplayImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/GeneratorImage.png" GeneratorImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus12.png" HotBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/InteractiveButtonHighlighted.png" InteractiveButtonHighlighted.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/MainScreen.png" MainScreen.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/PowerSourceCustomCell.png" PowerSourceCustomCell.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ScreenIcon.png" ScreenIcon.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus12.png" ShedBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TableBorder.png" TableBorder.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TableViewHighlighted.png" TableViewHighlighted.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ThreeNetworksImage.png" ThreeNetworksImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TouchAnyBusLabel.png" TouchAnyBusLabel.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/TwoNetworksImage.png" TwoNetworksImage.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormal.png" abnormal.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormalGeneratorSymbol.png" abnormalGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/abnormalStripes.png" abnormalStripes.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/blackButton.png" blackButton.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/buttonPad2.png" buttonPad2.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/darkBlueBackground.png" darkBlueBackground.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/depoweredGeneratorSymbol.png" depoweredGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/gradientBackground.png" gradientBackground.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/normalGeneratorSymbol.png" normalGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/plug.png" plug.png
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus1.plist" BackupBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupBus2.plist" BackupBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupEssentialBus.plist" BackupEssentialBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/BackupHotBus.plist" BackupHotBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/CentralBus.plist" CentralBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus1.plist" DCBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/DCBus2.plist" DCBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/Entitlements.plist" Entitlements.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus1.plist" EssBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/EssBus2.plist" EssBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus1.plist" HotBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/HotBus2.plist" HotBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus1.plist" ShedBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ShedBus2.plist" ShedBus2.plist
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/Contact.html Contact.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/ERJElecSysUserManual.html ERJElecSysUserManual.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/ERJElecSysUserManual.rtf ERJElecSysUserManual.rtf
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/InteractiveMode.html InteractiveMode.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/LexiconLimitations.html LexiconLimitations.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/PowerSourceListMode.html PowerSourceListMode.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/RWDifferences.html RWDifferences.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/ScenarioGuide.html ScenarioGuide.html
+r0
+
+CCpResource build/Release-iphoneos/ERJElectrical.app/UserManual.css UserManual.css
+r0
+
+CGenerateDSYMFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app.dSYM" "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ERJElectrical"
+r0
+
+CLd "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/ERJElectrical" normal armv6
+r0
+
+CProcessInfoPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/Info.plist" Power_Source-Info.plist
+r0
+
+CProcessPCH /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-gsikssjirddbnqgchqpgtkixzsky/Power_Source_Prefix.pch.gch Power_Source_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/mdhull/Library/MobileDevice/Provisioning Profiles/1D35D76A-A2E4-499A-8753-5CD97AC8185B.mobileprovision" "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app/embedded.mobileprovision"
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist "/Users/mdhull/XCode Projects/Power Source/build/ERJElectrical.build/Release-iphoneos/ERJElectrical.build/ERJElectrical.xcent"
+r0
+
+CTouch "/Users/mdhull/XCode Projects/Power Source/build/Release-iphoneos/ERJElectrical.app"
+r0
+

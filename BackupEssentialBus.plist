@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>AHRS 1 Power</string>
+	<string>Data Acquisition Unit 1, 2</string>
+	<string>Symbol Generator 1 Power/Control</string>
+	<string>EICAS Power</string>
+</array>
+</plist>

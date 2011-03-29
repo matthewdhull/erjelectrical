@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Interactive Mode</title>
+	</head>
+	<body>
+		<p style="font-family:helvetica">
+		<b>Interactive Mode</b>
+		<br />
+		<br>This portion of the ERJ Electrical System Manual is intended for use in conduction with the Interactive Mode of this application.  This mode features a robust set of of features and visual displays for controlling and observing operation of the electrical system.  The following is an overview of the components in this mode.</br>
+		<br />
+		<br><u>I. Interactive Elecrical System Diagram</u></br>
+		<br>This diagram is an animated diagram that displays the electrical system's various configurations depending on the current state.   Use legend below to familiarize yourself with each part of the diagram.</br>
+		<br />
+		<br>Generator</br>
+		<br>The rounded symbol atop the diagram symbolises a generator.  On the ERJ,  there are 5 total generators.  4 are engine-driven, 1 is a starter-generator [APU].  Three colors are used to display the status of a generator.</br> 
+		<br>Gray is used to indicate that the generator is de-energized.</br>
+		<br>Green is used to indicate that the generator is available and generating power.</br>
+		<br>Red Diagonal Lines indicate that the generator is in an abnormal condition or failed.</br> 
+		<br />
+		<br>Line Contactor</br>
+		<br>A line contractor is an electronic switch that is used as a sort of electrical bridge.  When a contractor is closed, power flows on the line depicted in the diagram.  An open contractor isolates portions of the electrical system so that power is no longer delivered to the respective bus.  The EDL Electrical Distribution Logic controls the opening and closing of contractors as appropriate for the purposes of managing power in the electrical system.</br>
+		<br />
+		<br>Bus</br>
+		<br>A bus is a component used for distribution of power in the electrical system.  Use the Power Src List Mode to view specific items powered on each bus. A green outline will appear around the bus when it is energized.</br>
+		<br />
+		<br>Battery</br>
+		<br>There are 3 batteries for the ERJ Electrical System:  2 NiCad main batteries and 1 Lead-Acid backup battery.  Use the generator/amp/volts display for viewing voltage on the main batteries.</br>
+		<br />
+		<br><u>II. Generator & Battery Amp/Volts Display</u></br>
+		<br>This display is placed just below the electrical system diagram and is used for viewing power indications for the generators, battery, and GPU.  The 5 generators contain a split display that shows volts in the upper portion of the box and amps in the lower portion of the box.  The GPU and battery indications shows voltage indications only.</br>
+		<br />
+		<br><u>III. Electrical System Control Pad</u></br>
+		<br>The button control pad is used for controlling the electrical system.  Using this control pad, the user can manipulate the electrical system in any configuration desired, provided that the desired configuration is logical and allowed within the limits of operation.   Certain mode selections will disable buttons to prevent an illegal configuration.  Use the appropriate (Gen 1, 2, 3, 4 , APU )Fail, All Gens Fail, Elec Ess Xfr Fail A(B), and Elec Emer Abnorm buttons to view the probable electrical abnormalities.</br>
+		<br />
+		<br>The control pad contains 18 different buttons,  8 of which are located on a secondary display,  accessed by pressing the "More" button.   Below is a list of  all controls and their associated action. </br>
+		<br />
+		<br>1. Hide: Hides the button pad. </br>
+		<br />
+		<br>2. Cold Airplane: A reset switch.  This button resets various parameters of the electrical system, including placing the airplane in Ground Logic and de-energizes all batteries and generators.  This action is the analogous with  shutting down an ERJ on the ground.  This method does NOT re-charge the batteries. </br>
+		<br />  
+		<br>3.  Batteries Auto:  Places batteries in the auto mode, which subjugates their control to the Electrical Distribution Logic.  If no other power source is made available, the batteries will begin to discharge.</br> 
+		<br />
+		<br>4.  Start A.P.U. (Stop A.P.U): This starts the APU.  The APU requires the availability of one of the following to start: A GPU, Battery 2, Battery 2 with the assistance of an engine-driven generator.  This button toggles to the Stop A.P.U action once it the APU is started.</br>  
+		<br />
+		<br>5.  All Gens On: Energizes all 5 generators.</br>
+		<br />
+		<br>6.  Gen 1 Fail(Gen 1 Reset): Fails the respective generator.  The button toggles to Gen 1 Reset and allows a reset on the failed generator.</br>
+		<br />
+		<br>7.  Gen 2 Fail(Gen 2 Reset): Fails the respective generator.  The button toggles to Gen 2 Reset and allows a reset on the failed generator.</br>
+		<br />
+		<br>8.  Gen 3 Fail:(Gen 3 Reset) Fails the respective generator.  The button toggles to Gen 3 Reset and allows a reset on the failed generator.</br>
+		<br />
+		<br>9.  Gen 4 Fail(Gen 4 Reset): Fails the respective generator.  The button toggles to Gen 4 Reset and allows a reset on the failed generator.</br>
+		<br />
+		<br>10. More:  Allows selection of the secondary display of buttons.  </br>
+		<br />
+		<br>11. A.P.U Gen Fail:   Fails the respective generator.  The button toggles to A.P.U Gen Reset and allows a reset on the failed generator.</br>
+		<br />
+		<br>12 . All Gens Fail EPC:  Fails all generators and configures the aircraft to essential power mode.  It is important to note that the airplane doesn't necessarily configure in this manner with a loss of all generators.  This mode only demonstrates the correct configuration.  You can view erroneous configurations using the Elec Ess Xfr Fail and Elec Emer Abnorm buttons.</br>
+		<br />
+		<br>13.  Elec Ess Xfr Fail A(B):  Fails all generators and shows a failure of the electrical system to properly configure into  essential power configuration.  Scenario A displays a transfer failure due to DC Bus 1 remaining energized.  Pressing the button a second time toggles Scenario B, a transfer failure due to DC  Bus 2 remaining energized.</br>  
+		<br />
+		<br>14.  Elec Emer Abnorm.  Configures the system into essential power with 1 or more generators available.   The only way to rectify this situation is to start the APU, a procedure dictated by the ERJ abnormal checklists.  The APU is the only generator that can charge the batteries.</br>    
+		<br />
+		<br>15.  Start GPU(Stop GPU): Starts the GPU and allows selection of the GPU using the Select GPU button.  This button toggles the Stop GPU button, which stops the GPU.</br>
+		<br />
+		<br>16.  Select(Deselect)GPU:  Allows selection/de-selection of the GPU.  Because the GPU takes priority over the system, selecting the GPU inhibits all other power sources (all generators and main batteries) from being used.  Because battery contractor 1 & 2 are opened when a GPU is selected, the batteries cannot be charged.</br>  
+		<br />
+		<br>17.  Ground Logic(Air Logic):  Configures the logic of the electrical system which is predicated off of the airplane being on the ground or in the air.   An example of this would be, when no generators are available on the ground, the batteries power most buses and discharge at a rapid rate.  If this situation was experienced in the air (loss of all generators) the system should configure to essential power, energizing only the essential items, resulting in a much slower battery discharge rate.</br>  
+		<br />
+		<br>18. Back:  Reverts to the first set of buttons available with this control pad.</br>
+		
+		   
+		
+		
+	</body>
+</html>

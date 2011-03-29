@@ -1,0 +1,1824 @@
+TPower Source
+v7
+r0
+t289255734.292472
+cCheck dependencies
+cCpResource "build/Debug-iphoneos/Power Source.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Info.plist" Power_Source-Info.plist
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/MainWindow.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.xib"
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus1.plist" DCBus1.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus2.plist" DCBus2.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus1.plist" EssBus1.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus2.plist" EssBus2.plist
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.xib"
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus1.plist" HotBus1.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus2.plist" HotBus2.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssentialBus.plist" BackupEssentialBus.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupHotBus.plist" BackupHotBus.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus.plist" BackupBus.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus1.plist" ShedBus1.plist
+cCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus2.plist" ShedBus2.plist
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.xib"
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/plug.png" plug.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/darkBlueBackground.png" darkBlueBackground.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PowerSourceCustomCell.png" PowerSourceCustomCell.png
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.xib"
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElectricalSystemEngineDiagram.png" ElectricalSystemEngineDiagram.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormal.png" abnormal.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gradientBackground.png" gradientBackground.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElecSysDiagramDropShadow.png" ElecSysDiagramDropShadow.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ButtonPad.png" ButtonPad.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/blackButton.png" blackButton.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/powerSourceIcon.png" powerSourceIcon.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalGeneratorSymbol.png" abnormalGeneratorSymbol.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/normalGeneratorSymbol.png" normalGeneratorSymbol.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/depoweredGeneratorSymbol.png" depoweredGeneratorSymbol.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalStripes.png" abnormalStripes.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus12.png" DCBus12.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/CentralBus.png" CentralBus.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus12.png" HotBus12.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssHotBus.png" BackupEssHotBus.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus12.png" BackupBus12.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus12.png" EssBus12.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus12.png" ShedBus12.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/GeneratorDisplay.png" GeneratorDisplay.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gpuCover.png" gpuCover.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/buttonPad2.png" buttonPad2.png
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib"
+cCompileXIB "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib"
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableBorder.png" TableBorder.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ArrowTab.png" ArrowTab.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainScreen.png" MainScreen.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png" TableViewHighlighted.png
+cCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png" InteractiveButtonHighlighted.png
+cProcessPCH /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch.gch Power_Source_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/main.o" "/Users/mdhull/XCode Projects/Power Source/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power_SourceAppDelegate.o" "/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/MenuTableController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus1TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus2TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus1TableViewControlller.o" "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus2TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupHotBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupEssentialBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus2TableController.o" "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus1TableController.o" "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus2TableController.o" "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus1TableController.o" "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PowerSourceCustomCell.o" "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BusListCustomCell.o" "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o" "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/LineContactor.o" "/Users/mdhull/XCode Projects/Power Source/LineContactor.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ApplicationTabBarController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorSymbol.o" "/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ButtonPad.o" "/Users/mdhull/XCode Projects/Power Source/ButtonPad.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemDiagramView.o" "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorDisplay.o" "/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/NewRootController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o" "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ModeSelectView.o" "/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source" normal armv6
+cGenerateDSYMFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app.dSYM" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source"
+cProcessProductPackaging "/Users/mdhull/Library/MobileDevice/Provisioning Profiles/6AEF17DA-C41B-45F8-9764-770BE8ED9D55.mobileprovision" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/embedded.mobileprovision"
+cTouch "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent"
+cCodeSign "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk
+c000000004B7CE4C70000000000000132
+t1266476231
+s306
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist
+c000000004B2B3B9F00000000000000DD
+t1261124511
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+c000000004B2B3B9F00000000000001E5
+t1261124511
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B537900000000005F4900
+t1261130617
+s6244608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B551F0000000000501370
+t1261131039
+s5247856
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B54F40000000000001355
+t1261130996
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004B2B5700000000000000007D
+t1261131520
+s125
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61610000000000000788
+t1261134177
+s1928
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B63DA0000000001B3F450
+t1261134810
+s28570704
+
+N/Users/mdhull/Library/MobileDevice/Provisioning Profiles/6AEF17DA-C41B-45F8-9764-770BE8ED9D55.mobileprovision
+c000000004B3DA8560000000000001C26
+t1262331990
+s7206
+
+N/Users/mdhull/XCode Projects/Power Source/ArrowTab.png
+c000000004B85C01C00000000000007FC
+t1267056668
+s2044
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBus.plist
+c000000004B11FE440000000000000100
+t1259470404
+s256
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBus12.png
+c000000004B6659280000000000000186
+t1264998696
+s390
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.h
+c000000004B11F8CA0000000000000192
+t1259469002
+s402
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m
+c000000004B78F02E0000000000000A76
+t1266217006
+s2678
+i"BackupBusTableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.xib
+c000000004B11F8650000000000001BC3
+t1259468901
+s7107
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssHotBus.png
+c000000004B66590B000000000000018D
+t1264998667
+s397
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBus.plist
+c000000004B11FD57000000000000015B
+t1259470167
+s347
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.h
+c000000004B11F9F000000000000001B1
+t1259469296
+s433
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m
+c000000004B78EE970000000000000ADE
+t1266216599
+s2782
+i"BackupEssentialBusTableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.xib
+c000000004B11C5190000000000001CAE
+t1259455769
+s7342
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBus.plist
+c000000004B11FDC800000000000001D6
+t1259470280
+s470
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.h
+c000000004B11F96D000000000000019A
+t1259469165
+s410
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m
+c000000004B19AB460000000000000A75
+t1259973446
+s2677
+i"BackupHotBusTableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.xib
+c000000004B11F8850000000000001BCC
+t1259468933
+s7116
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.h
+c000000004B1993AE0000000000000197
+t1259967406
+s407
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m
+c000000004B1993D900000000000002FD
+t1259967449
+s765
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.xib
+c000000004B699FCD0000000000002A72
+t1265213389
+s10866
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.h
+c000000004B39AA460000000000000406
+t1262070342
+s1030
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.m
+c000000004B80B9A0000000000000284C
+t1266727328
+s10316
+i"ButtonPad.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ButtonPad.png
+c000000004B30592D000000000000424B
+t1261459757
+s16971
+
+N/Users/mdhull/XCode Projects/Power Source/CentralBus.png
+c000000004B6659B900000000000002B8
+t1264998841
+s696
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.h
+c000000004B1C0A7C000000000000011E
+t1260128892
+s286
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m
+c000000004B7DD56F0000000000000599
+t1266537839
+s1433
+i"ApplicationTabBarController.h"
+i"ElectricalSystemEngineViewController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.h
+c000000004B8C95B8000000000000029E
+t1267504568
+s670
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m
+c000000004B8C95B200000000000020D0
+t1267504562
+s8400
+i"MenuTableController.h"
+i"DCBus1TableViewController.h"
+i"DCBus2TableViewController.h"
+i"EssentialBus1TableViewControlller.h"
+i"EssentialBus2TableViewController.h"
+i"ShedBus1TableController.h"
+i"ShedBus2TableController.h"
+i"HotBus1TableController.h"
+i"HotBus2TableController.h"
+i"BackupEssentialBusTableController.h"
+i"BackupHotBusTableController.h"
+i"BackupBusTableController.h"
+i"PowerSourceCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib
+c000000004B840C1E0000000000001EAA
+t1266945054
+s7850
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.h
+c000000004B899E27000000000000020D
+t1267310119
+s525
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m
+c000000004B89A2D50000000000000952
+t1267311317
+s2386
+i"ModeSelectView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.h
+c000000004B8C69B80000000000000561
+t1267493304
+s1377
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m
+c000000004B8D60660000000000001A3C
+t1267556454
+s6716
+i"NewRootController.h"
+i"ElectricalSystemEngineViewController.h"
+i"PwrSrcDistroLoadListViewController.h"
+i"ModeSelectView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib
+c000000004B869B1A0000000000001BFB
+t1267112730
+s7163
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.h
+c000000004B80A1470000000000000589
+t1266721095
+s1417
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m
+c000000004B80A6C20000000000000BBE
+t1266722498
+s3006
+i"Power_SourceAppDelegate.h"
+i"ApplicationTabBarController.h"
+i"MenuTableController.h"
+i"ElectricalSystemEngineViewController.h"
+i"NewRootController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1.plist
+c000000004B134AF70000000000000A28
+t1259555575
+s2600
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus12.png
+c000000004B66588E0000000000000219
+t1264998542
+s537
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.h
+c000000004B1363280000000000000192
+t1259561768
+s402
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m
+c000000004B19AB970000000000000A56
+t1259973527
+s2646
+i"DCBus1TableViewController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.xib
+c000000004B116F200000000000001B8C
+t1259433760
+s7052
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2.plist
+c000000004B134BD20000000000000AA2
+t1259555794
+s2722
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.h
+c000000004B116F05000000000000018F
+t1259433733
+s399
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m
+c000000004B19AB870000000000000AA1
+t1259973511
+s2721
+i"DCBus2TableViewController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.xib
+c000000004B10BE5D0000000000001C96
+t1259388509
+s7318
+
+N/Users/mdhull/XCode Projects/Power Source/ElecSysDiagramDropShadow.png
+c000000004B576B940000000000008966
+t1264020372
+s35174
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.h
+c000000004B8D6EDC0000000000000D2D
+t1267560156
+s3373
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m
+c000000004B8D75800000000000004BFD
+t1267561856
+s19453
+i"ElectricalSystemDiagramView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineDiagram.png
+c000000004B5767C300000000000036D5
+t1264019395
+s14037
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.h
+c000000004B8D60BF00000000000022F1
+t1267556543
+s8945
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m
+c000000004B8C96270000000000018FA1
+t1267504679
+s102305
+i"ElectricalSystemEngineViewController.h"
+i"LineContactor.h"
+i"GeneratorSymbol.h"
+i"ButtonPad.h"
+i"ElectricalSystemDiagramView.h"
+i"GeneratorDisplay.h"
+i"NewRootController.h"
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus1.plist
+c000000004B59187F00000000000005BB
+t1264130175
+s1467
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus12.png
+c000000004B66593E0000000000000190
+t1264998718
+s400
+
+N/Users/mdhull/XCode Projects/Power Source/EssBus2.plist
+c000000004B1342EB00000000000005E5
+t1259553515
+s1509
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.h
+c000000004B11AF3500000000000001A2
+t1259450165
+s418
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m
+c000000004B19AB800000000000000A78
+t1259973504
+s2680
+i"EssentialBus1TableViewControlller.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.xib
+c000000004B11BCD00000000000001BD6
+t1259453648
+s7126
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.h
+c000000004B11BC80000000000000019F
+t1259453568
+s415
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m
+c000000004B19AB780000000000000A89
+t1259973496
+s2697
+i"EssentialBus2TableViewController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.xib
+c000000004B11BCD90000000000001BDB
+t1259453657
+s7131
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.h
+c000000004B6BA9AB0000000000000A15
+t1265346987
+s2581
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m
+c000000004B72437400000000000026CF
+t1265779572
+s9935
+i"GeneratorDisplay.h"
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.png
+c000000004B71C351000000000000220A
+t1265746769
+s8714
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.h
+c000000004B7245D7000000000000052F
+t1265780183
+s1327
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m
+c000000004B71C0B900000000000011A3
+t1265746105
+s4515
+i"GeneratorSymbol.h"
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1.plist
+c000000004B17351200000000000001E2
+t1259812114
+s482
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus12.png
+c000000004B66590D0000000000000212
+t1264998669
+s530
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.h
+c000000004B11FBA10000000000000185
+t1259469729
+s389
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m
+c000000004B19AB610000000000000A39
+t1259973473
+s2617
+i"HotBus1TableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.xib
+c000000004B11C5A70000000000001C8D
+t1259455911
+s7309
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2.plist
+c000000004B11FCD700000000000001A3
+t1259470039
+s419
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.h
+c000000004B11FA8C000000000000018A
+t1259469452
+s394
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m
+c000000004B78EE760000000000000A96
+t1266216566
+s2710
+i"HotBus2TableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.xib
+c000000004B11C59A0000000000001C8D
+t1259455898
+s7309
+
+N/Users/mdhull/XCode Projects/Power Source/InteractiveButtonHighlighted.png
+c000000004B89A2480000000000000B67
+t1267311176
+s2919
+
+N/Users/mdhull/XCode Projects/Power Source/LineContactor.h
+c000000004B554D5C00000000000001E3
+t1263881564
+s483
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/LineContactor.m
+c000000004B554D8D0000000000000FE2
+t1263881613
+s4066
+i"LineContactor.h"
+
+N/Users/mdhull/XCode Projects/Power Source/MainScreen.png
+c000000004B8D4048000000000001DEDC
+t1267548232
+s122588
+
+N/Users/mdhull/XCode Projects/Power Source/MainWindow.xib
+c000000004B80A5F60000000000001C50
+t1266722294
+s7248
+
+N/Users/mdhull/XCode Projects/Power Source/ModalViewDismissalDelegate.h
+c000000004B8C69F200000000000000F6
+t1267493362
+s246
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.h
+c000000004B18624B000000000000013E
+t1259889227
+s318
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m
+c000000004B18625700000000000002CB
+t1259889239
+s715
+i"PowerSourceCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.png
+c000000004B1992350000000000000175
+t1259967029
+s373
+
+N/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib
+c000000004B84070300000000000024A0
+t1266943747
+s9376
+
+N/Users/mdhull/XCode Projects/Power Source/Power_Source_Prefix.pch
+c000000004B108FCA00000000000000C1
+t1259376586
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.h
+c000000004B8D66930000000000000C16
+t1267558035
+s3094
+i<UIKit/UIKit.h>
+i"ModalViewDismissalDelegate.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m
+c000000004B8D699A0000000000003305
+t1267558810
+s13061
+i"PwrSrcDistroLoadListViewController.h"
+i"ElectricalSystemDiagramView.h"
+
+N/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib
+c000000004B84ABD90000000000001FBA
+t1266985945
+s8122
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1.plist
+c000000004B11FE8D00000000000001B2
+t1259470477
+s434
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus12.png
+c000000004B6659520000000000000257
+t1264998738
+s599
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.h
+c000000004B12076D000000000000018D
+t1259472749
+s397
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m
+c000000004B19AB6F0000000000000A7B
+t1259973487
+s2683
+i"ShedBus1TableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.xib
+c000000004B11FFD00000000000001C90
+t1259470800
+s7312
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2.plist
+c000000004B11FF9600000000000001EF
+t1259470742
+s495
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.h
+c000000004B120016000000000000018E
+t1259470870
+s398
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m
+c000000004B19AB680000000000000A7B
+t1259973480
+s2683
+i"ShedBus2TableController.h"
+i"BusListCustomCell.h"
+
+N/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.xib
+c000000004B11FFC40000000000001C90
+t1259470788
+s7312
+
+N/Users/mdhull/XCode Projects/Power Source/TableBorder.png
+c000000004B8D77BE000000000000273C
+t1267562430
+s10044
+
+N/Users/mdhull/XCode Projects/Power Source/TableViewHighlighted.png
+c000000004B89A26B0000000000000D3C
+t1267311211
+s3388
+
+N/Users/mdhull/XCode Projects/Power Source/abnormal.png
+c000000004B25D8FB0000000000000276
+t1260771579
+s630
+
+N/Users/mdhull/XCode Projects/Power Source/abnormalGeneratorSymbol.png
+c000000004B418F110000000000000369
+t1262587665
+s873
+
+N/Users/mdhull/XCode Projects/Power Source/abnormalStripes.png
+c000000004B5552D2000000000000034D
+t1263882962
+s845
+
+N/Users/mdhull/XCode Projects/Power Source/blackButton.png
+c000000004B43E56C000000000000010E
+t1262740844
+s270
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app
+t1267562934
+s2584
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app.dSYM
+t1267562932
+s102
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ArrowTab.png
+t1267562928
+s2681
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus.plist
+t1262332252
+s78
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus12.png
+t1265133202
+s505
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBusTableController.nib
+t1265517529
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssHotBus.png
+t1265133202
+s512
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssentialBus.plist
+t1262332252
+s139
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssentialBusTableController.nib
+t1265517530
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupHotBus.plist
+t1262332252
+s222
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupHotBusTableController.nib
+t1265517529
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BusListCustomCell.nib
+t1265517531
+s3046
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ButtonPad.png
+t1262332255
+s17836
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/CentralBus.png
+t1265133201
+s790
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus1.plist
+t1262332251
+s1598
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus12.png
+t1265133201
+s661
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus1TableViewController.nib
+t1265517528
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus2.plist
+t1262332251
+s1694
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus2TableViewController.nib
+t1265517528
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElecSysDiagramDropShadow.png
+t1264129832
+s36053
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElectricalSystemEngineDiagram.png
+t1264129832
+s15456
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus1.plist
+t1264131532
+s873
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus12.png
+t1265133202
+s513
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus2.plist
+t1262332251
+s908
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssentialBus1TableViewControlller.nib
+t1265517529
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssentialBus2TableViewController.nib
+t1265517529
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/GeneratorDisplay.png
+t1266184847
+s10174
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus1.plist
+t1262332252
+s234
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus12.png
+t1265133202
+s660
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus1TableController.nib
+t1265517530
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus2.plist
+t1262332252
+s201
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus2TableController.nib
+t1265517530
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Info.plist
+t1267562919
+s840
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png
+t1267562928
+s3155
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainScreen.png
+t1267562928
+s124101
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainWindow.nib
+t1267562925
+s1350
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MenuTableController.nib
+t1267562927
+s1436
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/NewRootController.nib
+t1267562927
+s1113
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PkgInfo
+t1267562919
+s8
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source
+t1267562932
+s370480
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PowerSourceCustomCell.nib
+t1267562926
+s2366
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PowerSourceCustomCell.png
+t1262332254
+s414
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PwrSrcDistroLoadListViewController.nib
+t1267562928
+s1106
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ResourceRules.plist
+t1265517527
+s485
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus1.plist
+t1262332252
+s200
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus12.png
+t1265133202
+s784
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus1TableController.nib
+t1265517530
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus2.plist
+t1262332252
+s229
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus2TableController.nib
+t1265517530
+s1386
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableBorder.png
+t1267562928
+s11106
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png
+t1267562928
+s3565
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormal.png
+t1262332254
+s711
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalGeneratorSymbol.png
+t1262592060
+s892
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalStripes.png
+t1263883026
+s917
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/blackButton.png
+t1262751460
+s319
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/buttonPad2.png
+t1267562927
+s15242
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/darkBlueBackground.png
+t1262332253
+s1337
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/depoweredGeneratorSymbol.png
+t1262592060
+s1367
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/embedded.mobileprovision
+t1262332261
+s7206
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gpuCover.png
+t1265133202
+s294
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gradientBackground.png
+t1267562929
+s80133
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/normalGeneratorSymbol.png
+t1262592060
+s911
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/plug.png
+t1262332253
+s289
+
+N/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/powerSourceIcon.png
+t1262418009
+s1378
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ApplicationTabBarController.o
+t1267562931
+s35900
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupBusTableController.o
+t1267562930
+s43332
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupEssentialBusTableController.o
+t1267562930
+s43740
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupHotBusTableController.o
+t1267562930
+s43356
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BusListCustomCell.o
+t1267562931
+s19420
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ButtonPad.o
+t1267562931
+s41692
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus1TableViewController.o
+t1267562930
+s43212
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus2TableViewController.o
+t1267562930
+s43212
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemDiagramView.o
+t1267562931
+s74084
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o
+t1267562931
+s283496
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus1TableViewControlller.o
+t1267562930
+s43516
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus2TableViewController.o
+t1267562930
+s43476
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorDisplay.o
+t1267562931
+s57932
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorSymbol.o
+t1267562931
+s30372
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus1TableController.o
+t1267562930
+s43112
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus2TableController.o
+t1267562930
+s43216
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/LineContactor.o
+t1267562931
+s22064
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/MenuTableController.o
+t1267562930
+s58312
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ModeSelectView.o
+t1267562932
+s21760
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/NewRootController.o
+t1267562932
+s53052
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power Source.LinkFileList
+c000000004B8D79A70000000000000EF7
+t1267562919
+s3831
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PowerSourceCustomCell.o
+t1267562930
+s18424
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power_SourceAppDelegate.o
+t1267562930
+s42576
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o
+t1267562932
+s93284
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus1TableController.o
+t1267562930
+s43164
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus2TableController.o
+t1267562930
+s43164
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/main.o
+t1267562930
+s6452
+
+N/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent
+t1267562933
+s324
+
+N/Users/mdhull/XCode Projects/Power Source/buttonPad2.png
+c000000004B7B0A600000000000003791
+t1266354784
+s14225
+
+N/Users/mdhull/XCode Projects/Power Source/darkBlueBackground.png
+c000000004B170E8D000000000000046E
+t1259802253
+s1134
+
+N/Users/mdhull/XCode Projects/Power Source/depoweredGeneratorSymbol.png
+c000000004B41934400000000000004C4
+t1262588740
+s1220
+
+N/Users/mdhull/XCode Projects/Power Source/gpuCover.png
+c000000004B6516CA00000000000000F6
+t1264916170
+s246
+
+N/Users/mdhull/XCode Projects/Power Source/gradientBackground.png
+c000000004B831B4F000000000001629C
+t1266883407
+s90780
+
+N/Users/mdhull/XCode Projects/Power Source/main.m
+c000000004B108FCA000000000000016F
+t1259376586
+s367
+i<UIKit/UIKit.h>
+
+N/Users/mdhull/XCode Projects/Power Source/normalGeneratorSymbol.png
+c000000004B4192EF000000000000034B
+t1262588655
+s843
+
+N/Users/mdhull/XCode Projects/Power Source/plug.png
+c000000004B14A8490000000000000105
+t1259645001
+s261
+
+N/Users/mdhull/XCode Projects/Power Source/powerSourceIcon.png
+c000000004B3EF7B00000000000000513
+t1262417840
+s1299
+
+N/var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch.gch
+t1267562929
+s8388792
+
+NPower_Source-Info.plist
+c000000004B80B8EA0000000000000424
+t1266727146
+s1060
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies289255719#289255719#0(0"0(0#1#0"4300907800#0"0#
+
+CCodeSign "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"
+s289255733.048118
+e289255734.292312
+r1
+xCodeSign
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app
+lSLF07#2@48"CodeSign "build/Debug-iphoneos/Power Source.app"289255733#289255734#0(0"0(0#0#79"/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app4300907800#712"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Matthew Hull (U4LS8477U4)" "--resource-rules=/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ResourceRules.plist" --entitlements "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ApplicationTabBarController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.101788
+e289255731.169470
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ApplicationTabBarController.o
+x/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m289255731#289255731#0(0"0(0#0#79"/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m4300907800#1937"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/Classes/ApplicationTabBarController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ApplicationTabBarController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.536047
+e289255730.641199
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupBusTableController.o
+x/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m289255730#289255730#0(0"0(0#0#68"/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m4300907800#1923"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupBusTableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupEssentialBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.641342
+e289255730.754187
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupEssentialBusTableController.o
+x/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m289255730#289255730#0(0"0(0#0#77"/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m4300907800#1941"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupEssentialBusTableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupHotBusTableController.o" "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.542026
+e289255730.654454
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupHotBusTableController.o
+x/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m289255730#289255730#0(0"0(0#0#71"/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m4300907800#1929"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BackupHotBusTableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BusListCustomCell.o" "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.932598
+e289255731.014284
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BusListCustomCell.o
+x/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m289255730#289255731#0(0"0(0#0#61"/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m4300907800#1909"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/BusListCustomCell.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ButtonPad.o" "/Users/mdhull/XCode Projects/Power Source/ButtonPad.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.303720
+e289255731.488160
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ButtonPad.o
+x/Users/mdhull/XCode Projects/Power Source/ButtonPad.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/mdhull/XCode Projects/Power Source/ButtonPad.m289255731#289255731#0(0"0(0#0#53"/Users/mdhull/XCode Projects/Power Source/ButtonPad.m4300907800#1893"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/ButtonPad.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ButtonPad.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus1TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.150036
+e289255730.294610
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus1TableViewController.o
+x/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m289255730#289255730#0(0"0(0#0#69"/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m4300907800#1925"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus1TableViewController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus2TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.294723
+e289255730.420825
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus2TableViewController.o
+x/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m289255730#289255730#0(0"0(0#0#69"/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m4300907800#1925"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/DCBus2TableViewController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemDiagramView.o" "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.488275
+e289255731.724784
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemDiagramView.o
+x/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m289255731#289255731#0(0"0(0#0#71"/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m4300907800#1929"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemDiagramView.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemDiagramView.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o" "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.934912
+e289255731.994279
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o
+x/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m289255730#289255731#0(0"0(0#0#80"/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m4300907800#1947"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/ElectricalSystemEngineViewController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ElectricalSystemEngineViewController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus1TableViewControlller.o" "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.420937
+e289255730.535927
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus1TableViewControlller.o
+x/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m289255730#289255730#0(0"0(0#0#77"/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m4300907800#1941"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus1TableViewControlller.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus2TableViewController.o" "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.448931
+e289255730.541914
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus2TableViewController.o
+x/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m289255730#289255730#0(0"0(0#0#76"/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m4300907800#1939"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/EssentialBus2TableViewController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorDisplay.o" "/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.724891
+e289255731.915134
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorDisplay.o
+x/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m289255731#289255731#0(0"0(0#0#60"/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m4300907800#1907"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/GeneratorDisplay.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorDisplay.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorSymbol.o" "/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.169571
+e289255731.303620
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorSymbol.o
+x/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m289255731#289255731#0(0"0(0#0#59"/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m4300907800#1905"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/GeneratorSymbol.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/GeneratorSymbol.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus1TableController.o" "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.752988
+e289255730.845379
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus1TableController.o
+x/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m289255730#289255730#0(0"0(0#0#66"/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m4300907800#1919"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus1TableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus2TableController.o" "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.654574
+e289255730.752868
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus2TableController.o
+x/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m289255730#289255730#0(0"0(0#0#66"/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m4300907800#1919"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/HotBus2TableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/LineContactor.o" "/Users/mdhull/XCode Projects/Power Source/LineContactor.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.014397
+e289255731.101663
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/LineContactor.o
+x/Users/mdhull/XCode Projects/Power Source/LineContactor.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/mdhull/XCode Projects/Power Source/LineContactor.m289255731#289255731#0(0"0(0#0#57"/Users/mdhull/XCode Projects/Power Source/LineContactor.m4300907800#1901"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/LineContactor.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/LineContactor.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/MenuTableController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.148820
+e289255730.448822
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/MenuTableController.o
+x/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m289255730#289255730#0(0"0(0#0#71"/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m4300907800#1921"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/MenuTableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ModeSelectView.o" "/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255732.036772
+e289255732.122307
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ModeSelectView.o
+x/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m289255732#289255732#0(0"0(0#0#66"/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m4300907800#1911"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/Classes/ModeSelectView.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ModeSelectView.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/NewRootController.o" "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.915258
+e289255732.036659
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/NewRootController.o
+x/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m289255731#289255732#0(0"0(0#0#69"/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m4300907800#1917"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/NewRootController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PowerSourceCustomCell.o" "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.853141
+e289255730.934810
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PowerSourceCustomCell.o
+x/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m289255730#289255730#0(0"0(0#0#65"/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m4300907800#1917"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PowerSourceCustomCell.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power_SourceAppDelegate.o" "/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255729.983188
+e289255730.149952
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power_SourceAppDelegate.o
+x/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m289255729#289255730#0(0"0(0#0#75"/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m4300907800#1929"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/Classes/Power_SourceAppDelegate.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power_SourceAppDelegate.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o" "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255731.994390
+e289255732.219046
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o
+x/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m289255731#289255732#0(0"0(0#0#78"/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m4300907800#1943"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/PwrSrcDistroLoadListViewController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus1TableController.o" "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.845687
+e289255730.932478
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus1TableController.o
+x/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m289255730#289255730#0(0"0(0#0#67"/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m4300907800#1921"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus1TableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus2TableController.o" "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255730.754274
+e289255730.852941
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus2TableController.o
+x/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m289255730#289255730#0(0"0(0#0#67"/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m4300907800#1921"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/ShedBus2TableController.o"0#
+
+CCompileC "build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/main.o" "/Users/mdhull/XCode Projects/Power Source/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255729.981499
+e289255730.148709
+r1
+xCompileC
+xbuild/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/main.o
+x/Users/mdhull/XCode Projects/Power Source/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/mdhull/XCode Projects/Power Source/main.m289255729#289255730#0(0"0(0#0#48"/Users/mdhull/XCode Projects/Power Source/main.m4300907800#1883"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -include /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch -c "/Users/mdhull/XCode Projects/Power Source/main.m" -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/main.o"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupEssentialBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BackupHotBusTableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/BusListCustomCell.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib"
+s289255727.401779
+e289255727.765294
+r1
+xCompileXIB
+x/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib
+lSLF07#2@42"CompileXIB Classes/MenuTableController.xib289255727#289255727#0(0"0(0#0#73"/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib4300907800#514"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MenuTableController.nib" "/Users/mdhull/XCode Projects/Power Source/Classes/MenuTableController.xib"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib"
+s289255727.112829
+e289255727.401516
+r1
+xCompileXIB
+x/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib
+lSLF07#2@40"CompileXIB Classes/NewRootController.xib289255727#289255727#0(0"0(0#0#71"/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib4300907800#510"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/NewRootController.nib" "/Users/mdhull/XCode Projects/Power Source/Classes/NewRootController.xib"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus1TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/DCBus2TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus1TableViewControlller.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/EssentialBus2TableViewController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus1TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/HotBus2TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/MainWindow.xib"
+s289255719.829960
+e289255725.901081
+r1
+xCompileXIB
+x/Users/mdhull/XCode Projects/Power Source/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib289255719#289255725#0(0"0(0#0#56"/Users/mdhull/XCode Projects/Power Source/MainWindow.xib18859201399816300#488"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainWindow.nib" "/Users/mdhull/XCode Projects/Power Source/MainWindow.xib"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib"
+s289255719.831602
+e289255726.461093
+r1
+xCompileXIB
+x/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib
+lSLF07#2@36"CompileXIB PowerSourceCustomCell.xib289255719#289255726#0(0"0(0#0#67"/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib4300907800#510"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PowerSourceCustomCell.nib" "/Users/mdhull/XCode Projects/Power Source/PowerSourceCustomCell.xib"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib"
+s289255727.765387
+e289255728.038305
+r1
+xCompileXIB
+x/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib
+lSLF07#2@49"CompileXIB PwrSrcDistroLoadListViewController.xib289255727#289255728#0(0"0(0#0#80"/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib4300907800#536"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PwrSrcDistroLoadListViewController.nib" "/Users/mdhull/XCode Projects/Power Source/PwrSrcDistroLoadListViewController.xib"0#
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus1TableController.xib"
+r0
+
+CCompileXIB "/Users/mdhull/XCode Projects/Power Source/ShedBus2TableController.xib"
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ArrowTab.png" ArrowTab.png
+s289255728.135884
+e289255728.182809
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ArrowTab.png
+xArrowTab.png
+lSLF07#2@77"CopyPNGFile "build/Debug-iphoneos/Power Source.app/ArrowTab.png" ArrowTab.png289255728#289255728#0(0"0(0#0#54"/Users/mdhull/XCode Projects/Power Source/ArrowTab.png4300907800#584"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/ArrowTab.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ArrowTab.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus12.png" BackupBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssHotBus.png" BackupEssHotBus.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ButtonPad.png" ButtonPad.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/CentralBus.png" CentralBus.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus12.png" DCBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElecSysDiagramDropShadow.png" ElecSysDiagramDropShadow.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ElectricalSystemEngineDiagram.png" ElectricalSystemEngineDiagram.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus12.png" EssBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/GeneratorDisplay.png" GeneratorDisplay.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus12.png" HotBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png" InteractiveButtonHighlighted.png
+s289255728.420158
+e289255728.454457
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png
+xInteractiveButtonHighlighted.png
+lSLF07#2@117"CopyPNGFile "build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png" InteractiveButtonHighlighted.png289255728#289255728#0(0"0(0#0#74"/Users/mdhull/XCode Projects/Power Source/InteractiveButtonHighlighted.png4300907800#624"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/InteractiveButtonHighlighted.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/InteractiveButtonHighlighted.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainScreen.png" MainScreen.png
+s289255728.182915
+e289255728.375559
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainScreen.png
+xMainScreen.png
+lSLF07#2@81"CopyPNGFile "build/Debug-iphoneos/Power Source.app/MainScreen.png" MainScreen.png289255728#289255728#0(0"0(0#0#56"/Users/mdhull/XCode Projects/Power Source/MainScreen.png4300907800#588"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/MainScreen.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/MainScreen.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PowerSourceCustomCell.png" PowerSourceCustomCell.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus12.png" ShedBus12.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableBorder.png" TableBorder.png
+s289255728.038400
+e289255728.135775
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableBorder.png
+xTableBorder.png
+lSLF07#2@83"CopyPNGFile "build/Debug-iphoneos/Power Source.app/TableBorder.png" TableBorder.png289255728#289255728#0(0"0(0#0#57"/Users/mdhull/XCode Projects/Power Source/TableBorder.png4300907800#590"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/TableBorder.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableBorder.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png" TableViewHighlighted.png
+s289255728.375666
+e289255728.420048
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png
+xTableViewHighlighted.png
+lSLF07#2@101"CopyPNGFile "build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png" TableViewHighlighted.png289255728#289255728#0(0"0(0#0#66"/Users/mdhull/XCode Projects/Power Source/TableViewHighlighted.png4300907800#608"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/TableViewHighlighted.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/TableViewHighlighted.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormal.png" abnormal.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalGeneratorSymbol.png" abnormalGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/abnormalStripes.png" abnormalStripes.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/blackButton.png" blackButton.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/buttonPad2.png" buttonPad2.png
+s289255726.461756
+e289255727.112732
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/buttonPad2.png
+xbuttonPad2.png
+lSLF07#2@81"CopyPNGFile "build/Debug-iphoneos/Power Source.app/buttonPad2.png" buttonPad2.png289255726#289255727#0(0"0(0#0#56"/Users/mdhull/XCode Projects/Power Source/buttonPad2.png4300907800#588"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/buttonPad2.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/buttonPad2.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/darkBlueBackground.png" darkBlueBackground.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/depoweredGeneratorSymbol.png" depoweredGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gpuCover.png" gpuCover.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gradientBackground.png" gradientBackground.png
+s289255725.901499
+e289255729.100396
+r1
+xCopyPNGFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gradientBackground.png
+xgradientBackground.png
+lSLF07#2@97"CopyPNGFile "build/Debug-iphoneos/Power Source.app/gradientBackground.png" gradientBackground.png289255725#289255729#0(0"0(0#0#64"/Users/mdhull/XCode Projects/Power Source/gradientBackground.png4300907800#604"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mdhull/XCode Projects/Power Source/gradientBackground.png" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/gradientBackground.png"0#
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/normalGeneratorSymbol.png" normalGeneratorSymbol.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/plug.png" plug.png
+r0
+
+CCopyPNGFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/powerSourceIcon.png" powerSourceIcon.png
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupBus.plist" BackupBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupEssentialBus.plist" BackupEssentialBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/BackupHotBus.plist" BackupHotBus.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus1.plist" DCBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/DCBus2.plist" DCBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus1.plist" EssBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/EssBus2.plist" EssBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus1.plist" HotBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/HotBus2.plist" HotBus2.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus1.plist" ShedBus1.plist
+r0
+
+CCopyPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ShedBus2.plist" ShedBus2.plist
+r0
+
+CCpResource "build/Debug-iphoneos/Power Source.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+r0
+
+CGenerateDSYMFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app.dSYM" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source"
+s289255732.831271
+e289255733.008019
+r1
+xGenerateDSYMFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app.dSYM
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source
+lSLF07#2@114"GenerateDSYMFile "build/Debug-iphoneos/Power Source.app.dSYM" "build/Debug-iphoneos/Power Source.app/Power Source"289255732#289255733#0(0"0(0#0#92"/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source4300907800#392"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source" -o "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app.dSYM"0#
+
+CLd "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source" normal armv6
+s289255732.219262
+e289255732.831162
+r1
+xLd
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source
+xnormal
+xarmv6
+lSLF07#2@97"Link /Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source289255732#289255732#0(0"0(0#0#0"4300907800#878"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk "-L/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" -filelist "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Objects-normal/armv6/Power Source.LinkFileList" -dead_strip -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Power Source"0#
+
+CProcessInfoPlistFile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Info.plist" Power_Source-Info.plist
+s289255719.742459
+e289255719.829855
+r1
+xProcessInfoPlistFile
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Info.plist
+xPower_Source-Info.plist
+lSLF07#2@31"Process Power_Source-Info.plist289255719#289255719#0(0"0(0#0#65"/Users/mdhull/XCode Projects/Power Source/Power_Source-Info.plist4300907800#602"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Power_Source-Info.plist -genpkginfo "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/ResourceRules.plist" -o "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/Info.plist"0#
+
+CProcessPCH /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch.gch Power_Source_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s289255729.100637
+e289255729.981305
+r1
+xProcessPCH
+x/var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch.gch
+xPower_Source_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile Power_Source_Prefix.pch289255729#289255729#0(0"0(0#0#65"/Users/mdhull/XCode Projects/Power Source/Power_Source_Prefix.pch4300907800#1771"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-generated-files.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-own-target-headers.hmap" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-all-target-headers.hmap" -iquote "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source-project-headers.hmap" "-F/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos" "-I/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/include" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources/armv6" "-I/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/DerivedSources" -c "/Users/mdhull/XCode Projects/Power Source/Power_Source_Prefix.pch" -o /var/folders/nm/nmWiqegrFYeXT8HxzVNE1k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Power_Source_Prefix-apxotydlcrafsqeibrwwafpzfqfr/Power_Source_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/mdhull/Library/MobileDevice/Provisioning Profiles/6AEF17DA-C41B-45F8-9764-770BE8ED9D55.mobileprovision" "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app/embedded.mobileprovision"
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent"
+s289255733.013498
+e289255733.047978
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist
+x/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent
+lSLF07#2@194"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist "build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent"289255733#289255733#0(0"0(0#0#119"/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent4300907800#459"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist -entitlements -format xml -o "/Users/mdhull/XCode Projects/Power Source/build/Power Source.build/Debug-iphoneos/Power Source.build/Power Source.xcent"0#
+
+CTouch "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"
+s289255733.008246
+e289255733.013363
+r1
+xTouch
+x/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app
+lSLF07#2@85"Touch /Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app289255733#289255733#0(0"0(0#0#0"4300907800#279"    cd "/Users/mdhull/XCode Projects/Power Source"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/mdhull/XCode Projects/Power Source/build/Debug-iphoneos/Power Source.app"0#
+

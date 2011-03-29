@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Air/Gnd Position System D</string>
+	<string>APU Control</string>
+	<string>APU Fire Detection</string>
+	<string>APU Fire Extinguishing</string>
+	<string>APU Fuel Feed</string>
+	<string>Inboard Brake Control Unit</string>
+	<string>FO Panel Lighting</string>
+	<string>Crossbleed Valve</string>
+	<string>EICAS Power (DAU2A)</string>
+	<string>Emergency Lighting Control</string>
+	<string>ENG 2 Fire Detection 2</string>
+	<string>Fuel Pump 1B</string>
+	<string>Fuel Pump 2A</string>
+	<string>ENG 1 FADEC B Power</string>
+	<string>ENG 2 FADEC B Power</string>
+	<string>ENG 2 Starting</string>
+	<string>ENG 1, 2 N2 Signal 1B</string>
+	<string>ENG 1, 2 N2 Signal 2B</string>
+	<string>Fuel Crossfeed</string>
+	<string>Fuel Quantity Indication 2</string>
+	<string>ISIS (LRJ)</string>
+	<string>Landing Gear Control</string>
+	<string>Landing Gear Nose Indication 2</string>
+	<string>Passenger Oxygen System 2</string>
+	<string>Pedestal Panel Lighting</string>
+	<string>CA/FO Audio System (Intph 2)</string>
+	<string>Pitch Trim 2</string>
+	<string>Pitot 3 Heating</string>
+	<string>Engine Bleed Valve 2</string>
+	<string>Public Address System</string>
+	<string>RMU 2 Power/Control</string>
+	<string>Rudder Control System 1</string>
+	<string>Standby Altimeter</string>
+	<string>Standby Attitude Indicator</string>
+	<string>Cockpit Voice Recorder</string>
+</array>
+</plist>

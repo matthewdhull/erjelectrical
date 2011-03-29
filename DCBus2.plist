@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>ADC 2 Power/Control</string>
+	<string>ADF 2</string>
+	<string>AHRS 2 Power</string>
+	<string>Aileron Control System 2</string>
+	<string>Air/Gnd Position System C</string>
+	<string>AOA 2 Sensor Heating</string>
+	<string>Aural Warning System 2</string>
+	<string>Autopilot 2</string>
+	<string>Baggage Smoke Detector</string>
+	<string>Inbd Brake Temp Indication</string>
+	<string>Cabin Recirculation Fan</string>
+	<string>Clear Ice Detection System 2 (XRJ)</string>
+	<string>Compartment Lights</string>
+	<string>Crew Seat Adjustment 2</string>
+	<string>Defueling</string>
+	<string>DME 2</string>
+	<string>FMS 2 CDU</string>
+	<string>FMS 2 Computer</string>
+	<string>FMS 2 Data Loader</string>
+	<string>FO Clock</string>
+	<string>Symbol Generator 2 Power/Control</string>
+	<string>EICAS Power (DAU 2B)</string>
+	<string>Electrical Flight Idle Stop 2</string>
+	<string>Electronic Bay Cooling (Recirc 1)</string>
+	<string>Electronic Bay Cooling (Exhuast 2)</string>
+	<string>Fuel Pump 2C</string>
+	<string>ENG 2 Thrust Reverser Command</string>
+	<string>ENG 2 Lip Anti-ice</string>
+	<string>Engine Vibration Sensors</string>
+	<string>Flap Power/Command 2</string>
+	<string>Gasper Fan</string>
+	<string>Inbd Ground Spoilers</string>
+	<string>Electromechanical Gust Lock</string>
+	<string>Electric Hydraulic Pump 1</string>
+	<string>GPS</string>
+	<string>Hydraulic System 1 Indication</string>
+	<string>Ice Detector 2</string>
+	<string>Inspection Lights</string>
+	<string>Landing Gear Door Command (solenoid)</string>
+	<string>Landing Light 2</string>
+	<string>MFD 1 Power</string>
+	<string>Observer Audio Panel (Intph 3)</string>
+	<string>Overhead Panel Lighting</string>
+	<string>Pack Valve 2</string>
+	<string>PFD 2 Power</string>
+	<string>Passenger Cabin Lights 1/2/3</string>
+	<string>Pitot 2 Heating</string>
+	<string>Pneumatic High Stage Valve 2</string>
+	<string>Radio Altimeter 2</string>
+	<string>Red Beacons</string>
+	<string>Roll Trim System</string>
+	<string>Sensors Heating Control</string>
+	<string>Spoiler Indication</string>
+	<string>SPS (Shaker 2/Channel 2)</string>
+	<string>SPS Pusher</string>
+	<string>Stabilizer Anti-ice System</string>
+	<string>Static Port 2 Heating</string>
+	<string>Nosewheel Steering System</string>
+	<string>TAT 2 Sensor Heating</string>
+	<string>Transponder 2 Power/Control</string>
+	<string>Tuning Backup Control Head</string>
+	<string>Ventral Fuel Transfer Pump B (XRJ)</string>
+	<string>VHF System 2</string>
+	<string>VOR/ILS/MB 2</string>
+	<string>Windshield Wiper System 2</string>
+</array>
+</plist>

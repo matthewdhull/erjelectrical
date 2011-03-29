@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Power_SourceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Power_SourceAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		DC0927FA11486A4600867892 /* UserManual.css in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F211486A4600867892 /* UserManual.css */; };
+		DC0927FB11486A4600867892 /* Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F311486A4600867892 /* Contact.html */; };
+		DC0927FC11486A4600867892 /* ERJElecSysUserManual.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F411486A4600867892 /* ERJElecSysUserManual.html */; };
+		DC0927FD11486A4600867892 /* InteractiveMode.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F511486A4600867892 /* InteractiveMode.html */; };
+		DC0927FE11486A4600867892 /* RWDifferences.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F611486A4600867892 /* RWDifferences.html */; };
+		DC0927FF11486A4600867892 /* LexiconLimitations.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F711486A4600867892 /* LexiconLimitations.html */; };
+		DC09280011486A4600867892 /* PowerSourceListMode.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F811486A4600867892 /* PowerSourceListMode.html */; };
+		DC09280111486A4600867892 /* ScenarioGuide.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F911486A4600867892 /* ScenarioGuide.html */; };
+		DC09282F114896C600867892 /* CentralBus.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC09282E114896C600867892 /* CentralBus.plist */; };
+		DC092833114897F100867892 /* BackupBus2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC092832114897F100867892 /* BackupBus2.plist */; };
+		DC1C898D10C746350023C9F8 /* darkBlueBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C898C10C746350023C9F8 /* darkBlueBackground.png */; };
+		DC1E60E71140557300FA92CB /* ManualNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E60E51140557300FA92CB /* ManualNavigationController.m */; };
+		DC1E60E81140557300FA92CB /* ManualNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1E60E61140557300FA92CB /* ManualNavigationController.xib */; };
+		DC2FBB4012F3D36D003513D3 /* GeneratorDisplayBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2FBB3F12F3D36D003513D3 /* GeneratorDisplayBorder.png */; };
+		DC32607F1135F565006F6E6E /* ArrowTab.png in Resources */ = {isa = PBXBuildFile; fileRef = DC32607E1135F565006F6E6E /* ArrowTab.png */; };
+		DC3384C911962DD800668594 /* PoweredGPU.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3384C811962DD800668594 /* PoweredGPU.png */; };
+		DC4071EA1113427B006A8D7B /* GeneratorDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4071E91113427B006A8D7B /* GeneratorDisplay.m */; };
+		DC4072C11113A611006A8D7B /* GeneratorDisplay.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4072C01113A611006A8D7B /* GeneratorDisplay.png */; };
+		DC422C93110585AB003EAC99 /* ElectricalSystemDiagramView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC422C92110585AB003EAC99 /* ElectricalSystemDiagramView.m */; };
+		DC422CEC11058A6D003EAC99 /* abnormalStripes.png in Resources */ = {isa = PBXBuildFile; fileRef = DC422CEB11058A6D003EAC99 /* abnormalStripes.png */; };
+		DC48782110C9CAF100F24FDE /* BusListCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC48782010C9CAF100F24FDE /* BusListCustomCell.m */; };
+		DC48782710C9CB7300F24FDE /* BusListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC48782610C9CB7300F24FDE /* BusListCustomCell.xib */; };
+		DC4878A510C9E81600F24FDE /* ElectricalSystemEngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4878A310C9E81600F24FDE /* ElectricalSystemEngineViewController.m */; };
+		DC4878BF10C9EFE100F24FDE /* LineContactor.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4878BE10C9EFE100F24FDE /* LineContactor.m */; };
+		DC5EB2C41136D0C2001269CF /* ModeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EB2C31136D0C2001269CF /* ModeSelectView.m */; };
+		DC634208110796C60033B438 /* EssBus12.png in Resources */ = {isa = PBXBuildFile; fileRef = DC634207110796C60033B438 /* EssBus12.png */; };
+		DC63424311079D300033B438 /* ShedBus12.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63424211079D300033B438 /* ShedBus12.png */; };
+		DC6764B5112B42090040D393 /* buttonPad2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6764B4112B42090040D393 /* buttonPad2.png */; };
+		DC680EA21138C7DF007405A6 /* MainScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DC680EA11138C7DF007405A6 /* MainScreen.png */; };
+		DC685EF510CC43C700A6086F /* ElectricalSystemEngineDiagram.png in Resources */ = {isa = PBXBuildFile; fileRef = DC685EF410CC43C700A6086F /* ElectricalSystemEngineDiagram.png */; };
+		DC6C3B641130C569006F0EFE /* NewRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6C3B631130C569006F0EFE /* NewRootController.xib */; };
+		DC6D0EDE10D4773800A46AA8 /* GeneratorSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6D0EDD10D4773800A46AA8 /* GeneratorSymbol.m */; };
+		DC7018F31106319300B7E74B /* DCBus12.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7018F21106319300B7E74B /* DCBus12.png */; };
+		DC7018F51106326F00B7E74B /* CentralBus.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7018F41106326F00B7E74B /* CentralBus.png */; };
+		DC70191A11066F7F00B7E74B /* HotBus12.png in Resources */ = {isa = PBXBuildFile; fileRef = DC70191911066F7F00B7E74B /* HotBus12.png */; };
+		DC7019251107812E00B7E74B /* BackupEssHotBus.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7019241107812E00B7E74B /* BackupEssHotBus.png */; };
+		DC70192A110783BC00B7E74B /* BackupBus12.png in Resources */ = {isa = PBXBuildFile; fileRef = DC701929110783BC00B7E74B /* BackupBus12.png */; };
+		DC70DCA110C183430070CFF5 /* DCBus1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DCA010C183430070CFF5 /* DCBus1.plist */; };
+		DC70DCC910C1A43B0070CFF5 /* DCBus2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DCC810C1A43B0070CFF5 /* DCBus2.plist */; };
+		DC70DD6410C1E6350070CFF5 /* EssBus1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DD6310C1E6350070CFF5 /* EssBus1.plist */; };
+		DC70DD6810C1EC280070CFF5 /* EssBus2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DD6710C1EC280070CFF5 /* EssBus2.plist */; };
+		DC70DDDD10C1FC810070CFF5 /* BackupBusTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DDDB10C1FC810070CFF5 /* BackupBusTableController.xib */; };
+		DC70DDE210C1FC8D0070CFF5 /* BackupHotBusTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DDE010C1FC8D0070CFF5 /* BackupHotBusTableController.xib */; };
+		DC70DDE710C1FC990070CFF5 /* BackupEssentialBusTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DDE510C1FC990070CFF5 /* BackupEssentialBusTableController.xib */; };
+		DC70DDEC10C1FD1A0070CFF5 /* HotBus2TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DDEA10C1FD1A0070CFF5 /* HotBus2TableController.xib */; };
+		DC70DDF110C1FD270070CFF5 /* HotBus1TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DDEF10C1FD270070CFF5 /* HotBus1TableController.xib */; };
+		DC70DE0910C233840070CFF5 /* HotBus1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE0810C233840070CFF5 /* HotBus1.plist */; };
+		DC70DE0C10C234140070CFF5 /* HotBus2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE0B10C234140070CFF5 /* HotBus2.plist */; };
+		DC70DE0F10C2349A0070CFF5 /* BackupEssentialBus.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE0E10C2349A0070CFF5 /* BackupEssentialBus.plist */; };
+		DC70DE1210C234EE0070CFF5 /* BackupHotBus.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE1110C234EE0070CFF5 /* BackupHotBus.plist */; };
+		DC70DE1510C235900070CFF5 /* BackupBus1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE1410C235900070CFF5 /* BackupBus1.plist */; };
+		DC70DE1810C235CF0070CFF5 /* ShedBus1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE1710C235CF0070CFF5 /* ShedBus1.plist */; };
+		DC70DE1B10C236AE0070CFF5 /* ShedBus2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE1A10C236AE0070CFF5 /* ShedBus2.plist */; };
+		DC70DE2110C237440070CFF5 /* ShedBus2TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE1F10C237440070CFF5 /* ShedBus2TableController.xib */; };
+		DC70DE2610C237500070CFF5 /* ShedBus1TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70DE2410C237500070CFF5 /* ShedBus1TableController.xib */; };
+		DC717EE810DF0A0100E57D0E /* ButtonPad.m in Sources */ = {isa = PBXBuildFile; fileRef = DC717EE710DF0A0100E57D0E /* ButtonPad.m */; };
+		DC717F0110DF350500E57D0E /* ButtonPad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC717F0010DF350500E57D0E /* ButtonPad.png */; };
+		DC71F1D910DC3FEF00ECEC11 /* gradientBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71F1D710DC3FEF00ECEC11 /* gradientBackground.png */; };
+		DC71F1DA10DC3FEF00ECEC11 /* ElecSysDiagramDropShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71F1D810DC3FEF00ECEC11 /* ElecSysDiagramDropShadow.png */; };
+		DC776F111139DA230001F35B /* TableViewHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DC776F0F1139DA230001F35B /* TableViewHighlighted.png */; };
+		DC776F121139DA230001F35B /* InteractiveButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DC776F101139DA230001F35B /* InteractiveButtonHighlighted.png */; };
+		DC792DA91145609B00DE744F /* ERJElecSysUserManual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DC792DA11145609B00DE744F /* ERJElecSysUserManual.rtf */; };
+		DC792DC91145D26D00DE744F /* ThreeNetworksImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC792DC81145D26D00DE744F /* ThreeNetworksImage.png */; };
+		DC792EDA114617FB00DE744F /* UserManualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC792ED9114617FB00DE744F /* UserManualViewController.m */; };
+		DC792FD31146214000DE744F /* UserManualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC792FD21146214000DE744F /* UserManualViewController.xib */; };
+		DC7931211146BC0400DE744F /* TwoNetworksImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7931201146BC0400DE744F /* TwoNetworksImage.png */; };
+		DC7DCCEC11154E78002C6E19 /* AmpVoltageCover.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7DCCEB11154E78002C6E19 /* AmpVoltageCover.png */; };
+		DC850C4F10E0911D009A8F80 /* blackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DC850C4E10E0911D009A8F80 /* blackButton.png */; };
+		DC868FE811344043000B0DB2 /* MenuTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC868FE711344043000B0DB2 /* MenuTableController.xib */; };
+		DC8690C211344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */; };
+		DC8690C311344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */; };
+		DC86914B11347E7D000B0DB2 /* TableBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC86914A11347E7D000B0DB2 /* TableBorder.png */; };
+		DC87D8D010C89990009AFD26 /* PowerSourceCustomCell.png in Resources */ = {isa = PBXBuildFile; fileRef = DC87D8CF10C89990009AFD26 /* PowerSourceCustomCell.png */; };
+		DC87D8DB10C899B0009AFD26 /* PowerSourceCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC87D8DA10C899B0009AFD26 /* PowerSourceCustomCell.m */; };
+		DC87D8DF10C89A35009AFD26 /* PowerSourceCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC87D8DE10C89A35009AFD26 /* PowerSourceCustomCell.xib */; };
+		DC8E857C12BEF7AA00C4EADF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8E857B12BEF7AA00C4EADF /* QuartzCore.framework */; };
+		DC8E858112BEF9A800C4EADF /* ElecSysBoxIndicationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E858012BEF9A800C4EADF /* ElecSysBoxIndicationLayer.m */; };
+		DC90627B112B9D96005D765F /* NewRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC906279112B9D96005D765F /* NewRootController.m */; };
+		DC957C4F10C4D91700B472F4 /* plug.png in Resources */ = {isa = PBXBuildFile; fileRef = DC957C4E10C4D91700B472F4 /* plug.png */; };
+		DCB23A521141B89A0020A5F2 /* GeneratorImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A4C1141B89A0020A5F2 /* GeneratorImage.png */; };
+		DCB23A531141B89A0020A5F2 /* GeneratorDisplayImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A4D1141B89A0020A5F2 /* GeneratorDisplayImage.png */; };
+		DCB23A541141B89A0020A5F2 /* ButtonPadImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A4E1141B89A0020A5F2 /* ButtonPadImage.png */; };
+		DCB23A551141B89A0020A5F2 /* BatteryImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A4F1141B89A0020A5F2 /* BatteryImage.png */; };
+		DCB23A561141B89A0020A5F2 /* BusImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A501141B89A0020A5F2 /* BusImage.png */; };
+		DCB23A571141B89A0020A5F2 /* ContactorImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB23A511141B89A0020A5F2 /* ContactorImage.png */; };
+		DCB4639B10DB26A0005D5C03 /* abnormal.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB4639A10DB26A0005D5C03 /* abnormal.png */; };
+		DCD463CD133ED186007BDB00 /* RectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD463CC133ED186007BDB00 /* RectConstants.m */; };
+		DCE6554F1157CAB500BE54A5 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE6554E1157CAB500BE54A5 /* Entitlements.plist */; };
+		DCF853B6115802340004C21D /* powerSourceIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCF853B5115802340004C21D /* powerSourceIcon.png */; };
+		DCFB7F7A10F1C6A800E2D4CB /* abnormalGeneratorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFB7F7910F1C6A800E2D4CB /* abnormalGeneratorSymbol.png */; };
+		DCFB7FBE10F1CAD500E2D4CB /* normalGeneratorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFB7FBC10F1CAD500E2D4CB /* normalGeneratorSymbol.png */; };
+		DCFB7FBF10F1CAD500E2D4CB /* depoweredGeneratorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFB7FBD10F1CAD500E2D4CB /* depoweredGeneratorSymbol.png */; };
+		DCFCD18810C0F5B700276149 /* DCBus1TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFCD18610C0F5B700276149 /* DCBus1TableViewController.xib */; };
+		DCFCD19010C0F5DD00276149 /* DCBus2TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFCD18E10C0F5DD00276149 /* DCBus2TableViewController.xib */; };
+		DCFCD19B10C0F61000276149 /* EssentialBus1TableViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFCD19910C0F61000276149 /* EssentialBus1TableViewControlller.xib */; };
+		DCFCD1A210C0F62400276149 /* EssentialBus2TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFCD1A010C0F62400276149 /* EssentialBus2TableViewController.xib */; };
+		DCFFA84C114B15AE008579D5 /* TouchAnyBusLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFFA84B114B15AE008579D5 /* TouchAnyBusLabel.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Power_SourceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power_SourceAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Power_SourceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Power_SourceAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ERJElectrical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERJElectrical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Power_Source_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power_Source_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Power_Source-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Power_Source-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DC0927F211486A4600867892 /* UserManual.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = UserManual.css; sourceTree = "<group>"; };
+		DC0927F311486A4600867892 /* Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Contact.html; sourceTree = "<group>"; };
+		DC0927F411486A4600867892 /* ERJElecSysUserManual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ERJElecSysUserManual.html; sourceTree = "<group>"; };
+		DC0927F511486A4600867892 /* InteractiveMode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InteractiveMode.html; sourceTree = "<group>"; };
+		DC0927F611486A4600867892 /* RWDifferences.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RWDifferences.html; sourceTree = "<group>"; };
+		DC0927F711486A4600867892 /* LexiconLimitations.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LexiconLimitations.html; sourceTree = "<group>"; };
+		DC0927F811486A4600867892 /* PowerSourceListMode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PowerSourceListMode.html; sourceTree = "<group>"; };
+		DC0927F911486A4600867892 /* ScenarioGuide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ScenarioGuide.html; sourceTree = "<group>"; };
+		DC09282E114896C600867892 /* CentralBus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CentralBus.plist; sourceTree = "<group>"; };
+		DC092832114897F100867892 /* BackupBus2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BackupBus2.plist; sourceTree = "<group>"; };
+		DC1C898C10C746350023C9F8 /* darkBlueBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBlueBackground.png; sourceTree = "<group>"; };
+		DC1E60E41140557300FA92CB /* ManualNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualNavigationController.h; sourceTree = "<group>"; };
+		DC1E60E51140557300FA92CB /* ManualNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualNavigationController.m; sourceTree = "<group>"; };
+		DC1E60E61140557300FA92CB /* ManualNavigationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManualNavigationController.xib; sourceTree = "<group>"; };
+		DC2FBB3F12F3D36D003513D3 /* GeneratorDisplayBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeneratorDisplayBorder.png; sourceTree = "<group>"; };
+		DC32607E1135F565006F6E6E /* ArrowTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowTab.png; sourceTree = "<group>"; };
+		DC3384C811962DD800668594 /* PoweredGPU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PoweredGPU.png; sourceTree = "<group>"; };
+		DC4071E81113427B006A8D7B /* GeneratorDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorDisplay.h; sourceTree = "<group>"; };
+		DC4071E91113427B006A8D7B /* GeneratorDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorDisplay.m; sourceTree = "<group>"; };
+		DC4072C01113A611006A8D7B /* GeneratorDisplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeneratorDisplay.png; sourceTree = "<group>"; };
+		DC422C91110585AB003EAC99 /* ElectricalSystemDiagramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ElectricalSystemDiagramView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DC422C92110585AB003EAC99 /* ElectricalSystemDiagramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ElectricalSystemDiagramView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DC422CEB11058A6D003EAC99 /* abnormalStripes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abnormalStripes.png; sourceTree = "<group>"; };
+		DC48781F10C9CAF100F24FDE /* BusListCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusListCustomCell.h; sourceTree = "<group>"; };
+		DC48782010C9CAF100F24FDE /* BusListCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusListCustomCell.m; sourceTree = "<group>"; };
+		DC48782610C9CB7300F24FDE /* BusListCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusListCustomCell.xib; sourceTree = "<group>"; };
+		DC4878A210C9E81600F24FDE /* ElectricalSystemEngineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricalSystemEngineViewController.h; sourceTree = "<group>"; };
+		DC4878A310C9E81600F24FDE /* ElectricalSystemEngineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ElectricalSystemEngineViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DC4878BD10C9EFE100F24FDE /* LineContactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineContactor.h; sourceTree = "<group>"; };
+		DC4878BE10C9EFE100F24FDE /* LineContactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineContactor.m; sourceTree = "<group>"; };
+		DC5EB2C21136D0C2001269CF /* ModeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeSelectView.h; sourceTree = "<group>"; };
+		DC5EB2C31136D0C2001269CF /* ModeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeSelectView.m; sourceTree = "<group>"; };
+		DC634207110796C60033B438 /* EssBus12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EssBus12.png; sourceTree = "<group>"; };
+		DC63424211079D300033B438 /* ShedBus12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShedBus12.png; sourceTree = "<group>"; };
+		DC6764B4112B42090040D393 /* buttonPad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonPad2.png; sourceTree = "<group>"; };
+		DC680EA11138C7DF007405A6 /* MainScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreen.png; sourceTree = "<group>"; };
+		DC685EF410CC43C700A6086F /* ElectricalSystemEngineDiagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElectricalSystemEngineDiagram.png; sourceTree = "<group>"; };
+		DC6C3B631130C569006F0EFE /* NewRootController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewRootController.xib; path = Classes/NewRootController.xib; sourceTree = "<group>"; };
+		DC6D0EDC10D4773800A46AA8 /* GeneratorSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorSymbol.h; sourceTree = "<group>"; };
+		DC6D0EDD10D4773800A46AA8 /* GeneratorSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorSymbol.m; sourceTree = "<group>"; };
+		DC7018F21106319300B7E74B /* DCBus12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DCBus12.png; sourceTree = "<group>"; };
+		DC7018F41106326F00B7E74B /* CentralBus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CentralBus.png; sourceTree = "<group>"; };
+		DC70191911066F7F00B7E74B /* HotBus12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HotBus12.png; sourceTree = "<group>"; };
+		DC7019241107812E00B7E74B /* BackupEssHotBus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackupEssHotBus.png; sourceTree = "<group>"; };
+		DC701929110783BC00B7E74B /* BackupBus12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackupBus12.png; sourceTree = "<group>"; };
+		DC70DCA010C183430070CFF5 /* DCBus1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DCBus1.plist; sourceTree = "<group>"; };
+		DC70DCC810C1A43B0070CFF5 /* DCBus2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DCBus2.plist; sourceTree = "<group>"; };
+		DC70DD6310C1E6350070CFF5 /* EssBus1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EssBus1.plist; sourceTree = "<group>"; };
+		DC70DD6710C1EC280070CFF5 /* EssBus2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EssBus2.plist; sourceTree = "<group>"; };
+		DC70DDDB10C1FC810070CFF5 /* BackupBusTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupBusTableController.xib; sourceTree = "<group>"; };
+		DC70DDE010C1FC8D0070CFF5 /* BackupHotBusTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupHotBusTableController.xib; sourceTree = "<group>"; };
+		DC70DDE510C1FC990070CFF5 /* BackupEssentialBusTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupEssentialBusTableController.xib; sourceTree = "<group>"; };
+		DC70DDEA10C1FD1A0070CFF5 /* HotBus2TableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotBus2TableController.xib; sourceTree = "<group>"; };
+		DC70DDEF10C1FD270070CFF5 /* HotBus1TableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotBus1TableController.xib; sourceTree = "<group>"; };
+		DC70DE0810C233840070CFF5 /* HotBus1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HotBus1.plist; sourceTree = "<group>"; };
+		DC70DE0B10C234140070CFF5 /* HotBus2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HotBus2.plist; sourceTree = "<group>"; };
+		DC70DE0E10C2349A0070CFF5 /* BackupEssentialBus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BackupEssentialBus.plist; sourceTree = "<group>"; };
+		DC70DE1110C234EE0070CFF5 /* BackupHotBus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BackupHotBus.plist; sourceTree = "<group>"; };
+		DC70DE1410C235900070CFF5 /* BackupBus1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BackupBus1.plist; sourceTree = "<group>"; };
+		DC70DE1710C235CF0070CFF5 /* ShedBus1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShedBus1.plist; sourceTree = "<group>"; };
+		DC70DE1A10C236AE0070CFF5 /* ShedBus2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShedBus2.plist; sourceTree = "<group>"; };
+		DC70DE1F10C237440070CFF5 /* ShedBus2TableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShedBus2TableController.xib; sourceTree = "<group>"; };
+		DC70DE2410C237500070CFF5 /* ShedBus1TableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShedBus1TableController.xib; sourceTree = "<group>"; };
+		DC717EE610DF0A0100E57D0E /* ButtonPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonPad.h; sourceTree = "<group>"; };
+		DC717EE710DF0A0100E57D0E /* ButtonPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonPad.m; sourceTree = "<group>"; };
+		DC717F0010DF350500E57D0E /* ButtonPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPad.png; sourceTree = "<group>"; };
+		DC71F1D710DC3FEF00ECEC11 /* gradientBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientBackground.png; sourceTree = "<group>"; };
+		DC71F1D810DC3FEF00ECEC11 /* ElecSysDiagramDropShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElecSysDiagramDropShadow.png; sourceTree = "<group>"; };
+		DC776F0F1139DA230001F35B /* TableViewHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableViewHighlighted.png; sourceTree = "<group>"; };
+		DC776F101139DA230001F35B /* InteractiveButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InteractiveButtonHighlighted.png; sourceTree = "<group>"; };
+		DC792DA11145609B00DE744F /* ERJElecSysUserManual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ERJElecSysUserManual.rtf; sourceTree = "<group>"; };
+		DC792DC81145D26D00DE744F /* ThreeNetworksImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThreeNetworksImage.png; sourceTree = "<group>"; };
+		DC792ED8114617FB00DE744F /* UserManualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManualViewController.h; sourceTree = "<group>"; };
+		DC792ED9114617FB00DE744F /* UserManualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManualViewController.m; sourceTree = "<group>"; };
+		DC792FD21146214000DE744F /* UserManualViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserManualViewController.xib; sourceTree = "<group>"; };
+		DC7931201146BC0400DE744F /* TwoNetworksImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoNetworksImage.png; sourceTree = "<group>"; };
+		DC7DCCEB11154E78002C6E19 /* AmpVoltageCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmpVoltageCover.png; sourceTree = "<group>"; };
+		DC850C4E10E0911D009A8F80 /* blackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackButton.png; sourceTree = "<group>"; };
+		DC868FE711344043000B0DB2 /* MenuTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MenuTableController.xib; path = Classes/MenuTableController.xib; sourceTree = "<group>"; };
+		DC8690B311344906000B0DB2 /* ModalViewDismissalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewDismissalDelegate.h; sourceTree = "<group>"; };
+		DC8690BF11344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwrSrcDistroLoadListViewController.h; sourceTree = "<group>"; };
+		DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwrSrcDistroLoadListViewController.m; sourceTree = "<group>"; };
+		DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PwrSrcDistroLoadListViewController.xib; sourceTree = "<group>"; };
+		DC86914A11347E7D000B0DB2 /* TableBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableBorder.png; sourceTree = "<group>"; };
+		DC87D8CF10C89990009AFD26 /* PowerSourceCustomCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerSourceCustomCell.png; sourceTree = "<group>"; };
+		DC87D8D910C899B0009AFD26 /* PowerSourceCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceCustomCell.h; sourceTree = "<group>"; };
+		DC87D8DA10C899B0009AFD26 /* PowerSourceCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceCustomCell.m; sourceTree = "<group>"; };
+		DC87D8DE10C89A35009AFD26 /* PowerSourceCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PowerSourceCustomCell.xib; sourceTree = "<group>"; };
+		DC8E857B12BEF7AA00C4EADF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DC8E857F12BEF9A800C4EADF /* ElecSysBoxIndicationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElecSysBoxIndicationLayer.h; sourceTree = "<group>"; };
+		DC8E858012BEF9A800C4EADF /* ElecSysBoxIndicationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElecSysBoxIndicationLayer.m; sourceTree = "<group>"; };
+		DC906278112B9D96005D765F /* NewRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRootController.h; sourceTree = "<group>"; };
+		DC906279112B9D96005D765F /* NewRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRootController.m; sourceTree = "<group>"; };
+		DC957C4E10C4D91700B472F4 /* plug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plug.png; sourceTree = "<group>"; };
+		DCB23A4C1141B89A0020A5F2 /* GeneratorImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeneratorImage.png; sourceTree = "<group>"; };
+		DCB23A4D1141B89A0020A5F2 /* GeneratorDisplayImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeneratorDisplayImage.png; sourceTree = "<group>"; };
+		DCB23A4E1141B89A0020A5F2 /* ButtonPadImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPadImage.png; sourceTree = "<group>"; };
+		DCB23A4F1141B89A0020A5F2 /* BatteryImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BatteryImage.png; sourceTree = "<group>"; };
+		DCB23A501141B89A0020A5F2 /* BusImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BusImage.png; sourceTree = "<group>"; };
+		DCB23A511141B89A0020A5F2 /* ContactorImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContactorImage.png; sourceTree = "<group>"; };
+		DCB4639A10DB26A0005D5C03 /* abnormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abnormal.png; sourceTree = "<group>"; };
+		DCD463CB133ED14A007BDB00 /* RectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectConstants.h; sourceTree = "<group>"; };
+		DCD463CC133ED186007BDB00 /* RectConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectConstants.m; sourceTree = "<group>"; };
+		DCE6554E1157CAB500BE54A5 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		DCF853B5115802340004C21D /* powerSourceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerSourceIcon.png; sourceTree = "<group>"; };
+		DCFB7F7910F1C6A800E2D4CB /* abnormalGeneratorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abnormalGeneratorSymbol.png; sourceTree = "<group>"; };
+		DCFB7FBC10F1CAD500E2D4CB /* normalGeneratorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normalGeneratorSymbol.png; sourceTree = "<group>"; };
+		DCFB7FBD10F1CAD500E2D4CB /* depoweredGeneratorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depoweredGeneratorSymbol.png; sourceTree = "<group>"; };
+		DCFCD18610C0F5B700276149 /* DCBus1TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DCBus1TableViewController.xib; sourceTree = "<group>"; };
+		DCFCD18E10C0F5DD00276149 /* DCBus2TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DCBus2TableViewController.xib; sourceTree = "<group>"; };
+		DCFCD19910C0F61000276149 /* EssentialBus1TableViewControlller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EssentialBus1TableViewControlller.xib; sourceTree = "<group>"; };
+		DCFCD1A010C0F62400276149 /* EssentialBus2TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EssentialBus2TableViewController.xib; sourceTree = "<group>"; };
+		DCFFA84B114B15AE008579D5 /* TouchAnyBusLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TouchAnyBusLabel.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				DC8E857C12BEF7AA00C4EADF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Root Class(es) */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* Power_SourceAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Power_SourceAppDelegate.m */,
+				DC906278112B9D96005D765F /* NewRootController.h */,
+				DC906279112B9D96005D765F /* NewRootController.m */,
+				DC5EB2C21136D0C2001269CF /* ModeSelectView.h */,
+				DC5EB2C31136D0C2001269CF /* ModeSelectView.m */,
+			);
+			name = "Root Class(es)";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ERJElectrical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				DCE655511157CAC800BE54A5 /* App Management */,
+				080E96DDFE201D6D7F000001 /* Root Class(es) */,
+				DC8690BC11344B4B000B0DB2 /* Power Source Distro Load List Classes */,
+				DC48789710C9E72400F24FDE /* Interactive Electrical Diagram Classes */,
+				DCF62A9B113F7F9000CFAEBB /* User Manual */,
+				DC1E62AC1140DDE500FA92CB /* Data Model */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Power_Source_Prefix.pch */,
+				DC87D8D910C899B0009AFD26 /* PowerSourceCustomCell.h */,
+				DC48781F10C9CAF100F24FDE /* BusListCustomCell.h */,
+				DC48782010C9CAF100F24FDE /* BusListCustomCell.m */,
+				DC87D8DA10C899B0009AFD26 /* PowerSourceCustomCell.m */,
+				DC8690B311344906000B0DB2 /* ModalViewDismissalDelegate.h */,
+				DCD463CB133ED14A007BDB00 /* RectConstants.h */,
+				DCD463CC133ED186007BDB00 /* RectConstants.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC717EDA10DF068B00E57D0E /* Custom View XIBs */,
+				DC717ED910DF066800E57D0E /* Table View Controllers */,
+				DC957C7310C4E43400B472F4 /* images */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				DC8E857B12BEF7AA00C4EADF /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC1E61D31140646200FA92CB /* Root Table View */ = {
+			isa = PBXGroup;
+			children = (
+				DC792ED8114617FB00DE744F /* UserManualViewController.h */,
+				DC792ED9114617FB00DE744F /* UserManualViewController.m */,
+				DC792FD21146214000DE744F /* UserManualViewController.xib */,
+			);
+			name = "Root Table View";
+			sourceTree = "<group>";
+		};
+		DC1E62AC1140DDE500FA92CB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC1E62AD1140DDFC00FA92CB /* Manual HTML Docs */,
+				DC70DE0710C233310070CFF5 /* Property Lists */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		DC1E62AD1140DDFC00FA92CB /* Manual HTML Docs */ = {
+			isa = PBXGroup;
+			children = (
+				DC0927F211486A4600867892 /* UserManual.css */,
+				DC0927F311486A4600867892 /* Contact.html */,
+				DC0927F411486A4600867892 /* ERJElecSysUserManual.html */,
+				DC0927F511486A4600867892 /* InteractiveMode.html */,
+				DC0927F611486A4600867892 /* RWDifferences.html */,
+				DC0927F711486A4600867892 /* LexiconLimitations.html */,
+				DC0927F811486A4600867892 /* PowerSourceListMode.html */,
+				DC0927F911486A4600867892 /* ScenarioGuide.html */,
+				DC792DA11145609B00DE744F /* ERJElecSysUserManual.rtf */,
+				DCB23A4C1141B89A0020A5F2 /* GeneratorImage.png */,
+				DCB23A4D1141B89A0020A5F2 /* GeneratorDisplayImage.png */,
+				DCB23A4E1141B89A0020A5F2 /* ButtonPadImage.png */,
+				DCB23A4F1141B89A0020A5F2 /* BatteryImage.png */,
+				DCB23A501141B89A0020A5F2 /* BusImage.png */,
+				DCB23A511141B89A0020A5F2 /* ContactorImage.png */,
+				DC7931201146BC0400DE744F /* TwoNetworksImage.png */,
+				DC792DC81145D26D00DE744F /* ThreeNetworksImage.png */,
+			);
+			name = "Manual HTML Docs";
+			sourceTree = "<group>";
+		};
+		DC48789710C9E72400F24FDE /* Interactive Electrical Diagram Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC4878A210C9E81600F24FDE /* ElectricalSystemEngineViewController.h */,
+				DC4878A310C9E81600F24FDE /* ElectricalSystemEngineViewController.m */,
+				DC676404112B2D590040D393 /* Custom Subview Classes */,
+			);
+			name = "Interactive Electrical Diagram Classes";
+			sourceTree = "<group>";
+		};
+		DC676404112B2D590040D393 /* Custom Subview Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC422C91110585AB003EAC99 /* ElectricalSystemDiagramView.h */,
+				DC422C92110585AB003EAC99 /* ElectricalSystemDiagramView.m */,
+				DC4878BD10C9EFE100F24FDE /* LineContactor.h */,
+				DC4878BE10C9EFE100F24FDE /* LineContactor.m */,
+				DC6D0EDC10D4773800A46AA8 /* GeneratorSymbol.h */,
+				DC6D0EDD10D4773800A46AA8 /* GeneratorSymbol.m */,
+				DC717EE610DF0A0100E57D0E /* ButtonPad.h */,
+				DC717EE710DF0A0100E57D0E /* ButtonPad.m */,
+				DC4071E81113427B006A8D7B /* GeneratorDisplay.h */,
+				DC4071E91113427B006A8D7B /* GeneratorDisplay.m */,
+				DC8E857F12BEF9A800C4EADF /* ElecSysBoxIndicationLayer.h */,
+				DC8E858012BEF9A800C4EADF /* ElecSysBoxIndicationLayer.m */,
+			);
+			name = "Custom Subview Classes";
+			sourceTree = "<group>";
+		};
+		DC7018C51106312400B7E74B /* Bus Symbol Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC7018F21106319300B7E74B /* DCBus12.png */,
+				DC7018F41106326F00B7E74B /* CentralBus.png */,
+				DC70191911066F7F00B7E74B /* HotBus12.png */,
+				DC7019241107812E00B7E74B /* BackupEssHotBus.png */,
+				DC701929110783BC00B7E74B /* BackupBus12.png */,
+				DC634207110796C60033B438 /* EssBus12.png */,
+				DC3384C811962DD800668594 /* PoweredGPU.png */,
+				DC63424211079D300033B438 /* ShedBus12.png */,
+			);
+			name = "Bus Symbol Images";
+			sourceTree = "<group>";
+		};
+		DC70DE0710C233310070CFF5 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				DC70DD6710C1EC280070CFF5 /* EssBus2.plist */,
+				DC70DD6310C1E6350070CFF5 /* EssBus1.plist */,
+				DC70DCA010C183430070CFF5 /* DCBus1.plist */,
+				DC70DCC810C1A43B0070CFF5 /* DCBus2.plist */,
+				DC70DE0810C233840070CFF5 /* HotBus1.plist */,
+				DC70DE0B10C234140070CFF5 /* HotBus2.plist */,
+				DC70DE0E10C2349A0070CFF5 /* BackupEssentialBus.plist */,
+				DC70DE1110C234EE0070CFF5 /* BackupHotBus.plist */,
+				DC70DE1410C235900070CFF5 /* BackupBus1.plist */,
+				DC092832114897F100867892 /* BackupBus2.plist */,
+				DC70DE1710C235CF0070CFF5 /* ShedBus1.plist */,
+				DC70DE1A10C236AE0070CFF5 /* ShedBus2.plist */,
+				DC09282E114896C600867892 /* CentralBus.plist */,
+			);
+			name = "Property Lists";
+			sourceTree = "<group>";
+		};
+		DC717ED910DF066800E57D0E /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC70DDE010C1FC8D0070CFF5 /* BackupHotBusTableController.xib */,
+				DC70DE1F10C237440070CFF5 /* ShedBus2TableController.xib */,
+				DC70DE2410C237500070CFF5 /* ShedBus1TableController.xib */,
+				DC70DDDB10C1FC810070CFF5 /* BackupBusTableController.xib */,
+				DC70DDE510C1FC990070CFF5 /* BackupEssentialBusTableController.xib */,
+				DC70DDEA10C1FD1A0070CFF5 /* HotBus2TableController.xib */,
+				DC70DDEF10C1FD270070CFF5 /* HotBus1TableController.xib */,
+				DCFCD1A010C0F62400276149 /* EssentialBus2TableViewController.xib */,
+				DCFCD19910C0F61000276149 /* EssentialBus1TableViewControlller.xib */,
+				DCFCD18E10C0F5DD00276149 /* DCBus2TableViewController.xib */,
+				DCFCD18610C0F5B700276149 /* DCBus1TableViewController.xib */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		DC717EDA10DF068B00E57D0E /* Custom View XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				DC6C3B631130C569006F0EFE /* NewRootController.xib */,
+				DC868FE711344043000B0DB2 /* MenuTableController.xib */,
+				DC48782610C9CB7300F24FDE /* BusListCustomCell.xib */,
+				DC87D8DE10C89A35009AFD26 /* PowerSourceCustomCell.xib */,
+			);
+			name = "Custom View XIBs";
+			sourceTree = "<group>";
+		};
+		DC8690BC11344B4B000B0DB2 /* Power Source Distro Load List Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC8690BF11344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.h */,
+				DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */,
+				DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */,
+			);
+			name = "Power Source Distro Load List Classes";
+			sourceTree = "<group>";
+		};
+		DC957C7310C4E43400B472F4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DC2FBB3F12F3D36D003513D3 /* GeneratorDisplayBorder.png */,
+				DC7018C51106312400B7E74B /* Bus Symbol Images */,
+				DCF853B5115802340004C21D /* powerSourceIcon.png */,
+				DC680EA11138C7DF007405A6 /* MainScreen.png */,
+				DC776F0F1139DA230001F35B /* TableViewHighlighted.png */,
+				DC776F101139DA230001F35B /* InteractiveButtonHighlighted.png */,
+				DC32607E1135F565006F6E6E /* ArrowTab.png */,
+				DCFB7F7910F1C6A800E2D4CB /* abnormalGeneratorSymbol.png */,
+				DC4072C01113A611006A8D7B /* GeneratorDisplay.png */,
+				DC7DCCEB11154E78002C6E19 /* AmpVoltageCover.png */,
+				DCFB7FBC10F1CAD500E2D4CB /* normalGeneratorSymbol.png */,
+				DCFB7FBD10F1CAD500E2D4CB /* depoweredGeneratorSymbol.png */,
+				DC850C4E10E0911D009A8F80 /* blackButton.png */,
+				DC717F0010DF350500E57D0E /* ButtonPad.png */,
+				DC6764B4112B42090040D393 /* buttonPad2.png */,
+				DC71F1D710DC3FEF00ECEC11 /* gradientBackground.png */,
+				DC71F1D810DC3FEF00ECEC11 /* ElecSysDiagramDropShadow.png */,
+				DC86914A11347E7D000B0DB2 /* TableBorder.png */,
+				DCB4639A10DB26A0005D5C03 /* abnormal.png */,
+				DC422CEB11058A6D003EAC99 /* abnormalStripes.png */,
+				DC685EF410CC43C700A6086F /* ElectricalSystemEngineDiagram.png */,
+				DC87D8CF10C89990009AFD26 /* PowerSourceCustomCell.png */,
+				DC1C898C10C746350023C9F8 /* darkBlueBackground.png */,
+				DC957C4E10C4D91700B472F4 /* plug.png */,
+				DCFFA84B114B15AE008579D5 /* TouchAnyBusLabel.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		DCE655511157CAC800BE54A5 /* App Management */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Power_Source-Info.plist */,
+				DCE6554E1157CAB500BE54A5 /* Entitlements.plist */,
+			);
+			name = "App Management";
+			sourceTree = "<group>";
+		};
+		DCF62A9B113F7F9000CFAEBB /* User Manual */ = {
+			isa = PBXGroup;
+			children = (
+				DC1E60E41140557300FA92CB /* ManualNavigationController.h */,
+				DC1E60E51140557300FA92CB /* ManualNavigationController.m */,
+				DC1E60E61140557300FA92CB /* ManualNavigationController.xib */,
+				DC1E61D31140646200FA92CB /* Root Table View */,
+			);
+			name = "User Manual";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ERJElectrical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ERJElectrical" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ERJElectrical;
+			productName = "Power Source";
+			productReference = 1D6058910D05DD3D006BFB54 /* ERJElectrical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ERJElectrical" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ERJElectrical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				DCFCD18810C0F5B700276149 /* DCBus1TableViewController.xib in Resources */,
+				DCFCD19010C0F5DD00276149 /* DCBus2TableViewController.xib in Resources */,
+				DCFCD19B10C0F61000276149 /* EssentialBus1TableViewControlller.xib in Resources */,
+				DCFCD1A210C0F62400276149 /* EssentialBus2TableViewController.xib in Resources */,
+				DC70DCA110C183430070CFF5 /* DCBus1.plist in Resources */,
+				DC70DCC910C1A43B0070CFF5 /* DCBus2.plist in Resources */,
+				DC70DD6410C1E6350070CFF5 /* EssBus1.plist in Resources */,
+				DC70DD6810C1EC280070CFF5 /* EssBus2.plist in Resources */,
+				DC70DDDD10C1FC810070CFF5 /* BackupBusTableController.xib in Resources */,
+				DC70DDE210C1FC8D0070CFF5 /* BackupHotBusTableController.xib in Resources */,
+				DC70DDE710C1FC990070CFF5 /* BackupEssentialBusTableController.xib in Resources */,
+				DC70DDEC10C1FD1A0070CFF5 /* HotBus2TableController.xib in Resources */,
+				DC70DDF110C1FD270070CFF5 /* HotBus1TableController.xib in Resources */,
+				DC70DE0910C233840070CFF5 /* HotBus1.plist in Resources */,
+				DC70DE0C10C234140070CFF5 /* HotBus2.plist in Resources */,
+				DC70DE0F10C2349A0070CFF5 /* BackupEssentialBus.plist in Resources */,
+				DC70DE1210C234EE0070CFF5 /* BackupHotBus.plist in Resources */,
+				DC70DE1510C235900070CFF5 /* BackupBus1.plist in Resources */,
+				DC70DE1810C235CF0070CFF5 /* ShedBus1.plist in Resources */,
+				DC70DE1B10C236AE0070CFF5 /* ShedBus2.plist in Resources */,
+				DC70DE2110C237440070CFF5 /* ShedBus2TableController.xib in Resources */,
+				DC70DE2610C237500070CFF5 /* ShedBus1TableController.xib in Resources */,
+				DC957C4F10C4D91700B472F4 /* plug.png in Resources */,
+				DC1C898D10C746350023C9F8 /* darkBlueBackground.png in Resources */,
+				DC87D8D010C89990009AFD26 /* PowerSourceCustomCell.png in Resources */,
+				DC87D8DF10C89A35009AFD26 /* PowerSourceCustomCell.xib in Resources */,
+				DC48782710C9CB7300F24FDE /* BusListCustomCell.xib in Resources */,
+				DC685EF510CC43C700A6086F /* ElectricalSystemEngineDiagram.png in Resources */,
+				DCB4639B10DB26A0005D5C03 /* abnormal.png in Resources */,
+				DC71F1D910DC3FEF00ECEC11 /* gradientBackground.png in Resources */,
+				DC71F1DA10DC3FEF00ECEC11 /* ElecSysDiagramDropShadow.png in Resources */,
+				DC717F0110DF350500E57D0E /* ButtonPad.png in Resources */,
+				DC850C4F10E0911D009A8F80 /* blackButton.png in Resources */,
+				DCFB7F7A10F1C6A800E2D4CB /* abnormalGeneratorSymbol.png in Resources */,
+				DCFB7FBE10F1CAD500E2D4CB /* normalGeneratorSymbol.png in Resources */,
+				DCFB7FBF10F1CAD500E2D4CB /* depoweredGeneratorSymbol.png in Resources */,
+				DC422CEC11058A6D003EAC99 /* abnormalStripes.png in Resources */,
+				DC7018F31106319300B7E74B /* DCBus12.png in Resources */,
+				DC7018F51106326F00B7E74B /* CentralBus.png in Resources */,
+				DC70191A11066F7F00B7E74B /* HotBus12.png in Resources */,
+				DC7019251107812E00B7E74B /* BackupEssHotBus.png in Resources */,
+				DC70192A110783BC00B7E74B /* BackupBus12.png in Resources */,
+				DC634208110796C60033B438 /* EssBus12.png in Resources */,
+				DC63424311079D300033B438 /* ShedBus12.png in Resources */,
+				DC4072C11113A611006A8D7B /* GeneratorDisplay.png in Resources */,
+				DC7DCCEC11154E78002C6E19 /* AmpVoltageCover.png in Resources */,
+				DC6764B5112B42090040D393 /* buttonPad2.png in Resources */,
+				DC6C3B641130C569006F0EFE /* NewRootController.xib in Resources */,
+				DC868FE811344043000B0DB2 /* MenuTableController.xib in Resources */,
+				DC8690C311344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib in Resources */,
+				DC86914B11347E7D000B0DB2 /* TableBorder.png in Resources */,
+				DC32607F1135F565006F6E6E /* ArrowTab.png in Resources */,
+				DC680EA21138C7DF007405A6 /* MainScreen.png in Resources */,
+				DC776F111139DA230001F35B /* TableViewHighlighted.png in Resources */,
+				DC776F121139DA230001F35B /* InteractiveButtonHighlighted.png in Resources */,
+				DC1E60E81140557300FA92CB /* ManualNavigationController.xib in Resources */,
+				DCB23A521141B89A0020A5F2 /* GeneratorImage.png in Resources */,
+				DCB23A531141B89A0020A5F2 /* GeneratorDisplayImage.png in Resources */,
+				DCB23A541141B89A0020A5F2 /* ButtonPadImage.png in Resources */,
+				DCB23A551141B89A0020A5F2 /* BatteryImage.png in Resources */,
+				DCB23A561141B89A0020A5F2 /* BusImage.png in Resources */,
+				DCB23A571141B89A0020A5F2 /* ContactorImage.png in Resources */,
+				DC792DA91145609B00DE744F /* ERJElecSysUserManual.rtf in Resources */,
+				DC792DC91145D26D00DE744F /* ThreeNetworksImage.png in Resources */,
+				DC792FD31146214000DE744F /* UserManualViewController.xib in Resources */,
+				DC7931211146BC0400DE744F /* TwoNetworksImage.png in Resources */,
+				DC0927FA11486A4600867892 /* UserManual.css in Resources */,
+				DC0927FB11486A4600867892 /* Contact.html in Resources */,
+				DC0927FC11486A4600867892 /* ERJElecSysUserManual.html in Resources */,
+				DC0927FD11486A4600867892 /* InteractiveMode.html in Resources */,
+				DC0927FE11486A4600867892 /* RWDifferences.html in Resources */,
+				DC0927FF11486A4600867892 /* LexiconLimitations.html in Resources */,
+				DC09280011486A4600867892 /* PowerSourceListMode.html in Resources */,
+				DC09280111486A4600867892 /* ScenarioGuide.html in Resources */,
+				DC09282F114896C600867892 /* CentralBus.plist in Resources */,
+				DC092833114897F100867892 /* BackupBus2.plist in Resources */,
+				DCFFA84C114B15AE008579D5 /* TouchAnyBusLabel.png in Resources */,
+				DCE6554F1157CAB500BE54A5 /* Entitlements.plist in Resources */,
+				DCF853B6115802340004C21D /* powerSourceIcon.png in Resources */,
+				DC3384C911962DD800668594 /* PoweredGPU.png in Resources */,
+				DC2FBB4012F3D36D003513D3 /* GeneratorDisplayBorder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Power_SourceAppDelegate.m in Sources */,
+				DC87D8DB10C899B0009AFD26 /* PowerSourceCustomCell.m in Sources */,
+				DC48782110C9CAF100F24FDE /* BusListCustomCell.m in Sources */,
+				DC4878A510C9E81600F24FDE /* ElectricalSystemEngineViewController.m in Sources */,
+				DC4878BF10C9EFE100F24FDE /* LineContactor.m in Sources */,
+				DC6D0EDE10D4773800A46AA8 /* GeneratorSymbol.m in Sources */,
+				DC717EE810DF0A0100E57D0E /* ButtonPad.m in Sources */,
+				DC422C93110585AB003EAC99 /* ElectricalSystemDiagramView.m in Sources */,
+				DC4071EA1113427B006A8D7B /* GeneratorDisplay.m in Sources */,
+				DC90627B112B9D96005D765F /* NewRootController.m in Sources */,
+				DC8690C211344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m in Sources */,
+				DC5EB2C41136D0C2001269CF /* ModeSelectView.m in Sources */,
+				DC1E60E71140557300FA92CB /* ManualNavigationController.m in Sources */,
+				DC792EDA114617FB00DE744F /* UserManualViewController.m in Sources */,
+				DC8E858112BEF9A800C4EADF /* ElecSysBoxIndicationLayer.m in Sources */,
+				DCD463CD133ED186007BDB00 /* RectConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
+				INFOPLIST_FILE = "Power_Source-Info.plist";
+				PRODUCT_NAME = ERJElectrical;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
+				INFOPLIST_FILE = "Power_Source-Info.plist";
+				PRODUCT_NAME = ERJElectrical;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Hull (U4LS8477U4)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A258250-E4A6-4045-8F31-C06C46A9090A";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Hull (U4LS8477U4)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A258250-E4A6-4045-8F31-C06C46A9090A";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DC6AD41511509F4600D5B073 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Hull (U4LS8477U4)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A258250-E4A6-4045-8F31-C06C46A9090A";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		DC6AD41611509F4600D5B073 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
+				INFOPLIST_FILE = "Power_Source-Info.plist";
+				PRODUCT_NAME = ERJElectrical;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ERJElectrical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				DC6AD41611509F4600D5B073 /* Distribution */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ERJElectrical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				DC6AD41511509F4600D5B073 /* Distribution */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

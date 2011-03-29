@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Introduction</title>
+	</head>
+	<body>
+		<p style="font-family:helvetica; font-size:14px">
+		<b>Introduction:</b>
+		
+		<br>This manual is intended for use with the ERJ Electrical System application for iPhone/iPad/iPodTouch.  Use this document to familiarize yourself with the features of this application.<br />
+		<br><u>I. Main Modes.</u></br> 
+		<br>This application utilizes two modes for learning about and interacting with the ERJ Electrical System:</br>
+		<br />
+		<br />
+		<br><img src="InteractiveButtonHighlighted.png"/></br>
+	  	<br>a. Interactive Mode - This mode features an interactive model of the electrical system that allows the users to observe system configurations through use of the control pad.  A procedural guide has also been incorporated into this manual to assist the user in observing scenarios that occur throughout operation of the system
+		<i>(example:  performing a power-up operation followed by a selecting a power source such as the APU) </i>  Reference the Interactive Mode section of this manual for further guidance on its use.</br>
+		<br />
+		<br />
+		<br><img src="TableViewHighlighted.png"/></br>
+		<br>b. Power Source List Mode - This mode uses an interactive diagram of the electrical system for the purpose of viewing specific items that are powered on each bus.  The user can touch any bus on the diagram and can subsequently view all items powered by that bus.  Reference the Power Source List Mode section of this manual for further guidance on its use. </br>
+		<br />
+		<br><u>II. Scenario Guide.</u></br>
+		<br>The interactive mode permits you to experience almost any configuration of the electrical system.  You can fail any generator, in any order, or affect electrical emergencies at almost any time. </br>
+		<br />
+		<br>However,  in order to view specific operations of the electrical system, a specific procedural order must be followed.  
+		<i>(example:  In order to fail all generators simultaneously and observe essential power configuration, the aircraft must be in the air, requiring selection of Air Logic.)</i>
+		The scenario guide will walk you through the proper order of control selection to see this scenario.  </br>
+		</p>
+		
+		
+
+
+	</body>
+</html>

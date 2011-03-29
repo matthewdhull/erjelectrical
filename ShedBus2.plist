@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Cabin Recirculation Fan</string>
+	<string>Flashlights</string>
+	<string>Galley</string>
+	<string>Galley Coffee Maker Power</string>
+	<string>Reading Lights/Attendant Call 2/3</string>
+	<string>Taxi Lights</string>
+	<string>Windshield 2 Heating</string>
+	<string>XM Radio System Inverter (some aircraft)</string>
+	<string>Aircraft Galley Oven Power Supply System (some aircraft)</string>
+</array>
+</plist>

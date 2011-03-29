@@ -1,0 +1,234 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf250
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19600\viewh13100\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 Introduction:
+\b0 \
+\
+This manual is intended for use with the ERJ Electrical System application for iPhone/iPad/iPodTouch.  Use this document to familiarize yourself with the features of this application.  \
+\
+\ul I.  Main Modes.\ulnone \
+This application utilizes two modes for learning about and interacting with the ERJ Electrical System:\
+	\
+1.) Interactive Mode\
+	\
+This mode features an interactive model of the electrical system that allows the users to observe system configurations through use of the control pad.  A procedural guide has also been incorporated into this manual to assist the user in observing scenarios that occur throughout operation of the system\
+\
+(example:  performing a power-up operation followed by a selecting a power source such as the APU)   Reference the Interactive Mode section of this manual for further guidance on its use.\
+	\
+2.) Power Source List Mode\
+\
+This mode uses an interactive diagram of the electrical system for the purpose of viewing specific items that are powered on each bus.  The user can touch any bus on the diagram and can subsequently view all items powered by that bus.  Reference the Power Source List Mode section of this manual for further guidance on its use.  \
+\
+\
+\ul II.  Scenario Guide. \ulnone \
+The interactive mode permits you to experience almost any configuration of the electrical system.  You can fail any generator, in any order, or affect electrical emergencies at almost any time.  \
+\
+However,  in order to view specific operations of the electrical system, a specific procedural order must be followed.  \
+(example:  In order to fail all generators simultaneously and observe essential power configuration, the aircraft must be in the air, requiring selection of Air Logic.)\
+The scenario guide will walk you through the proper order of control selection to see this scenario.  \
+\
+_________________________________________________________________________________________\
+
+\b Interactive Mode
+\b0 \
+\
+This portion of the ERJ Electrical System Manual is intended for use in conduction with the Interactive Mode of this application.  This mode features a robust set of of features and visual displays for controlling and observing operation of the electrical system.  The following is an overview of the components in this mode.\
+\
+\ul I.  Interactive Electrical System Diagram\ulnone \
+This diagram is an animated diagram that displays the electrical system's various configurations depending on the current state.   Use legend below to familiarize yourself with each part of the diagram.\
+\
+Generator\
+The rounded symbol atop the diagram symbolises a generator.  On the ERJ,  there are 5 total generators.  4 are engine-driven, 1 is a starter-generator [APU].  Three colors are used to display the status of a generator. \
+Gray is used to indicate that the generator is de-energized.\
+Green is used to indicate that the generator is available and generating power.\
+Red Diagonal Lines indicate that the generator is in an abnormal condition or failed.  \
+\
+Line Contactor\
+A line contractor is an electronic switch that is used as a sort of electrical bridge.  When a contractor is closed, power flows on the line depicted in the diagram.  An open contractor isolates portions of the electrical system so that power is no longer delivered to the respective bus.  The EDL Electrical Distribution Logic controls the opening and closing of contractors as appropriate for the purposes of managing power in the electrical system.   \
+\
+Bus\
+A bus is a component used for distribution of power in the electrical system.  Use the Power Src List Mode to view specific items powered on each bus. A green outline will appear around the bus when it is energized.  \
+\
+Battery\
+There are 3 batteries for the ERJ Electrical System:  2 NiCad main batteries and 1 Lead-Acid backup battery.  Use the generator/amp/volts display for viewing voltage on the main batteries.\
+\
+\
+\ul II. Generator & Battery Amp/Volts Display\
+\ulnone This display is placed just below the electrical system diagram and is used for viewing power indications for the generators, battery, and GPU.  The 5 generators contain a split display that shows volts in the upper portion of the box and amps in the lower portion of the box.  The GPU and battery indications shows voltage indications only.   \
+\
+\
+I\ul II. Electrical System Control Pad\
+\ulnone The button control pad is used for controlling the electrical system.  Using this control pad, the user can manipulate the electrical system in any configuration desired, provided that the desired configuration is logical and allowed within the limits of operation.   Certain mode selections will disable buttons to prevent an illegal configuration.  Use the appropriate (Gen 1, 2, 3, 4 , APU )Fail, All Gens Fail, Elec Ess Xfr Fail A(B), and Elec Emer Abnorm buttons to view the probable electrical abnormalities.  \
+\
+The control pad contains 18 different buttons,  8 of which are located on a secondary display,  accessed by pressing the "More" button.   Below is a list of  all controls and their associated action.    \
+\
+1. Hide: Hides the button pad.\
+\
+2. Cold Airplane: A reset switch.  This button resets various parameters of the electrical system, including placing the airplane in Ground Logic and de-energizes all batteries and generators.  This action is the analogous with  shutting down an ERJ on the ground.  This method does NOT re-charge the batteries.  \
+\
+3.  Batteries Auto:  Places batteries in the auto mode, which subjugates their control to the Electrical Distribution Logic.  If no other power source is made available, the batteries will begin to discharge. \
+\
+4.  Start A.P.U. (Stop A.P.U): This starts the APU.  The APU requires the availability of one of the following to start: A GPU, Battery 2, Battery 2 with the assistance of an engine-driven generator.  This button toggles to the Stop A.P.U action once it the APU is started.  \
+\
+5.  All Gens On: Energizes all 5 generators.\
+\
+6.  Gen 1 Fail(Gen 1 Reset): Fails the respective generator.  The button toggles to Gen 1 Reset and allows a reset on the failed generator.\
+\
+7.  Gen 2 Fail(Gen 2 Reset): Fails the respective generator.  The button toggles to Gen 2 Reset and allows a reset on the failed generator.\
+\
+8.  Gen 3 Fail:(Gen 3 Reset) Fails the respective generator.  The button toggles to Gen 3 Reset and allows a reset on the failed generator.\
+\
+9.  Gen 4 Fail:(Gen 4 Reset) Fails the respective generator.  The button toggles to Gen 4 Reset and allows a reset on the failed generator.\
+\
+10. More:  Allows selection of the secondary display of buttons.  \
+\
+11. A.P.U Gen Fail:   Fails the respective generator.  The button toggles to A.P.U Gen Reset and allows a reset on the failed generator.\
+\
+12 . All Gens Fail EPC:  Fails all generators and configures the aircraft to essential power mode.  It is important to note that the airplane doesn't necessarily configure in this manner with a loss of all generators.  This mode only demonstrates the correct configuration.  You can view erroneous configurations using the Elec Ess Xfr Fail and Elec Emer Abnorm buttons.\
+\
+13.  Elec Ess Xfr Fail A(B):  Fails all generators and shows a failure of the electrical system to properly configure into  essential power configuration.  Scenario A displays a transfer failure due to DC Bus 1 remaining energized.  Pressing the button a second time toggles Scenario B, a transfer failure due to DC  Bus 2 remaining energized.  \
+\
+14.  Elec Emer Abnorm.  Configures the system into essential power with 1 or more generators available.   The only way to rectify this situation is to start the APU, a procedure dictated by the ERJ abnormal checklists.  The APU is the only generator that can charge the batteries.    \
+\
+15.  Start GPU(Stop GPU): Starts the GPU and allows selection of the GPU using the Select GPU button.  This button toggles the Stop GPU button, which stops the GPU.\
+\
+16.  Select(Deselect)GPU:  Allows selection/de-selection of the GPU.  Because the GPU takes priority over the system, selecting the GPU inhibits all other power sources (all generators and main batteries) from being used.  Because battery contractor 1 & 2 are opened when a GPU is selected, the batteries cannot be charged.  \
+\
+17.  Ground Logic(Air Logic):  Configures the logic of the electrical system which is predicated off of the airplane being on the ground or in the air.   An example of this would be, when no generators are available on the ground, the batteries power most buses and discharge at a rapid rate.  If this situation was experienced in the air (loss of all generators) the system should configure to essential power, energizing only the essential items, resulting in a much slower battery discharge rate.  \
+\
+18. Back:  Reverts to the first set of buttons available with this control pad.\
+\
+___________________________________________________________________________________________________\
+\
+
+\b Power Source List Mode
+\b0 \
+\
+The power source list mode allows touch-selection of any bus shown on the system diagram in order to view items powered on the selected bus.  To use this mode, simply touch any bus to view items powered on the bus.  Once the desired bus is highlighted, the items will appear in a scroll-able table below the diagram.  Scroll through the items by performing a touch-drag-up or touch-drag-down gestures with your finger.   The corresponding power source of each item will appear on the right-hand side of each item. (example:  Symbol Generator 1 Power/Control - EssBus 1)\
+\
+Certain items, such as the Central Bus, do not have any items that receive power from that bus.  \
+\
+Use the arrow button to navigate back to the main screen.\
+\
+___________________________________________________________________________________________________\
+\
+
+\b Scenario Guide\
+\
+
+\b0 In order to visualize realistic situations, use this portion of the manual to facilitate a walk-through of various procedures.   During review, you will re-enforce your understanding with how the electrical system works and how various configurations appear. \
+\
+\pard\tx560\pardeftab560\ql\qnatural\pardirnatural
+\cf0 The button pad is the primary means of controlling the electrical diagram in the interactive mode of this application.  Due to the raw feature of this control, it is possible to affect situations that fall outside of the purview of normal operations.  Care must be taken not to cloud the understanding by performing abnormal operations, such as powering up the airplane by selecting the GPU prior to turning the batteries to auto.  Although this is a possible scenario on the airplane and permitted within this application, it is not a recommended procedure for properly operating this system.   In an effort to provide a realistic and meaningful learning environment, the following scenario guides have been incorporated.  Take time to look through the scenarios so that you, the user, can experience the desired situation.  \
+\
+Remember, these scenarios are intended for use within the Interactive Mode of this application.  Each scenario also contains an explanation that might further help explain what is taking place.  Use the link at the bottom of each procedure guide to navigation to the appropriate explanation.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+Power-Up\
+\
+APU Start\
+\
+GPU Selection\
+\
+Powering All Generators\
+\
+Air Logic / Ground Logic\
+\
+Failing Generators\
+\
+Essential Power Configuration\
+\
+Essential Power Transfer Failure\
+\
+Abnormal Electrical Emergency Mode\
+\
+\ul Power Up Details:\
+\ulnone \
+When the Interactive Mode first loads,  the system is in the "cold configuration," similar to what you would experience if you arrived at the airplane and no power was being supplied by the batteries or by an external power source, such as the GPU.   Notice that Hot Bus 1, Hot Bus 2, and the Backup Hot Bus are always powered off their respective battery. (i.e. Hot Bus 1 is powered at all times by Main Battery 1).  \
+\
+Power-Up the airplane by selecting the Batteries Auto Button on the control pad.  Battery contactor 1 & 2 will close, energizing most of the buses.  (The shed buses aren't powered).  The batteries, without any generator charging them, will deplete rapidly*.   Selection of another power source is required so that the batteries don't drain below 19.0 Volts.   You may either, start the APU, start & select the GPU, or select All Gens On.  Once another power source has been selected, the batteries can be charged or isolated from use due to GPU selection.  \
+\
+\
+
+\i *Note: this application has been intentionally programmed to show a very quick discharge rate only for the purposes of simulation.  \
+\
+\
+\
+\
+
+\i0 \ul APU Start:\ulnone  \
+\
+Select the Start A.P.U button to start the APU  This action will cause the APU to be started with one of 3 possible power sources.  \
+The APU can be started with:\
+1.  Battery 2\
+2.  Battery 2 with the assistance of an engine-driven generator\
+3.  The GPU\
+\
+During APU start, battery contactor 1 will open, isolating battery 1.  Once the APU reached 95% RPM + 7 seconds, the APU's generator control unit, or GCU will bring the generator online.  At this point, the APU line contactor will close, thus supplying power to the electrical system.   Keep in mind that if the GPU is selected, it will take priority over the system and the APU generator will not be brought online until the GPU is de-selected.    \
+\
+To stop the APU, select the Stop A.P.U. button.\
+\
+\ul \
+\
+\
+\
+GPU Selection:\
+\ulnone \
+The GPU can be selected and used to power the electrical system by accessing the secondary display on the button control pad.  Tap the More: button to access this display.  You must Start the GPU prior to selecting it.  The GPU voltage can be seen on the Amp/Volts display above the button control pad.  Although not completely realistic, the GPU will always be at 28.0 volts in this application.  Realize that a real-world GPU will likely have noticeable variances in voltage and that 26.0 - 29.0 volts is needed prior to selecting the GPU.  \
+\
+Once the GPU is selected, it takes priority over the electrical system.  As a result, the 5 generator control units will remain open, even if the APU generator or an engine-driven generator is available.  \
+\
+You will not be able to select Air Logic while the GPU is selected.\
+\
+\
+\ul \
+\
+Powering All Generators:\
+\ulnone \
+Select the All Gens On button after powering up the electrical system.  This action will energize all 5 generators and allow them to supply power to the system provided that the GPU isn't selected.  You may stop the APU after powering all generators on to view system operation with only the 4 engine-driven generators online.   \
+\
+One goal of the electrical system's controlling logic  (Electrical Distribution Logic) is seek development of a redundant system.  This means that if 4 or more generators are available, the system can configure itself into 2 independent electrical networks.  The system will split during normal operations at bus tie contactor 1, located between DC BUS 1 and the Central DC Bus.  Study the system carefully to note that, in this case, the system is operating as 2 networks.  In the event that less than 4 generators are available, the system will then configure itself back into one system.  You will note this change happens any time this rule is true.  Fore more detail, reference the Failing Generators portion of this section in the manual.  \
+\
+\
+\ul Air Logic / Ground Logic:\
+\
+\ulnone Select the Air Logic / Ground Logic button to configure the airplane's logic to the desired state.  The  selection of Air Logic will only be permitted provided you have selected All Generators On.  \ul \
+\ulnone \
+\
+\
+Failing Generators\
+\
+Essential Power Configuration\
+\
+Essential Power Transfer Failure\
+\
+Abnormal Electrical Emergency Mode\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+___________________________________________________________________________________________________\
+\
+
+\b Contact Information\
+\
+
+\b0 This application has been carefully designed with your best interests in mind.  As a result, I covet  your feedback.   Drop me a line, especially if:\
+\
+If you'd like further explanation on a feature of this application.\
+The function of the electrical system as presented in this application isn't correct.\
+This application is crashing on your iPod/iPad/iPodTouch.\
+\
+\
+\
+\
+\
+}
