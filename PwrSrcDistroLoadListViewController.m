@@ -8,12 +8,14 @@
 
 #import "PwrSrcDistroLoadListViewController.h"
 #import "ElectricalSystemDiagramView.h"
+#import "GradientView.h"
+#import "RectConstants.h"
+#import "StaticDiagramComponents.h"
 
 @implementation PwrSrcDistroLoadListViewController
 
 @synthesize viewDelegate;
 @synthesize electricalSystemDiagramView;
-@synthesize backGroundImageView;
 @synthesize touchAnyBusView;
 @synthesize tableBorderView;
 @synthesize distroTableView;
@@ -42,17 +44,18 @@
     NSMutableArray *distroArray = [[NSMutableArray alloc] initWithObjects:@"Touch Any Bus", nil];
     self.distroListArray = distroArray;
     [distroArray release];
+
+    GradientView *gView = [[GradientView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    [self.view addSubview: gView];
+    [gView release];
     
-    //set up for backround image
-    UIImageView *backGroundView = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"gradientBackground.png"]];
-    self.backGroundImageView = backGroundView;
-    [self.view addSubview: backGroundImageView];
-    [backGroundView release];
     
+    StaticDiagramComponents *diagramComponents = [[StaticDiagramComponents alloc] initWithFrame: diagramRect];
+    [self.view addSubview: diagramComponents];
+    [diagramComponents release];
     
     //set up for diagram image
-    ElectricalSystemDiagramView *diagramView = [[ElectricalSystemDiagramView alloc] init];
-    diagramView.frame = CGRectMake(13.0, 15.0, 300.0, 240.0);
+    ElectricalSystemDiagramView *diagramView = [[ElectricalSystemDiagramView alloc] initWithFrame: diagramRect allDeenerized:YES];
     [diagramView depowerAllBuses];
     self.electricalSystemDiagramView = diagramView;
     [self.view addSubview: electricalSystemDiagramView];
@@ -100,7 +103,7 @@
     [self.view addSubview: dcbus1Button];
     
     dcBus2Button  = [UIButton buttonWithType: UIButtonTypeCustom];
-    dcBus2Button.frame = CGRectMake(224.0, 67.0, 74.0, 16.0);
+    dcBus2Button.frame = CGRectMake(224.0, 67.0, 75.0, 15.0);
     [dcBus2Button addTarget: self action: @selector(loadDCBus2List:) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview: dcBus2Button];
     
@@ -311,7 +314,6 @@
 }
 
 - (void)viewDidUnload {
-    self.backGroundImageView = nil;
     self.electricalSystemDiagramView = nil;
     self.tableBorderView = nil;
     self.touchAnyBusView = nil;
@@ -337,8 +339,6 @@
 
 
 - (void)dealloc {
-    
-    [backGroundImageView release];
     [electricalSystemDiagramView release];
     [tableBorderView release];
     [touchAnyBusView release];

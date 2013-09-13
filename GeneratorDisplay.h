@@ -16,10 +16,7 @@
     
     UIImageView *generatorImageView;
     ElecSysBoxIndicationLayer *generatorIndicationLayer;
-//    UIImageView *apuVoltageCover;
-//    UIImageView *gpuVoltageCover;
-    
-    
+
     float battVoltage;
     float gen1V;
     float gen3V;
@@ -68,8 +65,6 @@
 
 @property (nonatomic, retain) UIImageView *generatorImageView;
 @property (nonatomic, retain) ElecSysBoxIndicationLayer *generatorIndicationLayer;
-//@property (nonatomic, retain) UIImageView *apuVoltageCover;
-//@property (nonatomic, retain) UIImageView *gpuVoltageCover;
 @property (nonatomic, retain) UILabel *generator1Voltage;
 @property (nonatomic, retain) UILabel *generator3Voltage;
 @property (nonatomic, retain) UILabel *apuVoltage;

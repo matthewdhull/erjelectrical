@@ -20,7 +20,8 @@
     
        
     rootController  = [[NewRootController alloc] init];
-    rootController.view.frame = CGRectMake(0.0, 20.0, 320.0, 460.0);
+    rootController.view.frame = [[UIScreen mainScreen] bounds];
+    [window setRootViewController: rootController];
     [window addSubview: rootController.view];
     [window makeKeyAndVisible];
     

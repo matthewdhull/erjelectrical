@@ -32,14 +32,7 @@ enum status { powered, depowered, abnormal };
     UIColor *currentColor;
     NSInteger powerState;
     BOOL isPowered;
-    
-    //uimage test 1/4/2010
-    UIImageView *abnormalGeneratorImage;
-    UIImageView *normalGeneratorImage;
-    UIImageView *depoweredGeneratorImage;
     enum status generatorStatus;
-    
-       
 
 }
 
@@ -49,12 +42,6 @@ enum status { powered, depowered, abnormal };
 @property (nonatomic, retain) UIColor *currentColor;
 @property NSInteger powerState;
 @property BOOL isPowered;
-
-//uiimagetest 1/4/2010
-
-@property (nonatomic, retain) UIImageView *abnormalGeneratorImage;
-@property (nonatomic, retain) UIImageView *normalGeneratorImage;
-@property (nonatomic, retain) UIImageView *depoweredGeneratorImage;
 @property enum status generatorStatus;
 
 
@@ -63,10 +50,5 @@ enum status { powered, depowered, abnormal };
 -(void)depower;
 
 -(void)abnormal;
-
--(UIImageView *)findVisibleImage;
-
--(void)fadeOutImage:(UIImageView *)visibleImage fadeInImage:(UIImageView *)hiddenImage;
-
 
 @end

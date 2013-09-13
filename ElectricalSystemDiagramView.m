@@ -12,23 +12,10 @@
 
 @implementation ElectricalSystemDiagramView
 
-@synthesize electricalSystemDiagramView;
-@synthesize dCBus1PowerSymbol;
-@synthesize dCBus2PowerSymbol;
-@synthesize centralBusPowerSymbol;
-@synthesize hotBus1Symbol;
-@synthesize hotBus2Symbol;
-@synthesize backupEssBusSymbol;
-@synthesize backupHotBusSymbol;
-@synthesize backupBus1Symbol;
-@synthesize backupBus2Symbol;
-@synthesize shedBus1Symbol;
-@synthesize shedBus2Symbol;
-@synthesize essBus1Symbol;
-@synthesize essBus2Symbol;
-@synthesize GPUSymbol;
 @synthesize gray;
+@synthesize green;
 
+@synthesize isDrawn;
 @synthesize dcBus1Powered;
 @synthesize dcBus2Powered;
 @synthesize centralDcBusPowered;
@@ -42,6 +29,7 @@
 @synthesize shedBus2Powered;
 @synthesize essBus1Powered;
 @synthesize essBus2Powered;
+@synthesize gpuPowered;
 
 
 @synthesize selectedBus;
@@ -56,175 +44,35 @@ typedef enum DrawType {
 } DrawType;
 
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
+- (id)initWithFrame:(CGRect)frame allDeenerized:(BOOL)energized{
+    if((self = [super initWithFrame:frame])){
         
         self.backgroundColor = [UIColor clearColor];
         UIColor *grayShade = [UIColor colorWithRed:131.0/255.0 green:131.0/255.0 blue:131.0/255.0 alpha:1.0];
         gray  = grayShade.CGColor;
         CGColorRetain(gray);
         
-        self.hotBus1Powered = YES;
-        self.hotBus2Powered = YES;
-        self.backupHotBusPowered = YES;
-        
+        UIColor *greenShade = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0];
+        green = greenShade.CGColor;
+        CGColorRetain(green);
+        if (energized == NO) {
+            self.hotBus1Powered = YES;
+            self.hotBus2Powered = YES;
+            self.backupHotBusPowered = YES;
 
-//        UIImageView *diagramView = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"ElecSysDiagramDropShadow.png"]];
-//        self.electricalSystemDiagramView = diagramView;
-//        [self addSubview: electricalSystemDiagramView];
-//        [diagramView release];
-        
-        
-        //hot bus 1
-//       
-//        UIImageView *hotBus1image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"HotBus12.png"]];
-//        hotBus1image.frame = CGRectMake(65.0, 95.0, 53.0, 18.0);
-//        self.hotBus1Symbol = hotBus1image;
-//        [self addSubview: hotBus1Symbol];
-//        [hotBus1image release];
-//       
-//        
-//        
-//        //hot bus2
-//       
-//        UIImageView *hotBus2image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"HotBus12.png"]];
-//        hotBus2image.frame = CGRectMake(180.0, 95.0, 53.0, 18.0);
-//        self.hotBus2Symbol = hotBus2image;
-//        [self addSubview: hotBus2Symbol];
-//        [hotBus2image release];
-//       
-//        
-//        //backup hot bus
-//       
-//        UIImageView *backupHotBusImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"BackupEssHotBus.png"]];
-//        backupHotBusImage.frame = CGRectMake(142.0, 135.0, 47.0, 16.0);
-//        self.backupHotBusSymbol = backupHotBusImage;
-//        [self addSubview: backupHotBusSymbol];
-//        [backupHotBusImage release];
-//        
-//        
-//        //dc bus 1
-//        UIImageView *bus1image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"DCBus12.png"]];
-//        bus1image.frame = CGRectMake(13.0, 52.0, 75.0, 16.0);
-//        self.dCBus1PowerSymbol = bus1image;
-//        dCBus1PowerSymbol.alpha = 0.0;
-//        [self addSubview: dCBus1PowerSymbol];
-//        [bus1image release];
-//        
-//        
-//        //dc bus 2
-//        
-//        UIImageView *bus2image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"DCBus12.png"]];
-//        bus2image.frame = CGRectMake(211.0, 52.0, 75.0, 16.0);
-//        self.dCBus2PowerSymbol = bus2image;
-//        [self addSubview: dCBus2PowerSymbol];
-//        dCBus2PowerSymbol.alpha = 0.0;
-//        [bus2image release];
-//        
-//        
-//        //central dc bus
-//        
-//        UIImageView *centralBusImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"CentralBus.png"]];
-//        centralBusImage.frame = CGRectMake(126.0, 52.0, 49.0, 15.0);
-//        self.centralBusPowerSymbol = centralBusImage;
-//        [self addSubview: centralBusPowerSymbol];
-//        centralBusPowerSymbol.alpha = 0.0;
-//        [centralBusImage release];
-//        
-//        
-//      
-//            
-//        //backup Ess Bus
-//        
-//        UIImageView *backEssImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"BackupEssHotBus.png"]];
-//        backEssImage.frame = CGRectMake(75.0, 134.0, 47.0, 16.0);
-//        self.backupEssBusSymbol = backEssImage;
-//        [self addSubview: backupEssBusSymbol];
-//        backupEssBusSymbol.alpha = 0.0;
-//        [backEssImage release];
-//        
-//            
-//        
-//        //backup bus 1
-//        
-//        UIImageView *backupBus1image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"BackupBus12.png"]];
-//        backupBus1image.frame = CGRectMake(76.0, 166.0, 35.0, 12.0);
-//        self.backupBus1Symbol = backupBus1image;
-//        [self addSubview: backupBus1Symbol];
-//        backupBus1Symbol.alpha = 0.0;
-//        [backupBus1image release];
-//        
-//        
-//        //backup bus 2
-//        
-//        UIImageView *backupBus2image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"BackupBus12.png"]];
-//        backupBus2image.frame = CGRectMake(113.0, 166.0, 35.0, 12.0);
-//        self.backupBus2Symbol = backupBus2image;
-//        [self addSubview: backupBus2Symbol];
-//        backupBus2Symbol.alpha = 0.0;
-//        [backupBus2image release];
-//        
-//        
-//        //ess bus 1
-//        
-//        UIImageView *essBus1image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"EssBus12.png"]];
-//        essBus1image.frame = CGRectMake(65.0, 191.0, 55.0, 15.0);
-//        self.essBus1Symbol = essBus1image;
-//        [self addSubview: essBus1Symbol];
-//        essBus1Symbol.alpha = 0.0;
-//        [essBus1image release];
-//        
-//        
-//        //ess bus2
-//        
-//        UIImageView *essBus2image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"EssBus12.png"]];
-//        essBus2image.frame = CGRectMake(179.0, 191.0, 55.0, 15.0);
-//        self.essBus2Symbol = essBus2image;
-//        [self addSubview: essBus2Symbol];
-//        essBus2Symbol.alpha = 0.0;
-//        [essBus2image release];
-//        
-//        
-//        
-//        //shed bus 1
-//        
-//        UIImageView *shedBus1image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"ShedBus12.png"]];
-//        shedBus1image.frame = CGRectMake(12.0, 190.0, 39.0, 17.0);
-//        self.shedBus1Symbol = shedBus1image;
-//        [self addSubview: shedBus1Symbol];
-//        shedBus1Symbol.alpha = 0.0;
-//        [shedBus1image release];
-//        
-//        
-//        //shed bus 2
-//        
-//        UIImageView *shedBus2image = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"ShedBus12.png"]];
-//        shedBus2image.frame = CGRectMake(248.0, 191.0, 39.0, 17.0);
-//        self.shedBus2Symbol = shedBus2image;
-//        [self addSubview: shedBus2Symbol];
-//        shedBus2Symbol.alpha = 0.0;
-//        [shedBus2image release];
-//        
-//        //gpu
-//        UIImageView *gpuPoweredImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"PoweredGPU.png"]];
-//        gpuPoweredImage.frame = CGRectMake(119.0, 79.0, 26.0, 16.0);
-//        self.GPUSymbol = gpuPoweredImage;
-//        [self addSubview: GPUSymbol];
-//        GPUSymbol.alpha = 0.0;
-//        [gpuPoweredImage release];
-//        
-        
+        }
         //this string is used for tracking the selected bus
         selectedBus = [[NSMutableString alloc] init];
         
         //this string is used for tracking the desired bus
         desiredBus = [[NSMutableString alloc] init];
         
-        
     }
     return self;
 }
+
+
+
 
 -(void)drawRoundedRect:(CGRect)rrect cornerRadius:(CGFloat)radius color:(CGColorRef)color  drawType:(DrawType)dType context:(CGContextRef)ctx {
 
@@ -251,9 +99,10 @@ typedef enum DrawType {
     
 }
 
+/*
 -(void)drawTriangleAtPoint:(CGPoint)orig orientation:(Orientation)orientation color:(CGColorRef)color context:(CGContextRef)ctx {
     CGContextSetFillColorWithColor(ctx, color);
-
+    
     CGPoint point2;
     CGPoint point3;
     
@@ -273,7 +122,7 @@ typedef enum DrawType {
         point2 = CGPointMake(orig.x + 2.5, orig.y + 2.5);
         point3 = CGPointMake(orig.x + 5.0, orig.y);
     }
-
+    
     
     CGPoint points[] = {
         CGPointMake(orig.x, orig.y),
@@ -285,19 +134,8 @@ typedef enum DrawType {
     CGContextAddLines(ctx, points, sizeof(points)/sizeof(points[0]));
     CGContextClosePath(ctx);
     CGContextFillPath(ctx);
-   
-/*
-                0.0, 0.0
-
- 
-    -1.0, 1.0                1.0, 1.0
-                
-                
-                0.0, 1.0
-                
-
-*/
 }
+
 
 -(void)drawGeneratorContactor:(CGPoint)orig color:(CGColorRef)color context:(CGContextRef)ctx{
     CGContextSetFillColorWithColor(ctx, color);
@@ -336,13 +174,55 @@ typedef enum DrawType {
     CGContextFillPath(ctx);
 
 }
+ 
+ 
+ 
+ -(void)drawBattery:(CGPoint)orig color:(CGColorRef)color context:(CGContextRef)ctx {
+ CGContextSetStrokeColorWithColor(ctx, color);
+ CGContextSetAllowsAntialiasing(ctx, FALSE);
+ CGContextSetLineWidth(ctx, 1.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x, orig.y);
+ CGContextAddLineToPoint(ctx, orig.x + 14.0, orig.y);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y+2.0);
+ CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 2.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 1.0, orig.y + 4.0);
+ CGContextAddLineToPoint(ctx, orig.x + 13.0, orig.y + 4.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y + 6.0);
+ CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 6.0);
+ 
+ //vertical line
+ CGContextMoveToPoint(ctx, orig.x + 7.0, orig.y + 7.0);
+ CGContextAddLineToPoint(ctx, orig.x + 7.0, orig.y + 11.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 1.0, orig.y + 11.0);
+ CGContextAddLineToPoint(ctx, orig.x + 13.0, orig.y + 11.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y + 13.0);
+ CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 13.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 4.0, orig.y + 15.0);
+ CGContextAddLineToPoint(ctx, orig.x + 10.0, orig.y + 15.0);
+ 
+ CGContextMoveToPoint(ctx, orig.x + 5.0, orig.y + 17.0);
+ CGContextAddLineToPoint(ctx, orig.x + 9.0, orig.y + 17.0);
+ 
+ CGContextStrokePath(ctx);
+ CGContextSetAllowsAntialiasing(ctx, TRUE);
+ }
+ 
+ 
+*/
+
 
 -(void)drawGpuWithPower:(BOOL)powered inContext:(CGContextRef)ctx{
-    UIColor *clr;
+
     CGColorRef color;
     if (powered == true) {
-        clr = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0];
-        color = clr.CGColor;
+        color = green;
     }
     
     else {
@@ -371,43 +251,6 @@ typedef enum DrawType {
     
 }
 
--(void)drawBattery:(CGPoint)orig color:(CGColorRef)color context:(CGContextRef)ctx {
-    CGContextSetStrokeColorWithColor(ctx, color);
-    CGContextSetAllowsAntialiasing(ctx, FALSE);
-    CGContextSetLineWidth(ctx, 1.0);
-    
-    CGContextMoveToPoint(ctx, orig.x, orig.y);
-    CGContextAddLineToPoint(ctx, orig.x + 14.0, orig.y);
-    
-    CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y+2.0);
-    CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 2.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 1.0, orig.y + 4.0);
-    CGContextAddLineToPoint(ctx, orig.x + 13.0, orig.y + 4.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y + 6.0);
-    CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 6.0);
-     
-    //vertical line
-    CGContextMoveToPoint(ctx, orig.x + 7.0, orig.y + 7.0);
-    CGContextAddLineToPoint(ctx, orig.x + 7.0, orig.y + 11.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 1.0, orig.y + 11.0);
-    CGContextAddLineToPoint(ctx, orig.x + 13.0, orig.y + 11.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 2.0, orig.y + 13.0);
-    CGContextAddLineToPoint(ctx, orig.x + 12.0, orig.y + 13.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 4.0, orig.y + 15.0);
-    CGContextAddLineToPoint(ctx, orig.x + 10.0, orig.y + 15.0);
-    
-    CGContextMoveToPoint(ctx, orig.x + 5.0, orig.y + 17.0);
-    CGContextAddLineToPoint(ctx, orig.x + 9.0, orig.y + 17.0);
-    
-    CGContextStrokePath(ctx);
-    CGContextSetAllowsAntialiasing(ctx, TRUE);
-}
-
 
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -422,6 +265,7 @@ typedef enum DrawType {
     
     CGContextBeginTransparencyLayer(context, NULL);
     
+/*
 //generator contactors conn
     [self drawGeneratorContactor:CGPointMake(33.0, 30.0) color:gray context:context];
     [self drawGeneratorContactor:CGPointMake(70.0, 30.0) color:gray context:context];
@@ -628,8 +472,6 @@ typedef enum DrawType {
     CGContextStrokePath(context);
 
     
-    [self drawGpuWithPower: FALSE inContext: context]; 
-    
     [self drawBattery:CGPointMake(124.0, 108.0) color: gray context:context];
     [self drawBattery:CGPointMake(160.0, 108.0) color: gray context:context];
     [self drawBattery:CGPointMake(170.0, 155.0) color: gray context:context];
@@ -667,8 +509,8 @@ typedef enum DrawType {
     //line opposite of ebc1
     CGContextStrokeEllipseInRect(context, CGRectMake(54.0, 143.0, 4.0, 4.0));
     CGContextStrokeEllipseInRect(context, CGRectMake(54.0, 159.0, 4.0, 4.0));
-
-   
+    
+    
     //ebc 2
     [self drawTriangleAtPoint:CGPointMake(228.0, 142.0) orientation:left color:gray context:context];
     [self drawTriangleAtPoint:CGPointMake(228.0, 158.0) orientation:left color:gray context:context];
@@ -692,7 +534,7 @@ typedef enum DrawType {
     
     //bb1
     [self drawTriangleAtPoint:CGPointMake(84.0, 161.0) orientation:left color:gray context:context];
-        
+    
     //bb2
     [self drawTriangleAtPoint:CGPointMake(119.0, 161.0) orientation:left color:gray context:context];
     
@@ -712,6 +554,14 @@ typedef enum DrawType {
     CGContextFillEllipseInRect(context, CGRectMake(253.0, 0.0, 30.0, 30.0));
     
     
+ */   
+    
+    if(gpuPowered == YES){
+        [self drawGpuWithPower: TRUE inContext: context]; 
+    }
+    else {
+        [self drawGpuWithPower: FALSE inContext: context]; 
+    }
     
     
     CGFloat radius = 4.0;
@@ -826,8 +676,30 @@ typedef enum DrawType {
     //this call will disable shadow drawing for any further drawing code.
     CGContextRestoreGState(context);
     
-}
+    //draws text labels on each bus
 
+    CGRect viewBounds = self.bounds;
+    CGContextTranslateCTM(context, 0, viewBounds.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    CGContextSetRGBStrokeColor(context, 0.0, 0.0, 0.0, 1.0);
+    CGContextSetLineWidth(context, 0.5);
+    CGContextSelectFont(context, "Helvetica", 8.0, kCGEncodingMacRoman);
+    CGContextSetCharacterSpacing(context, 2.0);
+    CGContextSetTextDrawingMode(context, kCGTextStroke);
+    CGContextShowTextAtPoint(context, dc1rect.origin.x + 23.0, 178.0, "DC 1", 4);
+    CGContextShowTextAtPoint(context, dc2Rect.origin.x + 23.0, 178.0, "DC 2", 4);
+    CGContextShowTextAtPoint(context, centralDCBusRect.origin.x + 4.0, 178.0, "Central", 7);
+    CGContextShowTextAtPoint(context, hb1Rect.origin.x + 12.0 ,133.0, "Hot 1",5);
+    CGContextShowTextAtPoint(context, hb2Rect.origin.x + 12.0 ,133.0, "Hot 2",5);
+    CGContextShowTextAtPoint(context, beRect.origin.x + 5.0, 95.0, "B. Ess.", 7);
+    CGContextShowTextAtPoint(context, bhbRect.origin.x + 5.0, 95.0, "B. Hot", 6);
+    CGContextShowTextAtPoint(context, bb1Rect.origin.x + 2.0, 65.5, "Bck 1", 5);
+    CGContextShowTextAtPoint(context, bb2Rect.origin.x + 2.0, 65.5, "Bck 2", 5);
+    CGContextShowTextAtPoint(context, eb1Rect.origin.x + 13.0, 38.5, "Ess 1", 5);
+    CGContextShowTextAtPoint(context, eb2Rect.origin.x + 13.0, 38.5, "Ess 2", 5);
+    CGContextShowTextAtPoint(context, sb1Rect.origin.x + 3.0, 38.5, "Shd 1", 5);
+    CGContextShowTextAtPoint(context, sb2Rect.origin.x + 3.0, 38.5, "Shd 2", 5);
+}
 
 -(void)powerAllBuses {
     self.dcBus1Powered = YES;
@@ -844,25 +716,6 @@ typedef enum DrawType {
     self.shedBus1Powered = YES;
     self.shedBus2Powered = YES;
     [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"allToVisible" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 1.0;
-//    dCBus2PowerSymbol.alpha = 1.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 1.0;
-//    backupBus2Symbol.alpha = 1.0;
-//    shedBus1Symbol.alpha = 1.0;
-//    shedBus2Symbol.alpha = 1.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;
-//    [UIView commitAnimations];
 }
 
 
@@ -881,25 +734,6 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"depowerRemainingBuses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 0.0;
-//    dCBus2PowerSymbol.alpha = 0.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    centralBusPowerSymbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 0.0;
-//    essBus2Symbol.alpha = 0.0;
-//    backupEssBusSymbol.alpha = 0.0;
-//    backupHotBusSymbol.alpha = 0.0;
-//    hotBus1Symbol.alpha = 0.0;
-//    hotBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    [UIView commitAnimations];
 }
 
 
@@ -919,28 +753,6 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-    
-    
-    
-//    [UIView beginAnimations:@"elevenBuses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 1.0;
-//    dCBus2PowerSymbol.alpha = 1.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 1.0;
-//    backupBus2Symbol.alpha = 1.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
 }
 
 // power 11 buses B config (electrical emergency abnormal)
@@ -958,27 +770,7 @@ typedef enum DrawType {
     self.essBus2Powered = YES;
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
-    [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"abnormalBuses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    //dCBus1PowerSymbol.alpha = 1.0;
-//    //dCBus2PowerSymbol.alpha = 1.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    //shedBus1Symbol.alpha = 1.0;
-//    //shedBus2Symbol.alpha = 1.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
+    [self setNeedsDisplay];    
 }
 
 //power 10 buses (gpu selected, apu start w/gpu)
@@ -997,26 +789,6 @@ typedef enum DrawType {
     self.shedBus1Powered = YES;
     self.shedBus2Powered = YES;
     [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"groundOpsBuses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 1.0;
-//    dCBus2PowerSymbol.alpha = 1.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 0.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 1.0;
-//    shedBus2Symbol.alpha = 1.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
 }
 
 //power 8 buses (electrical ess xfr fail with DC1 powered)
@@ -1034,28 +806,7 @@ typedef enum DrawType {
     self.essBus2Powered = YES;
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
-    [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"elecEssXfrFailOption1" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 1.0;
-//    dCBus2PowerSymbol.alpha = 0.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
-    
+    [self setNeedsDisplay];    
 }
 
 //power 8 buses (electrical ess xfr fail with DC2 powered)
@@ -1074,28 +825,7 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-    
-    
-    
-//    [UIView beginAnimations:@"elecEssXfrFailOption2" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 0.0;
-//    dCBus2PowerSymbol.alpha = 1.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
+
 }
 
 
@@ -1115,26 +845,6 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-    
-//    [UIView beginAnimations:@"essBuses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 0.0;
-//    dCBus2PowerSymbol.alpha = 0.0;
-//    centralBusPowerSymbol.alpha = 1.0;
-//    backupEssBusSymbol.alpha = 1.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 1.0;
-//    essBus2Symbol.alpha = 1.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;    
-//    [UIView commitAnimations];
-    
 }
 
 //power 3 buses (cold airplane)
@@ -1153,54 +863,18 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-//    [UIView beginAnimations:@"coldAirplane" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationRepeatCount: 1];
-//    [UIView setAnimationDuration: 0.25];
-//    dCBus1PowerSymbol.alpha = 0.0;
-//    dCBus2PowerSymbol.alpha = 0.0;
-//    centralBusPowerSymbol.alpha = 0.0;
-//    backupEssBusSymbol.alpha = 0.0;
-//    backupBus1Symbol.alpha = 0.0;
-//    backupBus2Symbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    essBus1Symbol.alpha = 0.0;
-//    essBus2Symbol.alpha = 0.0;
-//    hotBus1Symbol.alpha = 1.0;
-//    hotBus2Symbol.alpha = 1.0;
-//    backupHotBusSymbol.alpha = 1.0;
-//    [UIView commitAnimations];
 }
 
 -(void)depowerShedBuses {
     self.shedBus1Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
-    
-//    [UIView beginAnimations: @"depower shed buses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationDuration: 0.25];
-//    [UIView setAnimationRepeatCount: 1.0];
-//    shedBus1Symbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    [UIView commitAnimations];
 }
 
 -(void)powerShedBuses {
     self.shedBus1Powered = YES;
     self.shedBus2Powered = YES;
     [self setNeedsDisplay];
- 
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    [self drawRoundedRect:bhbRect cornerRadius: 4.0 color:gray drawType:fillStroke context:context];
-//    [UIView beginAnimations: @"power shed buses" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationDuration: 0.25];
-//    [UIView setAnimationRepeatCount: 1.0];
-//    shedBus1Symbol.alpha = 1.0;
-//    shedBus2Symbol.alpha = 1.0;
-//    [UIView commitAnimations];
 }
 
 -(void)depowerSameSideBus1 {
@@ -1208,36 +882,23 @@ typedef enum DrawType {
     self.shedBus1Powered = NO;
     [self setNeedsDisplay];
 
-//    [UIView beginAnimations: @"depower same-side dc1" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationDuration: 0.25];
-//    [UIView setAnimationRepeatCount: 1.0];
-//    dCBus1PowerSymbol.alpha = 0.0;
-//    shedBus1Symbol.alpha = 0.0;
-//    [UIView commitAnimations];
 }
 
 -(void)depowerSameSideBus2 {
     self.dcBus2Powered = NO;
     self.shedBus2Powered = NO;
     [self setNeedsDisplay];
- 
-//    [UIView beginAnimations: @"depower same-side dc2" context: nil];
-//    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-//    [UIView setAnimationDuration: 0.25];
-//    [UIView setAnimationRepeatCount: 1.0];
-//    dCBus2PowerSymbol.alpha = 0.0;
-//    shedBus2Symbol.alpha = 0.0;
-//    [UIView commitAnimations];
-}
+ }
 
 -(void)displayGPUPowerIndication {
-    [self displayOutlineOfBus: GPUSymbol];
+    self.gpuPowered = YES;                 
+    [self setNeedsDisplay];
 }
 
 
 -(void)hideGPUPowerIndication {
-    [self fadeOutlineOfBus: GPUSymbol];
+    self.gpuPowered = NO;                 
+    [self setNeedsDisplay];
 }
 
 
@@ -1246,32 +907,11 @@ typedef enum DrawType {
 #pragma mark -
 #pragma mark - Methods for Displaying individual bus green outlines
 
--(void)displayOutlineOfBus:(UIImageView *)aBus {
-    
-    [UIView beginAnimations:@"displayOutline" context: nil];
-    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-    [UIView setAnimationRepeatCount: 1];
-    [UIView setAnimationDuration: 0.25];
-    aBus.alpha = 1.0;
-    [UIView commitAnimations];
-    
-}
-
--(void)fadeOutlineOfBus:(UIImageView *)aBus {
-    
-    [UIView beginAnimations:@"fadeOutline" context: nil];
-    [UIView setAnimationCurve: UIViewAnimationCurveEaseIn];
-    [UIView setAnimationRepeatCount: 1];
-    [UIView setAnimationDuration: 0.25];
-    aBus.alpha = 0.0;
-    [UIView commitAnimations];
-    
-}
-
-
 -(void)selectDCBus1PowerSymbol {
     [desiredBus setString: @"dCBus1PowerSymbol"];
-    [self displayOutlineOfBus: dCBus1PowerSymbol];
+    self.dcBus1Powered = YES;
+    [self setNeedsDisplay];
+    
     if ([desiredBus isEqualToString: selectedBus] == FALSE){
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1281,7 +921,9 @@ typedef enum DrawType {
 
 -(void)selectDCBus2PowerSymbol {
     [desiredBus setString: @"dCBus2PowerSymbol"];
-    [self displayOutlineOfBus: dCBus2PowerSymbol];
+    self.dcBus2Powered = YES;
+    [self setNeedsDisplay];
+
     if ([desiredBus isEqualToString: selectedBus] == FALSE){
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1291,7 +933,8 @@ typedef enum DrawType {
 
 -(void)selectCentralBusPowerSymbol {
     [desiredBus setString: @"centralBusPowerSymbol"];
-    [self displayOutlineOfBus: centralBusPowerSymbol];
+    self.centralDcBusPowered = YES;
+    [self setNeedsDisplay];
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1301,7 +944,8 @@ typedef enum DrawType {
 
 -(void)selectHotBus1Symbol {
     [desiredBus setString: @"hotBus1Symbol"];
-    [self displayOutlineOfBus: hotBus1Symbol];
+    self.hotBus1Powered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1311,7 +955,8 @@ typedef enum DrawType {
 
 -(void)selectHotBus2Symbol {
     [desiredBus setString: @"hotBus2Symbol"];
-    [self displayOutlineOfBus: hotBus2Symbol];
+    self.hotBus2Powered = YES;
+    [self setNeedsDisplay];
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1321,7 +966,8 @@ typedef enum DrawType {
 
 -(void)selectBackupEssBusSymbol {
     [desiredBus setString: @""];
-    [self displayOutlineOfBus: backupEssBusSymbol];
+    self.backupEssBusPowered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1331,7 +977,8 @@ typedef enum DrawType {
 
 -(void)selectBackupHotBusSymbol {
     [desiredBus setString: @"backupHotBusSymbol"];
-    [self displayOutlineOfBus: backupHotBusSymbol];
+    self.backupHotBusPowered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1341,7 +988,8 @@ typedef enum DrawType {
 
 -(void)selectBackupBus1Symbol {
     [desiredBus setString: @"backupBus1Symbol"];
-    [self displayOutlineOfBus: backupBus1Symbol];
+    self.backupBus1Powered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1352,7 +1000,7 @@ typedef enum DrawType {
 
 -(void)selectBackupBus2Symbol {
     [desiredBus setString: @"backupBus2Symbol"];
-    [self displayOutlineOfBus: backupBus2Symbol];
+    self.backupBus2Powered = YES;
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1363,7 +1011,8 @@ typedef enum DrawType {
 
 -(void)selectShedBus1Symbol {
     [desiredBus setString: @"shedBus1Symbol"];
-    [self displayOutlineOfBus: shedBus1Symbol];
+    self.shedBus1Powered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1373,7 +1022,8 @@ typedef enum DrawType {
 
 -(void)selectShedBus2Symbol {
     [desiredBus setString: @"shedBus2Symbol"];
-    [self displayOutlineOfBus: shedBus2Symbol];
+    self.shedBus2Powered = YES;
+    [self setNeedsDisplay]; 
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1383,7 +1033,8 @@ typedef enum DrawType {
 
 -(void)selectEssBus1Symbol {
     [desiredBus setString: @"essBus1Symbol"];
-    [self displayOutlineOfBus: essBus1Symbol];
+    self.essBus1Powered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1393,7 +1044,8 @@ typedef enum DrawType {
 
 -(void)selectEssBus2Symbol {
     [desiredBus setString: @"essBus2Symbol"];
-    [self displayOutlineOfBus: essBus2Symbol];
+    self.essBus2Powered = YES;
+    [self setNeedsDisplay];    
     if([desiredBus isEqualToString: selectedBus] == FALSE) {
         NSLog(@"desiredBus != selectedBus");
         [self didSelectAnotherBus];
@@ -1406,68 +1058,52 @@ typedef enum DrawType {
     NSString *bus = [NSString stringWithString: selectedBus];
     
     if ([bus isEqualToString: @"dCBus1PowerSymbol"]) 
-        [self fadeOutlineOfBus: dCBus1PowerSymbol];
+        self.dcBus1Powered = NO;
     
+    else if ([bus isEqualToString: @"dCBus2PowerSymbol"])
+        self.dcBus2Powered = NO;
     
-    if ([bus isEqualToString: @"dCBus2PowerSymbol"])
-        [self fadeOutlineOfBus: dCBus2PowerSymbol];
+    else if ([bus isEqualToString: @"essBus1Symbol"])
+        self.essBus1Powered = NO;
     
-    if ([bus isEqualToString: @"essBus1Symbol"])
-        [self fadeOutlineOfBus: essBus1Symbol];
-    
-    if ([bus isEqualToString: @"essBus2Symbol"])
-        [self fadeOutlineOfBus: essBus2Symbol];
+    else if ([bus isEqualToString: @"essBus2Symbol"])
+        self.essBus2Powered = NO;
 
-    if ([bus isEqualToString: @"shedBus1Symbol"])
-        [self fadeOutlineOfBus: shedBus1Symbol];
+    else if ([bus isEqualToString: @"shedBus1Symbol"])
+        self.shedBus1Powered = NO;
 
-    if ([bus isEqualToString: @"shedBus2Symbol"])
-        [self fadeOutlineOfBus: shedBus2Symbol];
+    else if ([bus isEqualToString: @"shedBus2Symbol"])
+        self.shedBus2Powered = NO;
 
-    if ([bus isEqualToString: @"hotBus1Symbol"])
-        [self fadeOutlineOfBus: hotBus1Symbol];
+    else if ([bus isEqualToString: @"hotBus1Symbol"])
+        self.hotBus1Powered = NO;
 
-    if ([bus isEqualToString: @"hotBus2Symbol"])
-        [self fadeOutlineOfBus: hotBus2Symbol];
+    else if ([bus isEqualToString: @"hotBus2Symbol"])
+        self.hotBus2Powered = NO;
 
-    if ([bus isEqualToString: @"backupEssBusSymbol"])
-        [self fadeOutlineOfBus: backupEssBusSymbol];
+    else if ([bus isEqualToString: @"backupEssBusSymbol"])
+        self.backupEssBusPowered = NO;
 
-    if ([bus isEqualToString: @"backupHotBusSymbol"])
-        [self fadeOutlineOfBus: backupHotBusSymbol];
+    else if ([bus isEqualToString: @"backupHotBusSymbol"])
+        self.backupHotBusPowered = NO;
 
-    if ([bus isEqualToString: @"centralBusPowerSymbol"])
-        [self fadeOutlineOfBus: centralBusPowerSymbol];
+    else if ([bus isEqualToString: @"centralBusPowerSymbol"])
+        self.centralDcBusPowered = NO;
 
-    if ([bus isEqualToString: @"backupBus1Symbol"])
-        [self fadeOutlineOfBus: backupBus1Symbol];
+    else if ([bus isEqualToString: @"backupBus1Symbol"])
+        self.backupBus1Powered = NO;
 
-    if ([bus isEqualToString: @"backupBus2Symbol"])
-        [self fadeOutlineOfBus: backupBus2Symbol];
+    else if ([bus isEqualToString: @"backupBus2Symbol"])
+        self.backupBus2Powered = NO;
 
+    [self setNeedsDisplay];
     
 }
 
 
 -(void)dealloc {
-    
-    [electricalSystemDiagramView release];
-    [dCBus1PowerSymbol release];
-    [dCBus2PowerSymbol release];
-    [centralBusPowerSymbol release];
-    [hotBus1Symbol release];
-    [hotBus2Symbol release];
-    [backupEssBusSymbol release];
-    [backupHotBusSymbol release];
-    [backupBus1Symbol release];
-    [backupBus2Symbol release];
-    [essBus1Symbol release];
-    [essBus2Symbol release];
-    [shedBus1Symbol release];
-    [shedBus2Symbol release];
-    [GPUSymbol release];
     CGColorRelease(gray);
-    
+    CGColorRelease(green);    
     [selectedBus release];
     [desiredBus release];
     [super dealloc];

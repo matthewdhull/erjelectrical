@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   version = "1.1">
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
    </BuildAction>
    <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
@@ -18,7 +21,7 @@
       displayScale = "1.00"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug">
+      buildConfiguration = "Distribution">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -36,6 +39,7 @@
       displayScaleIsEnabled = "NO"
       displayScale = "1.00"
       shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug">
       <BuildableProductRunnable>
@@ -48,7 +52,11 @@
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release">
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

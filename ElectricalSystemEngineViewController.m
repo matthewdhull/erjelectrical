@@ -11,8 +11,12 @@
 #import "GeneratorSymbol.h"
 #import "ButtonPad.h"
 #import "ElectricalSystemDiagramView.h"
+#import "StaticDiagramComponents.h"
 #import "GeneratorDisplay.h"
 #import "NewRootController.h"
+#import "GradientView.h"
+#import "RectConstants.h"
+#import "ElecSysBoxIndicationLayer.h"
 
 
 @implementation ElectricalSystemEngineViewController
@@ -121,21 +125,22 @@
 
 
 -(void)loadAllComponents {
+
+//    GradientView *gradientView = [[GradientView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+//    [self.view addSubview: gradientView];
+//    [gradientView release];
     
-    //backgroundImage
-//    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"gradientBackground.png"]];
-//    [self.view addSubview: backgroundImageView];
-//    [backgroundImageView release];
     
-    //light gray background color
-    self.view.backgroundColor = [UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0];
-     
+    //set up electrical system diagram image in 2 parts, a static part, and a portion that is re-drawn for interaction.
+    StaticDiagramComponents *staticComponents = [[StaticDiagramComponents alloc] initWithFrame: diagramRect];
+    [self.view addSubview: staticComponents];
+    [staticComponents release];
     
-    //set up electrical system diagram image
-    ElectricalSystemDiagramView *diagramView = [[ElectricalSystemDiagramView alloc] initWithFrame: CGRectMake(13.0, 15.0, 300.0, 240.0)];
+    ElectricalSystemDiagramView *diagramView = [[ElectricalSystemDiagramView alloc] initWithFrame: diagramRect  allDeenerized: NO];
     self.electricalSystemDiagramView = diagramView;
     [self.view addSubview: electricalSystemDiagramView];
     [diagramView release];
+    
     self.genCount = 0;
     self.currentAmps = 0;
     
@@ -436,6 +441,7 @@
        
     //determines if shed bus should be powered
     if (self.genCount <= 2 && !gpuSelected && !elecEmerAbnormConfig && !elecEssXfrFailConfig) {
+        
         [electricalSystemDiagramView depowerShedBuses];
         [electricalSystemDiagramView powerElevenBusesA];
     }
@@ -472,7 +478,7 @@
         
     }
     
-    //elecEmerAbnormal is a special case where the airplane can have more than one generator online but yet be in ess power config.
+    //elecEmerAbnormal is a special case where the airplane can have one or more generator(s) online but yet be in ess power config.
     //the batteries are powering the ESS buses only.
     //in this case, the battery voltage decrements 0.1 every 8 seconds, however, DC & shed buses may still be energized.
     //3.30.10 added a check for status of apuGenerator. Batteries will only decrement @ the ess rate if the apu isn't running.
@@ -985,7 +991,7 @@
 
 //NOTE: all buttons must have their targets removed, vice an accrual of multiple targets per control. (UIButton(s)).
 
--(IBAction)buttonChanger:(id)sender {
+-(void)buttonChanger:(id)sender {
     if (buttonConfig == buttonConfig1) {
         
         [buttonPad.button3 setTitle: @"All Gens Fail EPC" forState: UIControlStateNormal];
@@ -1370,7 +1376,7 @@
  */
 
 
--(IBAction)coldAirplane:(id)sender {
+-(void)coldAirplane:(id)sender {
     //NSLog(@"cold airplane called");
     //this method has no logic method so contactors are opened explicitly. This method is a reset for all parameters in the electrical system
     //
@@ -1521,7 +1527,7 @@
 }
 
 
--(IBAction)startGPU:(id)sender {
+-(void)startGPU:(id)sender {
     if(gpuAvailable == NO) {
         gpuAvailable = YES;
         generatorDisplay.genGpuV = 28.0;
@@ -1562,7 +1568,7 @@
 
 
 
--(IBAction)gpuSelection:(id)sender {
+-(void)gpuSelection:(id)sender {
     if(gpuSelected == NO) {
         [gpc close];
         gpuSelected = YES;
@@ -1695,7 +1701,7 @@
 }
 
 
--(IBAction)setAirGroundLogic:(id)sender {
+-(void)setAirGroundLogic:(id)sender {
     if(airplaneIsInAir == NO) {
         airplaneIsInAir = YES;
         [gpc open];
@@ -1703,7 +1709,7 @@
         gpuSelected = NO;
         [generatorDisplay hideGpuIndication];
         [self runEDLogic: self];
-        if(buttonConfig = buttonConfig2) {
+        if(buttonConfig == buttonConfig2) {
             [buttonPad.button6 setTitle: @"Start GPU" forState: UIControlStateNormal];
             [buttonPad.button7 setTitle: @"Select GPU" forState: UIControlStateNormal];
             [buttonPad.button8 setTitle: @"Air Logic" forState: UIControlStateNormal];
@@ -1745,7 +1751,7 @@
 
 
 
--(IBAction)batteriesAuto:(id)sender {
+-(void)batteriesAuto:(id)sender {
     
     if(gpuSelected == NO) {
         [bc1 close]; 
@@ -1772,6 +1778,11 @@
     [ebc1 close]; [ebc2 close];
     [generatorDisplay loadIndications];
     
+    
+    //energizes DC BUS 1 & 2 bus bars (green color)
+    self.generatorDisplay.generatorIndicationLayer.dcBus1Indication.status = kNormal;
+    self.generatorDisplay.generatorIndicationLayer.dcBus2Indication.status = kNormal;                
+    [self.generatorDisplay.generatorIndicationLayer setNeedsDisplay];    
        
         
     onBatteries = YES;
@@ -1850,7 +1861,7 @@
     //NSLog(@"Apu Start: Gen Count = %i", genCount);
 }
 
--(IBAction)apuStartWithBatteries:(id)sender {
+-(void)apuStartWithBatteries:(id)sender {
     
     [alc open]; [asc close]; [bc1 open];
     [generatorDisplay showApuIndication];
@@ -1895,7 +1906,7 @@
 }
 
 
--(IBAction)stopApu:(id)sender {
+-(void)stopApu:(id)sender {
     
     [alc open];
     [apuGenerator depower];
@@ -1923,7 +1934,7 @@
 
 }
 
--(IBAction)allGensOn:(id)sender {
+-(void)allGensOn:(id)sender {
     
     if (gpuSelected == YES) {
         [btc1 close]; [btc2 close]; [eic open]; [sbc1 close]; [sbc2 close];
@@ -1951,7 +1962,7 @@
     NSEnumerator *voltageEnumerator = [voltageIndicationArray objectEnumerator];
     id anObject;
     
-    while(anObject = [voltageEnumerator nextObject]) {
+    while((anObject = [voltageEnumerator nextObject])) {
         [anObject setText: @"28.0"];
     }
     
@@ -1986,8 +1997,7 @@
 }
 
 
--(IBAction)lossOfAllGens:(id)sender {
-    
+-(void)lossOfAllGens:(id)sender {
     [glc1 open];[glc2 open];[glc3 open];[glc4 open];[alc open];
     
     [generator1 abnormal]; [generator2 abnormal]; [generator3 abnormal]; [generator4 abnormal]; [apuGenerator abnormal];
@@ -2000,7 +2010,7 @@
     NSEnumerator *voltageEnumerator = [voltageIndicationArray objectEnumerator];
     id anObject;
     
-    while(anObject = [voltageEnumerator nextObject]) {
+    while((anObject = [voltageEnumerator nextObject])) {
         [anObject setText: @"0.0"];
     }
     
@@ -2008,7 +2018,7 @@
     
         
     //conditional method changed from if (airplaneIsInAir == YES) to be more inclusive of other scenarios
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }    
     
@@ -2036,7 +2046,7 @@
 
 
 
--(IBAction)gen1Fail:(id)sender {
+-(void)gen1Fail:(id)sender {
     
     [glc1 open];    
     [generator1 abnormal];
@@ -2044,7 +2054,7 @@
     [generatorDisplay.generator1Voltage setText: @"0.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
     [self runEDLogic: self];
     }
        
@@ -2056,7 +2066,7 @@
     }
 }
 
--(IBAction)resetGen1:(id)sender {
+-(void)resetGen1:(id)sender {
     if (gpuSelected == NO) {
     [glc1 close]; [eic open]; [ebc1 close]; [ebc2 close]; [bc1 close];
     }
@@ -2070,7 +2080,7 @@
     [generatorDisplay.generator1Voltage setText: @"28.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }
     
@@ -2084,14 +2094,14 @@
     
 }
 
--(IBAction)gen2Fail:(id)sender {
+-(void)gen2Fail:(id)sender {
     [glc2 open];
     [generator2 abnormal];
     self.genCount -=1;
     [generatorDisplay.generator2Voltage setText: @"0.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }
     
@@ -2104,7 +2114,7 @@
     
 }
 
--(IBAction)resetGen2:(id)sender {
+-(void)resetGen2:(id)sender {
     
     if (gpuSelected == NO) {
     [glc2 close]; [eic open]; [ebc1 close]; [ebc2 close]; [bc1 close];
@@ -2119,7 +2129,7 @@
     //NSLog(@"Gen Count: %i", self.genCount);
     
        
-     if(airplaneIsInAir || onBatteries && !gpuSelected) {
+     if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }
     
@@ -2131,14 +2141,14 @@
 }
 
 
--(IBAction)gen3Fail:(id)sender {
+-(void)gen3Fail:(id)sender {
     [glc3 open];
     [generator3 abnormal];
     self.genCount -=1;
     [generatorDisplay.generator3Voltage setText: @"0.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-     if(airplaneIsInAir || onBatteries && !gpuSelected) {
+     if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }
 
@@ -2150,7 +2160,7 @@
     
 }
 
--(IBAction)resetGen3:(id)sender {
+-(void)resetGen3:(id)sender {
     if (gpuSelected == NO) {
     [glc3 close]; [eic open]; [ebc1 close]; [ebc2 close]; [bc1 close];
     }
@@ -2166,7 +2176,7 @@
     
 
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }    
     
@@ -2178,14 +2188,14 @@
 }
 
 
--(IBAction)gen4Fail:(id)sender {
+-(void)gen4Fail:(id)sender {
     [glc4 open];
     [generator4 abnormal];
     self.genCount -=1;
     [generatorDisplay.generator4Voltage setText: @"0.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }    
     
@@ -2196,7 +2206,7 @@
     }
 }
 
--(IBAction)resetGen4:(id)sender{
+-(void)resetGen4:(id)sender{
     if (gpuSelected == NO) {
     [glc4 close]; [eic open]; [ebc1 close]; [ebc2 close]; [bc1 close];
     }
@@ -2210,7 +2220,7 @@
     [generatorDisplay.generator4Voltage setText: @"28.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-    if(airplaneIsInAir || onBatteries && !gpuSelected) {
+    if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }    
     
@@ -2221,7 +2231,7 @@
     }
 }
 
--(IBAction)apuGenFail:(id)sender{
+-(void)apuGenFail:(id)sender{
     [alc open]; 
     [apuGenerator abnormal]; 
     self.genCount -=1;
@@ -2241,7 +2251,7 @@
 }
 
 
--(IBAction)resetApuGen:(id)sender{
+-(void)resetApuGen:(id)sender{
     if (gpuSelected == NO) {
     [alc close]; [eic open]; [ebc1 close]; [ebc2 close]; [bc1 close];
     }
@@ -2254,7 +2264,7 @@
     [generatorDisplay.apuVoltage setText: @"28.0"];
     //NSLog(@"Gen Count: %i", self.genCount);
     
-     if(airplaneIsInAir || onBatteries && !gpuSelected) {
+     if(airplaneIsInAir || (onBatteries && !gpuSelected)) {
         [self runEDLogic: self];
     }    
     
@@ -2270,13 +2280,19 @@
 }
 
 
--(IBAction)elecEssXfrFailOption1:(id)sender {
+-(void)elecEssXfrFailOption1:(id)sender {
     [btc1 close]; [btc2 open]; [eic close];
     [bc1 open]; [bc2 close]; [ebc1 open]; [ebc2 open];
     [alc open]; [glc1 open]; [glc2 open]; [glc3 open]; [glc4 open];
     [bbc1 close]; [sbc1 open]; [sbc2 open];
     
     [generator1 abnormal]; [generator2 abnormal]; [generator3 abnormal]; [generator4 abnormal]; [apuGenerator abnormal];
+    
+    //de-energizes DC BUS 2 bar indication (turns amber)
+    self.generatorDisplay.generatorIndicationLayer.dcBus2Indication.status = kAbnormal;        
+    self.generatorDisplay.generatorIndicationLayer.dcBus1Indication.status = kNormal;            
+    [self.generatorDisplay.generatorIndicationLayer setNeedsDisplay];
+    
     
     //3.19.2010 invalidates any active timers to avoid conflicts.
     if([incrementTimer isValid] ) {
@@ -2302,7 +2318,7 @@
     NSEnumerator *voltageEnumerator = [voltageIndicationArray objectEnumerator];
     id anObject;
     
-    while(anObject = [voltageEnumerator nextObject]) {
+    while((anObject = [voltageEnumerator nextObject])) {
         [anObject setText: @"0.0"];
     }
         
@@ -2328,13 +2344,19 @@
 }
 
 
--(IBAction)elecEssXfrFailOption2:(id)sender {
+-(void)elecEssXfrFailOption2:(id)sender {
     [btc1 open]; [btc2 close]; [eic close];
     [bc1 open]; [bc2 close]; [ebc1 open]; [ebc2 open];
     [alc open]; [glc1 open]; [glc2 open]; [glc3 open]; [glc4 open];
     [bbc1 close]; [sbc1 open]; [sbc2 open];
     
     [generator1 abnormal]; [generator2 abnormal]; [generator3 abnormal]; [generator4 abnormal]; [apuGenerator abnormal];
+    
+    //de-energizes DC BUS 1 bar indication (turns amber)
+    self.generatorDisplay.generatorIndicationLayer.dcBus1Indication.status = kAbnormal;
+    self.generatorDisplay.generatorIndicationLayer.dcBus2Indication.status = kNormal;                
+    [self.generatorDisplay.generatorIndicationLayer setNeedsDisplay];
+    
 
     //3.19.2010 invalidates any active timers to avoid conflicts.
     if([incrementTimer isValid] ) {
@@ -2372,9 +2394,10 @@
 
 
 
--(IBAction)elecEmerAbnorm:(id)sender {
+-(void)elecEmerAbnorm:(id)sender {
     [ebc1 open]; [ebc2 open]; [eic close]; [bc2 close];
     [btc1 open]; [btc2 open]; [bc1 open]; [ebc1 open]; [ebc2 open];
+    
     [electricalSystemDiagramView powerElecAbnormBuses];
     
     //if both gens on one side are de-energized, the associated dc & shed bus should be de-energized.
@@ -2478,7 +2501,18 @@
         [eic close]; [bc1 open];
         if((!elecEmerAbnormConfig || !elecEssXfrFailConfig) && airplaneIsInAir)
             [electricalSystemDiagramView powerEssBuses];
+        
+        //turns dc bus 1 and bus 2 bars amber. 10/15/2011
+        self.generatorDisplay.generatorIndicationLayer.dcBus1Indication.status = kAbnormal;
+        self.generatorDisplay.generatorIndicationLayer.dcBus2Indication.status = kAbnormal;        
+        [self.generatorDisplay.generatorIndicationLayer setNeedsDisplay];
         //NSLog(@"Loss of All Gens Logic satisfied");
+    }
+        
+    else {
+        self.generatorDisplay.generatorIndicationLayer.dcBus1Indication.status = kNormal;
+        self.generatorDisplay.generatorIndicationLayer.dcBus2Indication.status = kNormal;                
+        [self.generatorDisplay.generatorIndicationLayer setNeedsDisplay];
     }
     
     

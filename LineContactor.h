@@ -11,40 +11,47 @@
 
 
 @interface LineContactorOrientationUp : UIView {
-
+    BOOL closed;
 }
+
+@property (nonatomic, assign) BOOL closed;
 
 -(void)open;
 
 
 -(void)close;
 
-BOOL closed;
+
 
 @end
 
 
 @interface LineContactorOrientationRight: UIView {
+    BOOL closed;
 }
+
+@property (nonatomic, assign) BOOL closed;
+
 
 -(void)open;
 
 -(void)close;
 
-BOOL closed;
 
 @end
 
 
 
 @interface LineContactorOrientationLeft: UIView {
+    BOOL closed;
 }
+
+@property (nonatomic, assign) BOOL closed;
 
 -(void)open;
 
 -(void)close;
 
-BOOL closed;
 
 
 @end

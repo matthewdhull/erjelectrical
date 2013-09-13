@@ -27,21 +27,10 @@ typedef enum Status {
 @end
 
 
-
-@protocol ElecSysBoxIndicationLayerDelegate
-
-//
-
-@end
-
-
-@interface ElecSysBoxIndicationLayer : CALayer {
+@interface ElecSysBoxIndicationLayer : UIView {
     
     
     CGColorRef lightGreenColor;
-    CGFloat voltsBoxY;
-    CGFloat ampsBoxY;
-    CGFloat ampsBoxHeight;
     ComponentIndication *generator1Indication;
     ComponentIndication *generator2Indication;
     ComponentIndication *generator3Indication;
@@ -62,10 +51,6 @@ typedef enum Status {
 }
 
 @property (nonatomic, assign) CGColorRef lightGreenColor;
-@property (nonatomic, assign) CGFloat voltsBoxY;
-@property (nonatomic, assign) CGFloat ampsBoxY;
-@property (nonatomic, assign) CGFloat ampsBoxHeight;
-
 @property (nonatomic, retain) ComponentIndication *generator1Indication;
 @property (nonatomic, retain) ComponentIndication *generator2Indication;
 @property (nonatomic, retain) ComponentIndication *generator3Indication;
@@ -76,11 +61,6 @@ typedef enum Status {
 @property (nonatomic, retain) ComponentIndication *dcBus2Indication;
 
 
--(ElecSysBoxIndicationLayer *)init;
-
--(void)showAll;
-
--(void)hideAll;
 
 -(void)showGPU:(BOOL)visible;
 

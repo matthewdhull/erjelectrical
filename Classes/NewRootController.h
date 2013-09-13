@@ -23,36 +23,19 @@
     ManualNavigationController *manualNavigationController;
     ModeSelectView *modeSelectView;
     
-    UIImageView *interactiveButtonHighlighted;
-    UIImageView *tableViewButtonHighlighted;
-
-
-
 }
 
 @property (nonatomic, retain) ElectricalSystemEngineViewController *electricalSystemEngineViewController;
 @property (nonatomic, retain) PwrSrcDistroLoadListViewController *pwrSrcDistroLoadListViewController;
 @property (nonatomic, retain) ManualNavigationController *manualNavigationController;
 @property (nonatomic, retain) ModeSelectView *modeSelectView;
-@property (nonatomic, retain) UIImageView *interactiveButtonHighlighted;
-@property (nonatomic, retain) UIImageView *tableViewButtonHighlighted;
 
--(void)loadInteractiveView:(id)sender;
 
 -(void)showInteractiveModalController;
-
--(void)loadDistroLoadListView:(id)sender;
 
 -(void)showDistroLoadModalController;
 
 -(void)loadManualViewController;
-
--(void)animateButtonImage:(UIImageView *)imageView withSelector: (SEL)aSelector;
-
-
-
-
-
 
 
 @end

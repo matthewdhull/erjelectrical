@@ -24,3 +24,4 @@ extern const CGRect sb1Rect;
 extern const CGRect sb2Rect;
 extern const CGRect eb1Rect;
 extern const CGRect eb2Rect;
+extern const CGRect diagramRect; //used for ElectricalSystemDiagramView, StaticDiagramComponents frames.

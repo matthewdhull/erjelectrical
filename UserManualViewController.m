@@ -68,7 +68,7 @@
 //UIViewController must be released.
 -(UIViewController *)webViewControllerWithFile:(NSString *)path title:(NSString *)titleString{
     
-    CGRect webViewFrame = CGRectMake(0.0, 0.0, 320.0, 460.0);
+    CGRect webViewFrame = [[UIScreen mainScreen]bounds];
     UIViewController *webViewController = [[UIViewController alloc] init];
     webViewController.title = titleString;
     UIWebView *webView = [[UIWebView alloc] initWithFrame: webViewFrame];

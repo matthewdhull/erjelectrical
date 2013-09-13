@@ -8,14 +8,13 @@
 
 #import "GeneratorDisplay.h"
 #import "ElecSysBoxIndicationLayer.h"
+#import "GeneratorBorderDisplay.h"
 
 
 @implementation GeneratorDisplay
 @synthesize generatorImageView;
 
 @synthesize generatorIndicationLayer;
-//@synthesize apuVoltageCover;
-//@synthesize gpuVoltageCover;
 @synthesize battVoltage;
 @synthesize generator1Voltage, generator3Voltage, apuVoltage, gpuVoltage, generator2Voltage, generator4Voltage, battery1Voltage, battery2Voltage; 
 @synthesize generator1Amps, generator3Amps, apuAmps, generator2Amps, generator4Amps;
@@ -24,39 +23,25 @@
 
 
 - (id)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
+
+    if((self = [super initWithFrame:frame])){
         self.backgroundColor = [UIColor clearColor];
+
+        
+//        UIImageView *generatorImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"GeneratorDisplayBorder.png"]];
+//        self.generatorImageView = generatorImage;
+//        [self addSubview: generatorImageView];
+//        [generatorImage release];
+        
+        GeneratorBorderDisplay *generatorBorderDisplay = [[GeneratorBorderDisplay alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 140.0)];
+        [self addSubview: generatorBorderDisplay];
+        [generatorBorderDisplay release];
 
         ElecSysBoxIndicationLayer *indicationLayer = [[ElecSysBoxIndicationLayer alloc] init];
         self.generatorIndicationLayer = indicationLayer;
-        [[self layer] addSublayer: generatorIndicationLayer];
+        [self addSubview: generatorIndicationLayer];
         [indicationLayer release];
-        
-        UIImageView *generatorImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"GeneratorDisplayBorder.png"]];
-        generatorImage.frame = CGRectMake(0.0, 0.0, 320.0, 140.0);
-        self.generatorImageView = generatorImage;
-        [self addSubview: generatorImageView];
-        [generatorImage release];
 
-        
-        
-/*        
-        UIImageView *cover = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"AmpVoltageCover.png"]];
-        cover.frame = CGRectMake( 164.0, 22.0, 43.0, 62.0);
-        cover.alpha = 0.0;
-        self.gpuVoltageCover = cover;
-        [self addSubview: gpuVoltageCover];
-        [cover release];
-        
-        UIImageView *cover2 = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"AmpVoltageCover.png"]];
-        cover2.frame = CGRectMake(114.0, 22.0, 43.0, 62.0);
-        self.apuVoltageCover = cover2;
-        [self addSubview: apuVoltageCover];
-        [cover2 release];
-        
-*/        
-        
-        
         //default battery voltage is 24.0
         [self setBattVoltage: 24.0];
         [self setGen1V: 0.0];
@@ -87,7 +72,7 @@
     if (generator1Voltage == nil) {
     UILabel *voltage1 = [[UILabel alloc] initWithFrame: CGRectMake(28.0, 38.0, 35.0, 18.0)];
     [voltage1 setBackgroundColor: [UIColor clearColor]];
-    voltage1.textAlignment = UITextAlignmentCenter;
+    voltage1.textAlignment = NSTextAlignmentCenter;
     voltage1.textColor = [UIColor greenColor];
     self.generator1Voltage = voltage1;
     [self addSubview: generator1Voltage];
@@ -97,7 +82,7 @@
     if (generator3Voltage == nil) {
     UILabel *voltage3 = [[UILabel alloc] initWithFrame: CGRectMake(74.0, 38.0, 35.0, 18.0)];
     [voltage3 setBackgroundColor: [UIColor clearColor]];
-    voltage3.textAlignment = UITextAlignmentCenter;
+    voltage3.textAlignment = NSTextAlignmentCenter;
     voltage3.textColor = [UIColor greenColor];
     self.generator3Voltage = voltage3;
     [self addSubview: generator3Voltage];
@@ -107,7 +92,7 @@
     if (apuVoltage == nil) {
     UILabel *voltageApu = [[UILabel alloc] initWithFrame: CGRectMake(120.0, 38.0, 35.0, 18.0)];
     [voltageApu setBackgroundColor: [UIColor clearColor]];
-    voltageApu.textAlignment = UITextAlignmentCenter;
+    voltageApu.textAlignment = NSTextAlignmentCenter;
     voltageApu.textColor = [UIColor greenColor];
     self.apuVoltage = voltageApu;
     [self addSubview: apuVoltage];
@@ -117,7 +102,7 @@
     if (gpuVoltage == nil) {
     UILabel *voltageGpu = [[UILabel alloc] initWithFrame: CGRectMake(168.0, 38.0, 35.0, 18.0)];
     [voltageGpu setBackgroundColor: [UIColor clearColor]];
-    voltageGpu.textAlignment = UITextAlignmentCenter;
+    voltageGpu.textAlignment = NSTextAlignmentCenter;
     voltageGpu.textColor = [UIColor greenColor];
     self.gpuVoltage = voltageGpu;
     [self addSubview: gpuVoltage];
@@ -128,7 +113,7 @@
     if(generator2Voltage == nil) {
     UILabel *voltage2 = [[UILabel alloc] initWithFrame: CGRectMake(214.0, 38.0, 35.0, 18.0)];
     [voltage2 setBackgroundColor: [UIColor clearColor]];
-    voltage2.textAlignment = UITextAlignmentCenter;
+    voltage2.textAlignment = NSTextAlignmentCenter;
     voltage2.textColor = [UIColor greenColor];
     self.generator2Voltage = voltage2;
     [self addSubview: generator2Voltage];
@@ -139,7 +124,7 @@
     if(generator4Voltage == nil ) {
     UILabel *voltage4 = [[UILabel alloc] initWithFrame: CGRectMake(259.0, 38.0, 35.0, 18.0)];
     [voltage4 setBackgroundColor: [UIColor clearColor]];
-    voltage4.textAlignment = UITextAlignmentCenter;
+    voltage4.textAlignment = NSTextAlignmentCenter;
     voltage4.textColor = [UIColor greenColor];
     self.generator4Voltage = voltage4;
     [self addSubview: generator4Voltage];
@@ -151,7 +136,7 @@
     if(battery1Voltage == nil ) {
     UILabel *bat1Voltage = [[UILabel alloc] initWithFrame: CGRectMake(96.0, 95.0, 35.0, 18.0)];
     [bat1Voltage setBackgroundColor: [UIColor clearColor]];
-    bat1Voltage.textAlignment = UITextAlignmentCenter;
+    bat1Voltage.textAlignment = NSTextAlignmentCenter;
     bat1Voltage.textColor = [UIColor greenColor];
     self.battery1Voltage = bat1Voltage;
     [self addSubview: battery1Voltage];
@@ -162,7 +147,7 @@
     if(battery2Voltage == nil ) {
     UILabel *bat2Voltage = [[UILabel alloc] initWithFrame: CGRectMake(183.0, 95.0, 35.0, 18.0)];
     [bat2Voltage setBackgroundColor: [UIColor clearColor]];
-    bat2Voltage.textAlignment = UITextAlignmentCenter;
+    bat2Voltage.textAlignment = NSTextAlignmentCenter;
     bat2Voltage.textColor = [UIColor greenColor];
     self.battery2Voltage = bat2Voltage;
     [self addSubview: battery2Voltage];
@@ -175,7 +160,7 @@
     if(generator1Amps == nil ) {
     UILabel *amps1 = [[UILabel alloc] initWithFrame: CGRectMake(28.0, 59.0, 34.0, 18.0)];
     [amps1 setBackgroundColor: [UIColor clearColor]];
-    amps1.textAlignment = UITextAlignmentRight;
+    amps1.textAlignment = NSTextAlignmentRight;
     amps1.textColor = [UIColor greenColor];
     self.generator1Amps = amps1;
     [self addSubview: generator1Amps];
@@ -185,7 +170,7 @@
     if(generator3Amps == nil ) {
     UILabel *amps3 = [[UILabel alloc] initWithFrame: CGRectMake(74.0, 59.0, 34.0, 18.0)];
     [amps3 setBackgroundColor: [UIColor clearColor]];
-    amps3.textAlignment = UITextAlignmentRight;
+    amps3.textAlignment = NSTextAlignmentRight;
     amps3.textColor = [UIColor greenColor];
     self.generator3Amps = amps3;
     [self addSubview: generator3Amps];
@@ -195,7 +180,7 @@
     if(apuAmps == nil ) {
     UILabel *ampsApu = [[UILabel alloc] initWithFrame: CGRectMake(120.0, 59.0, 34.0, 18.0)];
     [ampsApu setBackgroundColor: [UIColor clearColor]];
-    ampsApu.textAlignment = UITextAlignmentRight;
+    ampsApu.textAlignment = NSTextAlignmentRight;
     ampsApu.textColor = [UIColor greenColor];
     self.apuAmps = ampsApu;
     [self addSubview: apuAmps];
@@ -206,7 +191,7 @@
     if(generator2Amps == nil ) {
     UILabel *amps2 = [[UILabel alloc] initWithFrame: CGRectMake(214.0, 59.0, 34.0, 18.0)];
     [amps2 setBackgroundColor: [UIColor clearColor]];
-    amps2.textAlignment = UITextAlignmentRight;
+    amps2.textAlignment = NSTextAlignmentRight;
     amps2.textColor = [UIColor greenColor];
     self.generator2Amps = amps2;
     [self addSubview: generator2Amps];
@@ -216,7 +201,7 @@
     if(generator4Amps == nil ) {
     UILabel *amps4 = [[UILabel alloc] initWithFrame: CGRectMake(259.0, 59.0, 34.0, 18.0)];
     [amps4 setBackgroundColor: [UIColor clearColor]];
-    amps4.textAlignment = UITextAlignmentRight;
+    amps4.textAlignment = NSTextAlignmentRight;
     amps4.textColor = [UIColor greenColor];
     self.generator4Amps = amps4;
     [self addSubview: generator4Amps];
@@ -235,7 +220,7 @@
     NSEnumerator *voltageEnumerator = [voltageIndicationArray objectEnumerator];
     id voltageLabel;
     
-    while (voltageLabel = [voltageEnumerator nextObject]) {
+    while ((voltageLabel = [voltageEnumerator nextObject])) {
         [voltageLabel setText: @"0.0"];
     }
     
@@ -244,7 +229,7 @@
     NSEnumerator *ampsEnumerator = [ampIndicationArray objectEnumerator];
     id ampLabel;
     
-    while(ampLabel = [ampsEnumerator nextObject]) {
+    while((ampLabel = [ampsEnumerator nextObject])) {
         [ampLabel setText: @"0"];
     }
     
@@ -262,7 +247,7 @@
     NSEnumerator *enumerator = [indicationArray objectEnumerator];
     id anObject;
     
-    while (anObject = [enumerator nextObject]) {
+    while ((anObject = [enumerator nextObject])) {
         [anObject setText: @""];
     }
 }
@@ -311,11 +296,11 @@
     
 }
 
-
+/*
 - (void)drawRect:(CGRect)rect {
     // Drawing code
 }
-
+*/
 
 
 
@@ -336,9 +321,6 @@
     [apuAmps release];
     [generator2Amps release];
     [generator4Amps release];
-    
-//    [apuVoltageCover release];
-//    [gpuVoltageCover release];
     [generatorImageView release];
     [super dealloc];
 }

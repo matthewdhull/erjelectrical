@@ -38,7 +38,7 @@
     //setup for the navigationController & its root: the manualViewController
     manualNavigationController = [[UINavigationController alloc] initWithRootViewController: userManualViewController];
     manualNavigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
-    manualNavigationController.view.frame = CGRectMake(0.0, 0.0, 320.0, 460.0);
+    manualNavigationController.view.frame = [[UIScreen mainScreen] bounds];
     [self.view addSubview: [manualNavigationController view]];
     
     [super viewDidLoad];

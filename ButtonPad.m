@@ -19,9 +19,13 @@
 
   if (self = [super initWithFrame: frame]) {
       self.backgroundColor = [UIColor clearColor];
-      UIImageView *buttonBackground = [[UIImageView alloc] initWithImage:  [UIImage imageNamed: @"buttonPad2.png"]];
-      [self addSubview: buttonBackground];
-      [buttonBackground release];
+//      UIImageView *buttonBackground = [[UIImageView alloc] initWithImage:  [UIImage imageNamed: @"buttonPad2.png"]];
+//      [self addSubview: buttonBackground];
+//      [buttonBackground release];
+      
+      UIColor *normalStateColor = [UIColor colorWithRed: 254.0f/255.0f green:254.0f/255.0f blue:254.0f/255.0f alpha: 1.0];
+      UIColor *disabledStateColor = [UIColor colorWithRed:45.0f/255.0f green:45.0f/255.0f blue:45.0f/255.0f alpha: 1.0];
+      UIColor *highlightedStateColor = [UIColor blueColor];
       
       
       //button changes 2/17/2010: Subtracted 7 from every button.frame origin.Y value to adjust for smaller buttonPad2.image.
@@ -31,10 +35,10 @@
       [buttonA setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonA setTitle: @"← Main Menu" forState: UIControlStateNormal];
       buttonA.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonA.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonA.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonA setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonA setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
+      buttonA.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonA.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonA setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonA setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
       self.button1 = buttonA;
       [self addSubview: button1];
       
@@ -43,11 +47,11 @@
       [buttonB setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonB setTitle: @"Cold Airplane" forState: UIControlStateNormal];
       buttonB.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonB.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonB.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonB setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonB setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonB setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonB.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonB.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonB setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonB setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonB setTitleColor:  disabledStateColor forState: UIControlStateDisabled];
       self.button2 = buttonB;
       [self addSubview: button2];
       
@@ -56,11 +60,11 @@
       [buttonC setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonC setTitle: @"Batteries Auto" forState: UIControlStateNormal];
       buttonC.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonC.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonC.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonC setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonC setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonC setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonC.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonC.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonC setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonC setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonC setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button3 = buttonC;
       [self addSubview: button3];
 
@@ -69,11 +73,11 @@
       [buttonD setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonD setTitle: @"Start A.P.U." forState: UIControlStateNormal];
       buttonD.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonD.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonD.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonD setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonD setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonD setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonD.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonD.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonD setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonD setTitleColor: highlightedStateColor  forState: UIControlStateHighlighted];
+      [buttonD setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button4 = buttonD;
       [self addSubview: button4];
       
@@ -82,11 +86,11 @@
       [buttonE setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonE setTitle: @"All Gens On" forState: UIControlStateNormal];
       buttonE.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonE.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonE.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonE setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonE setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonE setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonE.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonE.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonE setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonE setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonE setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button5 = buttonE;
       [self addSubview: button5];
       
@@ -95,11 +99,11 @@
       [buttonF setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonF setTitle: @"Gen 1 Fail" forState: UIControlStateNormal];
       buttonF.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonF.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonF.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonF setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonF setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonF setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonF.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonF.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonF setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonF setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonF setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button6 = buttonF;
       [self addSubview: button6];
       
@@ -108,11 +112,11 @@
       [buttonG setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonG setTitle: @"Gen 2 Fail" forState: UIControlStateNormal];
       buttonG.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonG.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonG.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonG setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonG setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonG setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonG.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonG.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonG setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonG setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonG setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button7 = buttonG;
       [self addSubview: button7];
 
@@ -121,11 +125,11 @@
       [buttonH setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonH setTitle: @"Gen 3 Fail" forState: UIControlStateNormal];
       buttonH.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonH.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonH.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonH setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonH setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonH setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonH.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonH.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonH setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonH setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonH setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button8 = buttonH;
       [self addSubview: button8];
       
@@ -134,11 +138,11 @@
       [buttonI setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonI setTitle: @"Gen 4 Fail" forState: UIControlStateNormal];
       buttonI.titleLabel.font = [UIFont systemFontOfSize: 11];
-      buttonI.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
-      buttonI.titleLabel.textAlignment = UITextAlignmentCenter;
-      [buttonI setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonI setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonI setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      buttonI.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+      buttonI.titleLabel.textAlignment = NSTextAlignmentCenter;
+      [buttonI setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonI setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonI setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button9 = buttonI;
       [self addSubview: button9];
       
@@ -147,9 +151,9 @@
       [buttonJ setBackgroundImage: [UIImage imageNamed: @"blackButton.png"] forState: UIControlStateHighlighted];
       [buttonJ setTitle: @"More →" forState: UIControlStateNormal];
       buttonJ.titleLabel.font = [UIFont systemFontOfSize: 11];
-      [buttonJ setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-      [buttonJ setTitleColor: [UIColor whiteColor] forState: UIControlStateHighlighted];
-      [buttonJ setTitleColor: [UIColor grayColor] forState: UIControlStateDisabled];
+      [buttonJ setTitleColor: normalStateColor forState: UIControlStateNormal];
+      [buttonJ setTitleColor: highlightedStateColor forState: UIControlStateHighlighted];
+      [buttonJ setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button10 = buttonJ;
       [self addSubview: button10];
       
@@ -160,9 +164,79 @@
 
 
 - (void)drawRect:(CGRect)rect { 
-       
+    //// Color Declarations
+    UIColor* keyGray = [UIColor colorWithRed: 0.282 green: 0.282 blue: 0.282 alpha: 1];
+    UIColor* keyboardBkgroundBlack = [UIColor colorWithRed: 0.063 green: 0.063 blue: 0.063 alpha: 1];
     
-    // Drawing code
+    //// background rectangle Drawing
+    UIBezierPath* backgroundRectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(-0.5, 0.5, 320, 152)];
+    [keyboardBkgroundBlack setFill];
+    [backgroundRectanglePath fill];
+    [[UIColor blackColor] setStroke];
+    backgroundRectanglePath.lineWidth = 1;
+    [backgroundRectanglePath stroke];
+    
+    
+    //// Rounded Rectangle Drawing
+    UIBezierPath* roundedRectanglePath = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(20, 12, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectanglePath fill];
+    
+    
+    //// Rounded Rectangle 2 Drawing
+    UIBezierPath* roundedRectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(20, 71, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle2Path fill];
+    
+    
+    //// Rounded Rectangle 3 Drawing
+    UIBezierPath* roundedRectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(78, 12, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle3Path fill];
+    
+    
+    //// Rounded Rectangle 4 Drawing
+    UIBezierPath* roundedRectangle4Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(78, 71, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle4Path fill];
+    
+    
+    //// Rounded Rectangle 5 Drawing
+    UIBezierPath* roundedRectangle5Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(136, 71, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle5Path fill];
+    
+    
+    //// Rounded Rectangle 6 Drawing
+    UIBezierPath* roundedRectangle6Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(194, 71, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle6Path fill];
+    
+    
+    //// Rounded Rectangle 7 Drawing
+    UIBezierPath* roundedRectangle7Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(252, 71, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle7Path fill];
+    
+    
+    //// Rounded Rectangle 8 Drawing
+    UIBezierPath* roundedRectangle8Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(136, 12, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle8Path fill];
+    
+    
+    //// Rounded Rectangle 9 Drawing
+    UIBezierPath* roundedRectangle9Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(194, 12, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle9Path fill];
+    
+    
+    //// Rounded Rectangle 10 Drawing
+    UIBezierPath* roundedRectangle10Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(252, 12, 50, 50) cornerRadius: 4];
+    [keyGray setFill];
+    [roundedRectangle10Path fill];
+    
+    
 }
 
 

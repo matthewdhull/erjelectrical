@@ -11,10 +11,8 @@
 
 @class ElectricalSystemDiagramView;
 
-
 @interface PwrSrcDistroLoadListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     id <ModalViewDismissalDelegate> viewDelegate;
-    UIImageView *backGroundImageView;
     ElectricalSystemDiagramView *electricalSystemDiagramView;
     UIImageView *tableBorderView;
     UIImageView *touchAnyBusView;
@@ -42,7 +40,6 @@
 
 
 @property (assign) id <ModalViewDismissalDelegate> viewDelegate;
-@property (nonatomic, retain) UIImageView *backGroundImageView;
 @property (nonatomic, retain) ElectricalSystemDiagramView *electricalSystemDiagramView;
 @property (nonatomic, retain) UIImageView *tableBorderView;
 @property (nonatomic, retain) UIImageView *touchAnyBusView;

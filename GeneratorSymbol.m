@@ -19,35 +19,10 @@
 @synthesize isPowered;
 @synthesize generatorStatus;
 
-//uiimageview test
-@synthesize abnormalGeneratorImage;
-@synthesize normalGeneratorImage;
-@synthesize depoweredGeneratorImage;
-
-
 - (id)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        
+    if((self =  [super initWithFrame:frame])){ 
         self.backgroundColor = [UIColor clearColor];
         symbolRect = CGRectMake(0.0, 0.0, 30.0, 30.0);
-        
-        UIImageView *abnormalImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"abnormalStripes.png"]];
-        self.abnormalGeneratorImage = abnormalImage;
-        abnormalGeneratorImage.alpha = 0.0;
-        [self addSubview: abnormalGeneratorImage];
-        [abnormalImage release];
-        
-        UIImageView *normalImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"normalGeneratorSymbol.png"]];
-        self.normalGeneratorImage = normalImage;
-        normalGeneratorImage.alpha = 0.0;
-        [self addSubview: normalGeneratorImage];
-        [normalImage release];
-        
-        UIImageView *depoweredImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"depoweredGeneratorSymbol.png"]];
-        self.depoweredGeneratorImage = depoweredImage;
-        depoweredGeneratorImage.alpha = 0.0;
-        [self addSubview: depoweredGeneratorImage];
-        [depoweredImage release];
     }
     return self;
 }
@@ -57,7 +32,60 @@
 
 
 - (void)drawRect:(CGRect)rect {
+    self.context = UIGraphicsGetCurrentContext();
     
+    if(self.generatorStatus == depowered) {
+        CGContextSetRGBFillColor(context, 0.5, 0.5, 0.5, 1.0);
+        CGContextFillEllipseInRect(context, self.symbolRect);
+    }
+    else if(self.generatorStatus == abnormal){
+        //set a clipping ellipse and then draw diagonal red lines.
+        CGContextSaveGState(context);
+        CGContextAddEllipseInRect(context, self.symbolRect);
+        CGContextClip(context);
+        
+        CGContextSetRGBStrokeColor(context, 0.7, 0.0, 0.0, 1.0);
+        CGContextSetLineWidth(context, 3.0);        
+
+        CGContextMoveToPoint(context, 16.5, 0.0);
+        CGContextAddLineToPoint(context, 0.0, 16.5);
+        
+        CGContextMoveToPoint(context, 26.5, 0.0);
+        CGContextAddLineToPoint(context, 0.0, 26.5);
+        
+        CGContextMoveToPoint(context, 7.0, 30.0);
+        CGContextAddLineToPoint(context, 30.0, 7.0);
+        
+        CGContextMoveToPoint(context, 17.0, 30.0);
+        CGContextAddLineToPoint(context, 30.0, 17.0);
+        CGContextStrokePath(context);        
+        CGContextRestoreGState(context);
+    }
+    else if(self.generatorStatus == normal) {
+        //create a gradient from white --> green
+        CGFloat colors [] = { 
+            1.0,1.0, 1.0, 1.0,
+            0.0, 0.95, 0.0, 1.0 
+        };
+        
+        CGColorSpaceRef baseSpace = CGColorSpaceCreateDeviceRGB();
+        CGGradientRef gradient = CGGradientCreateWithColorComponents(baseSpace, colors, NULL, 2);
+        CGColorSpaceRelease(baseSpace), baseSpace = NULL;
+        
+        self.context = UIGraphicsGetCurrentContext();
+        
+        CGContextSaveGState(context);
+        CGContextAddEllipseInRect(context, rect);
+        CGContextClip(context);
+        
+        CGPoint startPoint = CGPointMake(CGRectGetMinX(rect), CGRectGetMinY(rect));
+        CGPoint endPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMinY(rect));
+        
+        CGContextDrawRadialGradient(context, gradient, startPoint, 0.0, endPoint, 30.0, kCGGradientDrawsAfterEndLocation);
+        CGGradientRelease(gradient), gradient = NULL;
+    }
+
+
 }
 
 
@@ -65,118 +93,35 @@
 
 -(void)power {
   
-        
-    [UIImageView beginAnimations: @"Fade Animation" context: nil];
-    [UIImageView setAnimationCurve: UIViewAnimationCurveEaseOut];
-    [UIImageView setAnimationDuration: 0.5];
-    [UIImageView setAnimationRepeatCount: 1];
-    if (abnormalGeneratorImage.alpha == 1.0) {
-        abnormalGeneratorImage.alpha = 0.0;
-    }
-    
-    if (depoweredGeneratorImage.alpha == 1.0) {
-        depoweredGeneratorImage.alpha = 0.0;
-    }
-    
-    normalGeneratorImage.alpha = 1.0;
-    [UIImageView commitAnimations];
-    
     self.isPowered = YES;
     self.generatorStatus = powered;
     
     [delegate generatorIsNormal:self];
     
+    [self setNeedsDisplay];
+    
    
 }
 
  -(void)depower {
-     
-     [UIImageView beginAnimations: @"Fade Animation" context: nil];
-     [UIImageView setAnimationCurve: UIViewAnimationCurveEaseOut];
-     [UIImageView setAnimationDuration: 0.5];
-     [UIImageView setAnimationRepeatCount: 1];
-     if (normalGeneratorImage.alpha == 1.0) {
-         normalGeneratorImage.alpha = 0.0;
-     }
-     
-     if (abnormalGeneratorImage.alpha == 1.0) {
-         abnormalGeneratorImage.alpha = 0.0;
-     }
-     
-     depoweredGeneratorImage.alpha = 1.0;
-     [UIImageView commitAnimations];
-     
      self.isPowered = NO;
      self.generatorStatus = depowered;
-
+    [delegate generatorIsNormal:self];     
+    [self setNeedsDisplay];
      
 }
 
 -(void)abnormal {
-   
-    
-    [UIImageView beginAnimations: @"Fade Animation" context: nil];
-    [UIImageView setAnimationCurve: UIViewAnimationCurveEaseOut];
-    [UIImageView setAnimationDuration: 0.5];
-    [UIImageView setAnimationRepeatCount: 1];
-    if (normalGeneratorImage.alpha == 1.0) {
-        normalGeneratorImage.alpha = 0.0;
-    }
-    
-    if (depoweredGeneratorImage.alpha == 1.0) {
-        depoweredGeneratorImage.alpha = 0.0;
-    }
-    
-    abnormalGeneratorImage.alpha = 1.0;
-    [UIImageView commitAnimations];
-     
     self.isPowered = NO;
     self.generatorStatus = abnormal;
     
     [delegate generatorIsAbnormal:self];
-  
+    [self setNeedsDisplay];  
 }
-
-
--(UIImageView *)findVisibleImage {
-    UIImageView *image;
-    if(normalGeneratorImage.alpha == 1.0) {
-        normalGeneratorImage = image;
-    }
-    else if(abnormalGeneratorImage.alpha == 1.0) {
-        abnormalGeneratorImage = image;
-    }
-    else if (depoweredGeneratorImage.alpha == 1.0) {
-        depoweredGeneratorImage = image;
-    }
-    return image;
-}
-
-
-
-
-
-
-
--(void)fadeOutImage:(UIImageView *)visibleImage fadeInImage:(UIImageView *)hiddenImage {
-
-    [UIImageView beginAnimations: @"Fade Animation" context: nil];
-    [UIImageView setAnimationCurve: UIViewAnimationCurveLinear];
-    [UIImageView setAnimationDuration: 0.5];
-    [UIImageView setAnimationRepeatCount: 1];
-    visibleImage.alpha = 0.0;
-    hiddenImage.alpha = 1.0;
-    [UIImageView commitAnimations];
-}
-
 
 
 - (void)dealloc {
     [currentColor release];
-    
-    [abnormalGeneratorImage release];
-    [normalGeneratorImage release];
-    [depoweredGeneratorImage release];
     [super dealloc];
 }
 

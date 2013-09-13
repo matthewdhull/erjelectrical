@@ -246,35 +246,35 @@ enum buttonTitle {title1, title2};
 
 -(void)enableAPUButton;
 
--(IBAction)allGensOn:(id)sender;
+-(void)allGensOn:(id)sender;
 
--(IBAction)lossOfAllGens:(id)sender;
+-(void)lossOfAllGens:(id)sender;
 
--(IBAction)gen1Fail:(id)sender;
+-(void)gen1Fail:(id)sender;
 
--(IBAction)resetGen1:(id)sender;
+-(void)resetGen1:(id)sender;
 
--(IBAction)gen2Fail:(id)sender;
+-(void)gen2Fail:(id)sender;
 
--(IBAction)resetGen2:(id)sender;
+-(void)resetGen2:(id)sender;
 
--(IBAction)gen3Fail:(id)sender;
+-(void)gen3Fail:(id)sender;
 
--(IBAction)resetGen3:(id)sender;
+-(void)resetGen3:(id)sender;
 
--(IBAction)gen4Fail:(id)sender;
+-(void)gen4Fail:(id)sender;
 
--(IBAction)resetGen4:(id)sender;
+-(void)resetGen4:(id)sender;
 
--(IBAction)apuGenFail:(id)sender;
+-(void)apuGenFail:(id)sender;
 
--(IBAction)resetApuGen:(id)sender;
+-(void)resetApuGen:(id)sender;
 
--(IBAction)elecEssXfrFailOption1:(id)sender;
+-(void)elecEssXfrFailOption1:(id)sender;
 
--(IBAction)elecEssXfrFailOption2:(id)sender;
+-(void)elecEssXfrFailOption2:(id)sender;
 
--(IBAction)elecEmerAbnorm:(id)sender;
+-(void)elecEmerAbnorm:(id)sender;
 
 #pragma mark -
 #pragma mark - Electrical Logic Methods

@@ -22,3 +22,4 @@ const CGRect sb1Rect = {{14.0, 191.0},{35.0, 15.0}};
 const CGRect sb2Rect = {{250.0, 191.0},{35.0, 15.0}};
 const CGRect eb1Rect = {{65.0, 191.0},{55.0, 15.0}};
 const CGRect eb2Rect = {{179.0, 191.0},{55.0, 15.0}};
+const CGRect diagramRect = {{13.0, 15.0}, {300.0, 240.0}};

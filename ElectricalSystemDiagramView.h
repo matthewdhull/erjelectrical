@@ -10,22 +10,7 @@
 
 @interface ElectricalSystemDiagramView : UIView {
     
-    
-    UIImageView *electricalSystemDiagramView;
-    UIImageView *dCBus1PowerSymbol;
-    UIImageView *dCBus2PowerSymbol;
-    UIImageView *centralBusPowerSymbol;
-    UIImageView *hotBus1Symbol;
-    UIImageView *hotBus2Symbol;
-    UIImageView *backupEssBusSymbol;
-    UIImageView *backupHotBusSymbol;
-    UIImageView *backupBus1Symbol;
-    UIImageView *backupBus2Symbol;
-    UIImageView *shedBus1Symbol;
-    UIImageView *shedBus2Symbol;
-    UIImageView *essBus1Symbol;
-    UIImageView *essBus2Symbol;
-    UIImageView *GPUSymbol;
+    bool isDrawn;
     
     bool dcBus1Powered;
     bool dcBus2Powered;
@@ -40,32 +25,19 @@
     bool shedBus2Powered;
     bool essBus1Powered;
     bool essBus2Powered;
+    bool gpuPowered;
     
     
     NSMutableString *selectedBus;
     NSMutableString *desiredBus;
     CGColorRef gray;
+    CGColorRef green;
     
 
 }
 
 
-
-@property (nonatomic, retain) UIImageView *electricalSystemDiagramView;
-@property (nonatomic, retain) UIImageView *dCBus1PowerSymbol;
-@property (nonatomic, retain) UIImageView *dCBus2PowerSymbol;
-@property (nonatomic, retain) UIImageView *centralBusPowerSymbol;
-@property (nonatomic, retain) UIImageView *hotBus1Symbol;
-@property (nonatomic, retain) UIImageView *hotBus2Symbol;
-@property (nonatomic, retain) UIImageView *backupEssBusSymbol;
-@property (nonatomic, retain) UIImageView *backupHotBusSymbol;
-@property (nonatomic, retain) UIImageView *backupBus1Symbol;
-@property (nonatomic, retain) UIImageView *backupBus2Symbol;
-@property (nonatomic, retain) UIImageView *shedBus1Symbol;
-@property (nonatomic, retain) UIImageView *shedBus2Symbol;
-@property (nonatomic, retain) UIImageView *essBus1Symbol;
-@property (nonatomic, retain) UIImageView *essBus2Symbol;
-@property (nonatomic, retain) UIImageView *GPUSymbol;
+@property bool isDrawn;
 
 @property bool dcBus1Powered;
 @property bool dcBus2Powered;
@@ -80,13 +52,18 @@
 @property bool shedBus2Powered;
 @property bool essBus1Powered;
 @property bool essBus2Powered;
+@property bool gpuPowered;
+
 
 
 @property (nonatomic, retain) NSMutableString *selectedBus;
 @property (nonatomic, retain) NSMutableString *desiredBus;
 @property CGColorRef gray;
+@property CGColorRef green;
 
 
+//designated initializer
+- (id)initWithFrame:(CGRect)frame allDeenerized:(BOOL)energized;
 
 //power all 13 buses
 -(void)powerAllBuses;
@@ -132,14 +109,6 @@
 -(void)displayGPUPowerIndication;
 
 -(void)hideGPUPowerIndication;
-
-//animation of bus outline
-
--(void)displayOutlineOfBus:(UIImageView *)aBus;
-
--(void)fadeOutlineOfBus:(UIImageView *)aBus;
-
-//the following methods serve as wrappers for the displayOutlineOfBus method by outlining the arguments to be specific to the bus.
 
 -(void)selectDCBus1PowerSymbol;
 
