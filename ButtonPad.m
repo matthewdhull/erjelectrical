@@ -23,7 +23,7 @@
 //      [self addSubview: buttonBackground];
 //      [buttonBackground release];
       
-      UIColor *normalStateColor = [UIColor colorWithRed: 254.0f/255.0f green:254.0f/255.0f blue:254.0f/255.0f alpha: 1.0];
+    UIColor *normalStateColor = [UIColor colorWithRed: 254.0f/255.0f green:254.0f/255.0f blue:254.0f/255.0f alpha: 1.0];
       UIColor *disabledStateColor = [UIColor colorWithRed:45.0f/255.0f green:45.0f/255.0f blue:45.0f/255.0f alpha: 1.0];
       UIColor *highlightedStateColor = [UIColor blueColor];
       
@@ -156,9 +156,8 @@
       [buttonJ setTitleColor: disabledStateColor forState: UIControlStateDisabled];
       self.button10 = buttonJ;
       [self addSubview: button10];
-      
-      
-      }
+
+  }
     return self;
 }
 
@@ -167,6 +166,7 @@
     //// Color Declarations
     UIColor* keyGray = [UIColor colorWithRed: 0.282 green: 0.282 blue: 0.282 alpha: 1];
     UIColor* keyboardBkgroundBlack = [UIColor colorWithRed: 0.063 green: 0.063 blue: 0.063 alpha: 1];
+    UIColor* color3 = [UIColor colorWithRed: 0.833 green: 0.833 blue: 0.833 alpha: 1];
     
     //// background rectangle Drawing
     UIBezierPath* backgroundRectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(-0.5, 0.5, 320, 152)];
@@ -178,63 +178,109 @@
     
     
     //// Rounded Rectangle Drawing
-    UIBezierPath* roundedRectanglePath = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(20, 12, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(20, 12, 50, 50)];
     [keyGray setFill];
     [roundedRectanglePath fill];
     
     
     //// Rounded Rectangle 2 Drawing
-    UIBezierPath* roundedRectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(20, 71, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle2Path = [UIBezierPath bezierPathWithRect: CGRectMake(20, 71, 50, 50)];
     [keyGray setFill];
     [roundedRectangle2Path fill];
     
     
     //// Rounded Rectangle 3 Drawing
-    UIBezierPath* roundedRectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(78, 12, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle3Path = [UIBezierPath bezierPathWithRect: CGRectMake(78, 12, 50, 50)];
     [keyGray setFill];
     [roundedRectangle3Path fill];
     
     
     //// Rounded Rectangle 4 Drawing
-    UIBezierPath* roundedRectangle4Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(78, 71, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle4Path = [UIBezierPath bezierPathWithRect: CGRectMake(78, 71, 50, 50)];
     [keyGray setFill];
     [roundedRectangle4Path fill];
     
     
     //// Rounded Rectangle 5 Drawing
-    UIBezierPath* roundedRectangle5Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(136, 71, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle5Path = [UIBezierPath bezierPathWithRect: CGRectMake(136, 71, 50, 50)];
     [keyGray setFill];
     [roundedRectangle5Path fill];
     
     
     //// Rounded Rectangle 6 Drawing
-    UIBezierPath* roundedRectangle6Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(194, 71, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle6Path = [UIBezierPath bezierPathWithRect: CGRectMake(194, 71, 50, 50)];
     [keyGray setFill];
     [roundedRectangle6Path fill];
     
     
     //// Rounded Rectangle 7 Drawing
-    UIBezierPath* roundedRectangle7Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(252, 71, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle7Path = [UIBezierPath bezierPathWithRect: CGRectMake(252, 71, 50, 50)];
     [keyGray setFill];
     [roundedRectangle7Path fill];
     
     
     //// Rounded Rectangle 8 Drawing
-    UIBezierPath* roundedRectangle8Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(136, 12, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle8Path = [UIBezierPath bezierPathWithRect: CGRectMake(136, 12, 50, 50)];
     [keyGray setFill];
     [roundedRectangle8Path fill];
     
     
     //// Rounded Rectangle 9 Drawing
-    UIBezierPath* roundedRectangle9Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(194, 12, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle9Path = [UIBezierPath bezierPathWithRect: CGRectMake(194, 12, 50, 50)];
     [keyGray setFill];
     [roundedRectangle9Path fill];
     
     
     //// Rounded Rectangle 10 Drawing
-    UIBezierPath* roundedRectangle10Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(252, 12, 50, 50) cornerRadius: 4];
+    UIBezierPath* roundedRectangle10Path = [UIBezierPath bezierPathWithRect: CGRectMake(252, 12, 50, 50)];
     [keyGray setFill];
     [roundedRectangle10Path fill];
+    
+    
+    //// Bezier Drawing
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(15.5, 66.5)];
+    [bezierPath addLineToPoint: CGPointMake(308.5, 66.5)];
+    [color3 setStroke];
+    bezierPath.lineWidth = 1;
+    [bezierPath stroke];
+    
+    
+    //// Bezier 2 Drawing
+    UIBezierPath* bezier2Path = [UIBezierPath bezierPath];
+    [bezier2Path moveToPoint: CGPointMake(74.5, 17.5)];
+    [bezier2Path addLineToPoint: CGPointMake(74.5, 115.5)];
+    [color3 setStroke];
+    bezier2Path.lineWidth = 1;
+    [bezier2Path stroke];
+    
+    
+    //// Bezier 3 Drawing
+    UIBezierPath* bezier3Path = [UIBezierPath bezierPath];
+    [bezier3Path moveToPoint: CGPointMake(132.5, 18.5)];
+    [bezier3Path addLineToPoint: CGPointMake(132.5, 116.5)];
+    [color3 setStroke];
+    bezier3Path.lineWidth = 1;
+    [bezier3Path stroke];
+    
+    
+    //// Bezier 4 Drawing
+    UIBezierPath* bezier4Path = [UIBezierPath bezierPath];
+    [bezier4Path moveToPoint: CGPointMake(190.5, 18.5)];
+    [bezier4Path addLineToPoint: CGPointMake(190.5, 116.5)];
+    [color3 setStroke];
+    bezier4Path.lineWidth = 1;
+    [bezier4Path stroke];
+    
+    
+    //// Bezier 5 Drawing
+    UIBezierPath* bezier5Path = [UIBezierPath bezierPath];
+    [bezier5Path moveToPoint: CGPointMake(248.5, 18.5)];
+    [bezier5Path addLineToPoint: CGPointMake(248.5, 116.5)];
+    [color3 setStroke];
+    bezier5Path.lineWidth = 1;
+    [bezier5Path stroke];
+    
     
     
 }

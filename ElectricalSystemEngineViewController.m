@@ -6,6 +6,8 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 #import "ElectricalSystemEngineViewController.h"
 #import "LineContactor.h"
 #import "GeneratorSymbol.h"
@@ -125,11 +127,18 @@
 
 
 -(void)loadAllComponents {
-
-//    GradientView *gradientView = [[GradientView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-//    [self.view addSubview: gradientView];
-//    [gradientView release];
     
+    CGRect buttonPadFrame;
+    CGRect generatorDisplayFrame;
+
+    if(IS_IPHONE_5) {
+        buttonPadFrame = CGRectMake(0.0, 357.0, 320.0, 300.0);
+        generatorDisplayFrame = CGRectMake(0.0, 220.0, 320.0, 140.0);
+    }
+    else {
+        buttonPadFrame = CGRectMake(0.0, 337.0, 320.0, 300.0);
+        generatorDisplayFrame = CGRectMake(0.0, 212.5, 320.0, 300.0);
+    }
     
     //set up electrical system diagram image in 2 parts, a static part, and a portion that is re-drawn for interaction.
     StaticDiagramComponents *staticComponents = [[StaticDiagramComponents alloc] initWithFrame: diagramRect];
@@ -145,7 +154,7 @@
     self.currentAmps = 0;
     
     //set up generator display 
-    GeneratorDisplay *genView = [[GeneratorDisplay alloc] initWithFrame: CGRectMake(0.0, 220.0, 320.0, 140.0)];
+    GeneratorDisplay *genView = [[GeneratorDisplay alloc] initWithFrame: generatorDisplayFrame];
     self.generatorDisplay = genView;
     [self.view addSubview: generatorDisplay];
     [genView release];
@@ -285,8 +294,7 @@
     
     
     //buttonPad setup: placed @ bottom of screen, displayed upon pressing "Control" button.
-    
-    ButtonPad *customPad = [[ButtonPad alloc] initWithFrame: CGRectMake(0.0, 337.0, 320.0, 300.0)];
+    ButtonPad *customPad = [[ButtonPad alloc] initWithFrame: buttonPadFrame];
     self.buttonPad = customPad;
     
     //buttonConfig is set to buttonConfig1 so that the viewController knows that the buttonPad loads in the default configuration

@@ -6,6 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 #define LOG_FRAME NSLog(@"Frame: x: %.02f y: %.02f w:%.02f, h: %.02f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
 
 #import "ModeSelectView.h"
@@ -24,20 +25,35 @@
 - (id)initWithFrame:(CGRect)frame {
     if((self = [super initWithFrame:frame])){
         
-        CGRect w = [[UIScreen mainScreen] bounds];
 
         self.backgroundColor = [UIColor clearColor];
 
         UIImageView *mainImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"MainScreen_WIP.png"]];
         self.mainScreenView = mainImage;
-        self.mainScreenView.frame = w;
-        [self addSubview: mainScreenView];
-        [mainImage release];
         
         DiodeView *diodeView = [[DiodeView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        [diodeView setBackgroundColor: [UIColor clearColor]];
-        [self addSubview: diodeView];
-        [diodeView release];
+
+        if (IS_IPHONE_5) {
+            self.mainScreenView.frame = [[UIScreen mainScreen] bounds];
+        }
+        
+        else {
+
+            CGRect smallScreenDiodeFrame = CGRectMake(0.0, -50.0f, [[UIScreen mainScreen]bounds].size.width,[[UIScreen mainScreen]bounds].size.height);
+            CGRect smallScreenMainViewFrame = CGRectMake(0.0, -25.0f, [[UIScreen mainScreen]bounds].size.width,[[UIScreen mainScreen]bounds].size.height);
+            self.mainScreenView.frame = smallScreenMainViewFrame;
+            diodeView.frame = smallScreenDiodeFrame;
+        }
+
+        
+        [self addSubview: self.mainScreenView];
+        [mainImage release];
+                                                   
+       [diodeView setBackgroundColor: [UIColor clearColor]];
+       [self addSubview: diodeView];
+       [diodeView release];
+
+        
         
         
         
