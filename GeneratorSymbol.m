@@ -35,11 +35,15 @@
     self.context = UIGraphicsGetCurrentContext();
     
     if(self.generatorStatus == depowered) {
-        CGContextSetRGBFillColor(context, 0.5, 0.5, 0.5, 1.0);
+        CGContextSetRGBFillColor(context, 200.0/255.0, 200.0/255.0, 200.0/255.0, 1.0);
         CGContextFillEllipseInRect(context, self.symbolRect);
     }
     else if(self.generatorStatus == abnormal){
         //set a clipping ellipse and then draw diagonal red lines.
+
+        CGContextSetRGBFillColor(context, 0.45f, 0.0f, 0.0f, 1.0f);
+        CGContextFillEllipseInRect(context, self.symbolRect);
+        
         CGContextSaveGState(context);
         CGContextAddEllipseInRect(context, self.symbolRect);
         CGContextClip(context);
@@ -62,27 +66,10 @@
         CGContextRestoreGState(context);
     }
     else if(self.generatorStatus == normal) {
-        //create a gradient from white --> green
-        CGFloat colors [] = { 
-            1.0,1.0, 1.0, 1.0,
-            0.0, 0.95, 0.0, 1.0 
-        };
         
-        CGColorSpaceRef baseSpace = CGColorSpaceCreateDeviceRGB();
-        CGGradientRef gradient = CGGradientCreateWithColorComponents(baseSpace, colors, NULL, 2);
-        CGColorSpaceRelease(baseSpace), baseSpace = NULL;
+        CGContextSetRGBFillColor(context, 0.0f, 1.0f, 20.0f/255.0f, 1.0f);
+        CGContextFillEllipseInRect(context, self.symbolRect);
         
-        self.context = UIGraphicsGetCurrentContext();
-        
-        CGContextSaveGState(context);
-        CGContextAddEllipseInRect(context, rect);
-        CGContextClip(context);
-        
-        CGPoint startPoint = CGPointMake(CGRectGetMinX(rect), CGRectGetMinY(rect));
-        CGPoint endPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMinY(rect));
-        
-        CGContextDrawRadialGradient(context, gradient, startPoint, 0.0, endPoint, 30.0, kCGGradientDrawsAfterEndLocation);
-        CGGradientRelease(gradient), gradient = NULL;
     }
 
 

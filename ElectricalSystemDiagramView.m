@@ -48,7 +48,7 @@ typedef enum DrawType {
     if((self = [super initWithFrame:frame])){
         
         self.backgroundColor = [UIColor clearColor];
-        UIColor *grayShade = [UIColor colorWithRed:131.0/255.0 green:131.0/255.0 blue:131.0/255.0 alpha:1.0];
+        UIColor *grayShade = [UIColor colorWithRed:200.0/255.0 green:200.0/255.0 blue:200.0/255.0 alpha:1.0];
         gray  = grayShade.CGColor;
         CGColorRetain(gray);
         
@@ -86,14 +86,17 @@ typedef enum DrawType {
     CGContextClosePath(ctx);
     
     if(dType == fill) {
+        CGContextSetFillColorWithColor(ctx, color);
         CGContextFillPath(ctx);
     }
     else if(dType == stroke){
+        CGContextSetStrokeColorWithColor(ctx, color);
         CGContextStrokePath(ctx);
     }
     else if(dType == fillStroke){
         CGContextSetLineWidth(ctx, 1.5);
-        CGContextSetRGBStrokeColor(ctx, 0.0, 1.0, 0.0, 1.0);
+        CGContextSetFillColorWithColor(ctx, color);
+        CGContextSetStrokeColorWithColor(ctx, color);
         CGContextDrawPath(ctx, kCGPathFillStroke);
     }
     
@@ -228,9 +231,8 @@ typedef enum DrawType {
     else {
         color = gray;
     }
+
     
-    //we momentarily remove the shadow to draw the gpu lines and restore it prior to drawing the rest of the diagram
-    CGContextRestoreGState(ctx);
     CGContextSetLineWidth(ctx, 2.0);
     CGContextSetStrokeColorWithColor(ctx, color);
     CGFloat rad = 2.0;
@@ -238,10 +240,6 @@ typedef enum DrawType {
     [self drawRoundedRect:CGRectMake(122.0, 85.0, 10.0, 3.0) cornerRadius:rad color: color drawType:stroke context:ctx];
     [self drawRoundedRect:CGRectMake(125.0, 80.0, 7.0, 3.0) cornerRadius: rad color: color drawType:stroke context:ctx];
     
-    //shadow restore.
-    CGSize shadowOffset = CGSizeMake (5,  5);
-    CGContextSaveGState(ctx);
-    CGContextSetShadow (ctx, shadowOffset, 4);
     
     CGContextSetLineWidth(ctx, 4.0);
     CGContextMoveToPoint(ctx, 132.0, 79.0);
@@ -258,12 +256,6 @@ typedef enum DrawType {
     CGContextSetFillColorWithColor(context, gray);
     CGContextSetLineWidth(context, 2.0);
     
-//shadow
-    CGSize shadowOffset = CGSizeMake (5,  5);
-    CGContextSaveGState(context);
-    CGContextSetShadow (context, shadowOffset, 4);
-    
-    CGContextBeginTransparencyLayer(context, NULL);
     
 /*
 //generator contactors conn
@@ -567,114 +559,111 @@ typedef enum DrawType {
     CGFloat radius = 4.0;
     //dc bus 1.
     if(dcBus1Powered == YES){
-        [self drawRoundedRect:dc1rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:dc1rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:dc1rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:dc1rect cornerRadius:radius color: gray drawType:fillStroke context:context];
         
     }
     
     //central DC Bus
     if(centralDcBusPowered == YES){
-        [self drawRoundedRect:centralDCBusRect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:centralDCBusRect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:centralDCBusRect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:centralDCBusRect cornerRadius:radius color: gray drawType:fillStroke context:context];
         
     }
     
     //dc bus 2
     if(dcBus2Powered == YES) {
-        [self drawRoundedRect:dc2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:dc2Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:dc2Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:dc2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
     
     //hot bus 1.
     if(hotBus1Powered == YES){
-        [self drawRoundedRect:hb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:hb1Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:hb1Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:hb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
         
     }
     
     //hot bus 2.
     if(hotBus2Powered == YES) {
-        [self drawRoundedRect:hb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:hb2Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:hb2Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:hb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
     
     //backup essential bus
     if(backupEssBusPowered == YES) {
-        [self drawRoundedRect:beRect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:beRect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:beRect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:beRect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
      
     //backup hot bus
     if(backupHotBusPowered == YES) {
-        [self drawRoundedRect:bhbRect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:bhbRect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:bhbRect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:bhbRect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
      
     //backup bus 1
     if(backupBus1Powered == YES) {
-        [self drawRoundedRect:bb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:bb1Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:bb1Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:bb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
     
     //backup bus 2
     if (backupBus2Powered == YES){
-        [self drawRoundedRect:bb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:bb2Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:bb2Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:bb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
     
     //shed bus 1
     if(shedBus1Powered == YES){
-        [self drawRoundedRect:sb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:sb1Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:sb1Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:sb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
      
     //shed bus 2
     if(shedBus2Powered == YES){
-        [self drawRoundedRect:sb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:sb2Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:sb2Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:sb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
     
     //essential bus 1
     if(essBus1Powered == YES){
-        [self drawRoundedRect:eb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:eb1Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:eb1Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:eb1Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
       
     //essential bus 2
     if(essBus2Powered == YES){
-        [self drawRoundedRect:eb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
+        [self drawRoundedRect:eb2Rect cornerRadius:radius color: green drawType:fillStroke context:context];
     }
     else {
-        [self drawRoundedRect:eb2Rect cornerRadius:radius color: gray drawType:fill context:context];
+        [self drawRoundedRect:eb2Rect cornerRadius:radius color: gray drawType:fillStroke context:context];
     }
-      
-    CGContextEndTransparencyLayer(context);
-    //this call will disable shadow drawing for any further drawing code.
-    CGContextRestoreGState(context);
+    
     
     //draws text labels on each bus
 
