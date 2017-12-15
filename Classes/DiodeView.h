@@ -10,4 +10,7 @@
 
 @interface DiodeView : UIView
 
+@property (strong, nonatomic) UIColor *strokeColor;
+
+
 @end

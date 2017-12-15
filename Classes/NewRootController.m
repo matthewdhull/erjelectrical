@@ -64,6 +64,7 @@
 
 
 -(void)showInteractiveModalController {
+    [modeSelectView translateDiodeAnimation];
     [self presentViewController: electricalSystemEngineViewController animated:YES completion: NULL];
 }
 
@@ -81,6 +82,10 @@
 #pragma mark - ModalViewDismissalDelegate Methods
 
 -(void)didRequestMainMenu: (id)sender {
+    
+    if ([sender isEqual: [ElectricalSystemEngineViewController class]]) {
+//        [modeSelectView reverseTranslateDiodeAnimation];
+    }
     [self dismissViewControllerAnimated:YES completion: NULL];
 }
 

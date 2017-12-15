@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,12 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		551E51CB1FE3BACE005AA99B /* PwrSrcDistroLoadListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551E51CA1FE3BACE005AA99B /* PwrSrcDistroLoadListViewController.xib */; };
 		55238E2317E3BF3F00082099 /* GeneratorBorderDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 55238E2217E3BF3F00082099 /* GeneratorBorderDisplay.m */; };
 		559858BD177CBCBA003C89B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559858BC177CBCBA003C89B3 /* Default-568h@2x.png */; };
 		55FB2D5D17E00F60007F061A /* DiodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB2D5C17E00F60007F061A /* DiodeView.m */; };
 		55FB2D6117E01530007F061A /* MainScreen_WIP.png in Resources */ = {isa = PBXBuildFile; fileRef = 55FB2D5F17E01530007F061A /* MainScreen_WIP.png */; };
 		55FB2D6217E01530007F061A /* MainScreen_WIP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55FB2D6017E01530007F061A /* MainScreen_WIP@2x.png */; };
-		DC0927FA11486A4600867892 /* UserManual.css in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F211486A4600867892 /* UserManual.css */; };
 		DC0927FB11486A4600867892 /* Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F311486A4600867892 /* Contact.html */; };
 		DC0927FC11486A4600867892 /* ERJElecSysUserManual.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F411486A4600867892 /* ERJElecSysUserManual.html */; };
 		DC0927FD11486A4600867892 /* InteractiveMode.html in Resources */ = {isa = PBXBuildFile; fileRef = DC0927F511486A4600867892 /* InteractiveMode.html */; };
@@ -73,7 +73,6 @@
 		DC850C4F10E0911D009A8F80 /* blackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DC850C4E10E0911D009A8F80 /* blackButton.png */; };
 		DC868FE811344043000B0DB2 /* MenuTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC868FE711344043000B0DB2 /* MenuTableController.xib */; };
 		DC8690C211344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */; };
-		DC8690C311344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */; };
 		DC86914B11347E7D000B0DB2 /* TableBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC86914A11347E7D000B0DB2 /* TableBorder.png */; };
 		DC87D8DB10C899B0009AFD26 /* PowerSourceCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC87D8DA10C899B0009AFD26 /* PowerSourceCustomCell.m */; };
 		DC87D8DF10C89A35009AFD26 /* PowerSourceCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC87D8DE10C89A35009AFD26 /* PowerSourceCustomCell.xib */; };
@@ -109,6 +108,7 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Power_Source_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power_Source_Prefix.pch; sourceTree = "<group>"; };
+		551E51CA1FE3BACE005AA99B /* PwrSrcDistroLoadListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PwrSrcDistroLoadListViewController.xib; sourceTree = "<group>"; };
 		55238E2117E3BF3F00082099 /* GeneratorBorderDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorBorderDisplay.h; sourceTree = "<group>"; };
 		55238E2217E3BF3F00082099 /* GeneratorBorderDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorBorderDisplay.m; sourceTree = "<group>"; };
 		559858BC177CBCBA003C89B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -117,7 +117,6 @@
 		55FB2D5F17E01530007F061A /* MainScreen_WIP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreen_WIP.png; sourceTree = "<group>"; };
 		55FB2D6017E01530007F061A /* MainScreen_WIP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainScreen_WIP@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Power_Source-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Power_Source-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		DC0927F211486A4600867892 /* UserManual.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = UserManual.css; sourceTree = "<group>"; };
 		DC0927F311486A4600867892 /* Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Contact.html; sourceTree = "<group>"; };
 		DC0927F411486A4600867892 /* ERJElecSysUserManual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ERJElecSysUserManual.html; sourceTree = "<group>"; };
 		DC0927F511486A4600867892 /* InteractiveMode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InteractiveMode.html; sourceTree = "<group>"; };
@@ -185,7 +184,6 @@
 		DC8690B311344906000B0DB2 /* ModalViewDismissalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewDismissalDelegate.h; sourceTree = "<group>"; };
 		DC8690BF11344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwrSrcDistroLoadListViewController.h; sourceTree = "<group>"; };
 		DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwrSrcDistroLoadListViewController.m; sourceTree = "<group>"; };
-		DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PwrSrcDistroLoadListViewController.xib; sourceTree = "<group>"; };
 		DC86914A11347E7D000B0DB2 /* TableBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableBorder.png; sourceTree = "<group>"; };
 		DC87D8D910C899B0009AFD26 /* PowerSourceCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceCustomCell.h; sourceTree = "<group>"; };
 		DC87D8DA10C899B0009AFD26 /* PowerSourceCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceCustomCell.m; sourceTree = "<group>"; };
@@ -333,7 +331,6 @@
 		DC1E62AD1140DDFC00FA92CB /* Manual HTML Docs */ = {
 			isa = PBXGroup;
 			children = (
-				DC0927F211486A4600867892 /* UserManual.css */,
 				DC0927F311486A4600867892 /* Contact.html */,
 				DC0927F411486A4600867892 /* ERJElecSysUserManual.html */,
 				DC0927F511486A4600867892 /* InteractiveMode.html */,
@@ -442,7 +439,7 @@
 			children = (
 				DC8690BF11344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.h */,
 				DC8690C011344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.m */,
-				DC8690C111344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib */,
+				551E51CA1FE3BACE005AA99B /* PwrSrcDistroLoadListViewController.xib */,
 			);
 			name = "Power Source Distro Load List Classes";
 			sourceTree = "<group>";
@@ -518,7 +515,7 @@
 				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ERJElectrical" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -545,6 +542,7 @@
 				DCFCD18810C0F5B700276149 /* DCBus1TableViewController.xib in Resources */,
 				DCFCD19010C0F5DD00276149 /* DCBus2TableViewController.xib in Resources */,
 				DCFCD19B10C0F61000276149 /* EssentialBus1TableViewControlller.xib in Resources */,
+				551E51CB1FE3BACE005AA99B /* PwrSrcDistroLoadListViewController.xib in Resources */,
 				DCFCD1A210C0F62400276149 /* EssentialBus2TableViewController.xib in Resources */,
 				DC70DCA110C183430070CFF5 /* DCBus1.plist in Resources */,
 				DC70DCC910C1A43B0070CFF5 /* DCBus2.plist in Resources */,
@@ -571,7 +569,6 @@
 				DC850C4F10E0911D009A8F80 /* blackButton.png in Resources */,
 				DC6764B5112B42090040D393 /* buttonPad2.png in Resources */,
 				DC868FE811344043000B0DB2 /* MenuTableController.xib in Resources */,
-				DC8690C311344B9B000B0DB2 /* PwrSrcDistroLoadListViewController.xib in Resources */,
 				DC86914B11347E7D000B0DB2 /* TableBorder.png in Resources */,
 				DC32607F1135F565006F6E6E /* ArrowTab.png in Resources */,
 				DC680EA21138C7DF007405A6 /* MainScreen.png in Resources */,
@@ -591,7 +588,6 @@
 				DC792DC91145D26D00DE744F /* ThreeNetworksImage.png in Resources */,
 				DC792FD31146214000DE744F /* UserManualViewController.xib in Resources */,
 				DC7931211146BC0400DE744F /* TwoNetworksImage.png in Resources */,
-				DC0927FA11486A4600867892 /* UserManual.css in Resources */,
 				DC0927FB11486A4600867892 /* Contact.html in Resources */,
 				DC0927FC11486A4600867892 /* ERJElecSysUserManual.html in Resources */,
 				DC0927FD11486A4600867892 /* InteractiveMode.html in Resources */,
@@ -656,7 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
 				INFOPLIST_FILE = "Power_Source-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				PRODUCT_NAME = ERJElectrical;
 				PROVISIONING_PROFILE = "5F1F056F-70F9-4EF0-9E7C-E31F225C80C0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -676,7 +672,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
 				INFOPLIST_FILE = "Power_Source-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				PRODUCT_NAME = ERJElectrical;
 				PROVISIONING_PROFILE = "5F1F056F-70F9-4EF0-9E7C-E31F225C80C0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -693,7 +689,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44D476DB-FBF0-4AC8-A4D7-2FF47D860367";
@@ -710,7 +706,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44D476DB-FBF0-4AC8-A4D7-2FF47D860367";
 				SDKROOT = iphoneos;
@@ -727,7 +723,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -747,7 +743,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Power_Source_Prefix.pch;
 				INFOPLIST_FILE = "Power_Source-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				PRODUCT_NAME = ERJElectrical;
 				PROVISIONING_PROFILE = "5F1F056F-70F9-4EF0-9E7C-E31F225C80C0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
